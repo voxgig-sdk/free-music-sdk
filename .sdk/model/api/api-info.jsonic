@@ -1,0 +1,29 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      contact: {
+        name: "TheAudioDB"
+        url: "https://www.theaudiodb.com"
+      }
+      description: "TheAudioDB provides a free music API to use in test or development environments. Access real-time music data including Artists, Albums, Songs, and Music Venues."
+      servers: [
+        {
+          description: "V1 API Server"
+          url: "https://www.theaudiodb.com/api/v1/json"
+        }
+        {
+          description: "V2 API Server (Premium only)"
+          url: "https://www.theaudiodb.com/api/v2/json"
+        }
+      ]
+      termsOfService: "https://www.theaudiodb.com"
+      title: "Free Music API"
+      version: "1.0.0"
+    }
+  }
+}
+
+}

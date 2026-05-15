@@ -1,0 +1,269 @@
+# Entity: v2_lookup
+
+main: kit: entity: v2_lookup: {
+
+  alias: field: {}
+
+  fields: [
+    {
+      name: "album"
+      req: false
+      type: "`$ARRAY`"
+    }
+    {
+      name: "artist"
+      req: false
+      type: "`$ARRAY`"
+    }
+    {
+      name: "track"
+      req: false
+      type: "`$ARRAY`"
+    }
+  ]
+
+  name: "v2_lookup"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          args: {
+            params: [
+              {
+                example: 2109615
+                kind: "param"
+                name: "id_album"
+                orig: "id_album"
+                reqd: true
+                type: "`$INTEGER`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/lookup/album/{idAlbum}"
+          parts: [
+            "lookup"
+            "album"
+            "{id_album}"
+          ]
+          rename: {
+            param: {
+              idAlbum: "id_album"
+            }
+          }
+          select: {
+            exist: [
+              "id_album"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                example: 111239
+                kind: "param"
+                name: "id_artist"
+                orig: "id_artist"
+                reqd: true
+                type: "`$INTEGER`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/lookup/artist/{idArtist}"
+          parts: [
+            "lookup"
+            "artist"
+            "{id_artist}"
+          ]
+          rename: {
+            param: {
+              idArtist: "id_artist"
+            }
+          }
+          select: {
+            exist: [
+              "id_artist"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                example: 32724183
+                kind: "param"
+                name: "id_track"
+                orig: "id_track"
+                reqd: true
+                type: "`$INTEGER`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/lookup/track/{idTrack}"
+          parts: [
+            "lookup"
+            "track"
+            "{id_track}"
+          ]
+          rename: {
+            param: {
+              idTrack: "id_track"
+            }
+          }
+          select: {
+            exist: [
+              "id_track"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                example: "1dc4c347-a1db-32aa-b14f-bc9cc507b843"
+                kind: "param"
+                name: "music_brainz_id"
+                orig: "music_brainz_id"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/lookup/album_mb/{musicBrainzId}"
+          parts: [
+            "lookup"
+            "album_mb"
+            "{music_brainz_id}"
+          ]
+          rename: {
+            param: {
+              musicBrainzId: "music_brainz_id"
+            }
+          }
+          select: {
+            exist: [
+              "music_brainz_id"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                example: "cc197bad-dc9c-440d-a5b5-d52ba2e14234"
+                kind: "param"
+                name: "music_brainz_id"
+                orig: "music_brainz_id"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/lookup/artist_mb/{musicBrainzId}"
+          parts: [
+            "lookup"
+            "artist_mb"
+            "{music_brainz_id}"
+          ]
+          rename: {
+            param: {
+              musicBrainzId: "music_brainz_id"
+            }
+          }
+          select: {
+            exist: [
+              "music_brainz_id"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                example: "50369905-68ca-48d2-912d-b37330ff7dc3"
+                kind: "param"
+                name: "music_brainz_id"
+                orig: "music_brainz_id"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/lookup/track_mb/{musicBrainzId}"
+          parts: [
+            "lookup"
+            "track_mb"
+            "{music_brainz_id}"
+          ]
+          rename: {
+            param: {
+              musicBrainzId: "music_brainz_id"
+            }
+          }
+          select: {
+            exist: [
+              "music_brainz_id"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  relations: {
+    ancestors: [
+      [
+        "album"
+      ]
+      [
+        "album_mb"
+      ]
+      [
+        "artist"
+      ]
+      [
+        "artist_mb"
+      ]
+      [
+        "track"
+      ]
+      [
+        "track_mb"
+      ]
+    ]
+  }
+
+
+
+}

@@ -1,0 +1,48 @@
+# BasicV1SearchFlow
+
+main: kit: flow: BasicV1SearchFlow:
+{
+  entity: "v1_search",
+  kind: "basic",
+  name: "BasicV1SearchFlow",
+  step: [
+    {
+      match: {
+        api_key: "api_key01"
+      }
+
+      op: "list",
+      valid: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "v1_search_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      input: {
+        ref: "v1_search_ref01",
+        srcdatavar: "v1_search_ref01_data",
+        suffix: "_dt0"
+      }
+
+      match: {
+        id: "v1_search01"
+      }
+
+      op: "load",
+      valid: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-v1_search_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicV1SearchFlow"
+}

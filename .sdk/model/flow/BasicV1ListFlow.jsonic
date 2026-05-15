@@ -1,0 +1,48 @@
+# BasicV1ListFlow
+
+main: kit: flow: BasicV1ListFlow:
+{
+  entity: "v1_list",
+  kind: "basic",
+  name: "BasicV1ListFlow",
+  step: [
+    {
+      match: {
+        api_key: "api_key01"
+      }
+
+      op: "list",
+      valid: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "v1_list_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      input: {
+        ref: "v1_list_ref01",
+        srcdatavar: "v1_list_ref01_data",
+        suffix: "_dt0"
+      }
+
+      match: {
+        id: "v1_list01"
+      }
+
+      op: "load",
+      valid: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-v1_list_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicV1ListFlow"
+}

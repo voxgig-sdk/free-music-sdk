@@ -1,0 +1,138 @@
+# Guide
+
+guide: {
+  metrics: count: entity: 6
+  metrics: count: path: 28
+  metrics: count: method: 28
+
+  entity: v1_list: {
+    path: "/{apiKey}/mostloved.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/mvid-mb.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/mvid.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/track-top10-mb.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/track-top10.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/trending.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+  }
+
+  entity: v1_lookup: {
+    path: "/{apiKey}/album-mb.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/album.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/artist-mb.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/artist-social.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/artist.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/track-mb.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/track.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+  }
+
+  entity: v1_search: {
+    path: "/{apiKey}/discography-mb.php": {
+      rename: param: "apiKey": *"api_key"
+      op: load: method: *GET
+    }
+    path: "/{apiKey}/discography.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/search.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/searchalbum.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+    path: "/{apiKey}/searchtrack.php": {
+      rename: param: "apiKey": *"api_key"
+      op: list: method: *GET
+    }
+  }
+
+  entity: v2_list: {
+    path: "/list/discography/{idArtist}": {
+      rename: param: "idArtist": *"id_artist"
+      op: load: method: *GET
+    }
+  }
+
+  entity: v2_lookup: {
+    path: "/lookup/album/{idAlbum}": {
+      rename: param: "idAlbum": *"id_album"
+      op: load: method: *GET
+    }
+    path: "/lookup/album_mb/{musicBrainzId}": {
+      rename: param: "musicBrainzId": *"music_brainz_id"
+      op: load: method: *GET
+    }
+    path: "/lookup/artist/{idArtist}": {
+      rename: param: "idArtist": *"id_artist"
+      op: load: method: *GET
+    }
+    path: "/lookup/artist_mb/{musicBrainzId}": {
+      rename: param: "musicBrainzId": *"music_brainz_id"
+      op: load: method: *GET
+    }
+    path: "/lookup/track/{idTrack}": {
+      rename: param: "idTrack": *"id_track"
+      op: load: method: *GET
+    }
+    path: "/lookup/track_mb/{musicBrainzId}": {
+      rename: param: "musicBrainzId": *"music_brainz_id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: v2_search: {
+    path: "/search/album/{albumName}": {
+      rename: param: "albumName": *"album_name"
+      op: load: method: *GET
+    }
+    path: "/search/artist/{artistName}": {
+      rename: param: "artistName": *"artist_name"
+      op: load: method: *GET
+    }
+    path: "/search/track/{trackName}": {
+      rename: param: "trackName": *"track_name"
+      op: load: method: *GET
+    }
+  }
+
+}

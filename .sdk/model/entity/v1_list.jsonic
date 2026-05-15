@@ -1,0 +1,507 @@
+# Entity: v1_list
+
+main: kit: entity: v1_list: {
+
+  alias: field: {}
+
+  fields: [
+    {
+      name: "id_album"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "id_artist"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "id_imvdb"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "id_lyric"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "id_track"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_cd"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_duration"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_loved"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_music_vid_comment"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_music_vid_dislike"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_music_vid_favorite"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_music_vid_like"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_music_vid_view"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_score"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_score_vote"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_total_listener"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_total_play"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "int_track_number"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_album"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_artist"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_artist_alternate"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_description_en"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_genre"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_locked"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_mood"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_brainz_album_id"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_brainz_artist_id"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_brainz_id"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_vid"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_vid_company"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_vid_director"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_vid_screen1"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_vid_screen2"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_music_vid_screen3"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_style"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_theme"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_track"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_track3x3"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_track_lyric"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "str_track_thumb"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "trending"
+      req: false
+      type: "`$ARRAY`"
+    }
+  ]
+
+  name: "v1_list"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          args: {
+            params: [
+              {
+                kind: "param"
+                name: "api_key"
+                orig: "api_key"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                example: "us"
+                kind: "query"
+                name: "country"
+                orig: "country"
+                reqd: true
+                type: "`$STRING`"
+              }
+              {
+                kind: "query"
+                name: "format"
+                orig: "format"
+                reqd: true
+                type: "`$STRING`"
+              }
+              {
+                kind: "query"
+                name: "type"
+                orig: "type"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/{apiKey}/trending.php"
+          parts: [
+            "{api_key}"
+            "trending.php"
+          ]
+          rename: {
+            param: {
+              apiKey: "api_key"
+            }
+          }
+          select: {
+            exist: [
+              "api_key"
+              "country"
+              "format"
+              "type"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                kind: "param"
+                name: "api_key"
+                orig: "api_key"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                kind: "query"
+                name: "i"
+                orig: "i"
+                reqd: true
+                type: "`$INTEGER`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/{apiKey}/mvid.php"
+          parts: [
+            "{api_key}"
+            "mvid.php"
+          ]
+          rename: {
+            param: {
+              apiKey: "api_key"
+            }
+          }
+          select: {
+            exist: [
+              "api_key"
+              "i"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                kind: "param"
+                name: "api_key"
+                orig: "api_key"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                example: "coldplay"
+                kind: "query"
+                name: "s"
+                orig: "s"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/{apiKey}/track-top10.php"
+          parts: [
+            "{api_key}"
+            "track-top10.php"
+          ]
+          rename: {
+            param: {
+              apiKey: "api_key"
+            }
+          }
+          select: {
+            exist: [
+              "api_key"
+              "s"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          args: {
+            params: [
+              {
+                kind: "param"
+                name: "api_key"
+                orig: "api_key"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                kind: "query"
+                name: "format"
+                orig: "format"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/{apiKey}/mostloved.php"
+          parts: [
+            "{api_key}"
+            "mostloved.php"
+          ]
+          rename: {
+            param: {
+              apiKey: "api_key"
+            }
+          }
+          select: {
+            exist: [
+              "api_key"
+              "format"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                kind: "param"
+                name: "api_key"
+                orig: "api_key"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                kind: "query"
+                name: "i"
+                orig: "i"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/{apiKey}/mvid-mb.php"
+          parts: [
+            "{api_key}"
+            "mvid-mb.php"
+          ]
+          rename: {
+            param: {
+              apiKey: "api_key"
+            }
+          }
+          select: {
+            exist: [
+              "api_key"
+              "i"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          args: {
+            params: [
+              {
+                kind: "param"
+                name: "api_key"
+                orig: "api_key"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                kind: "query"
+                name: "s"
+                orig: "s"
+                reqd: true
+                type: "`$STRING`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/{apiKey}/track-top10-mb.php"
+          parts: [
+            "{api_key}"
+            "track-top10-mb.php"
+          ]
+          rename: {
+            param: {
+              apiKey: "api_key"
+            }
+          }
+          select: {
+            exist: [
+              "api_key"
+              "s"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

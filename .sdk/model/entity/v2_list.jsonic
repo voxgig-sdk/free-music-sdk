@@ -1,0 +1,69 @@
+# Entity: v2_list
+
+main: kit: entity: v2_list: {
+
+  alias: field: {}
+
+  fields: [
+    {
+      name: "album"
+      req: false
+      type: "`$ARRAY`"
+    }
+  ]
+
+  name: "v2_list"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          args: {
+            params: [
+              {
+                example: 111239
+                kind: "param"
+                name: "id_artist"
+                orig: "id_artist"
+                reqd: true
+                type: "`$INTEGER`"
+              }
+            ]
+          }
+          method: "GET"
+          orig: "/list/discography/{idArtist}"
+          parts: [
+            "list"
+            "discography"
+            "{id_artist}"
+          ]
+          rename: {
+            param: {
+              idArtist: "id_artist"
+            }
+          }
+          select: {
+            exist: [
+              "id_artist"
+            ]
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  relations: {
+    ancestors: [
+      [
+        "discography"
+      ]
+    ]
+  }
+
+
+
+}
