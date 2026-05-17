@@ -43,7 +43,8 @@
         "str_track_lyric": "s1c0",
         "str_track_thumb": "s1c1",
         "trending": [],
-        "api_key": "API_KEY01"
+        "api_key": "API_KEY01",
+        "id": "V1_LIST00"
       },
       "V1_LIST01": {
         "id_album": "s334",
@@ -87,7 +88,8 @@
         "str_track_lyric": "s35a",
         "str_track_thumb": "s35b",
         "trending": [],
-        "api_key": "API_KEY01"
+        "api_key": "API_KEY01",
+        "id": "V1_LIST01"
       },
       "V1_LIST02": {
         "id_album": "s4ce",
@@ -131,7 +133,8 @@
         "str_track_lyric": "s4f4",
         "str_track_thumb": "s4f5",
         "trending": [],
-        "api_key": "API_KEY01"
+        "api_key": "API_KEY01",
+        "id": "V1_LIST02"
       }
     }
   },

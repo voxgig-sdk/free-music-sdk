@@ -1,6 +1,6 @@
 package utility
 
-import "github.com/voxgig-sdk/free-music-sdk/core"
+import "github.com/voxgig-sdk/free-music-sdk/go/core"
 
 func cleanUtil(ctx *core.Context, val any) any {
 	return val

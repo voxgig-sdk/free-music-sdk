@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/voxgig-sdk/free-music-sdk"
-	"github.com/voxgig-sdk/free-music-sdk/core"
+	sdk "github.com/voxgig-sdk/free-music-sdk/go"
+	"github.com/voxgig-sdk/free-music-sdk/go/core"
 
-	vs "github.com/voxgig/struct"
+	vs "github.com/voxgig-sdk/free-music-sdk/go/utility/struct"
 )
 
 func TestV2SearchEntity(t *testing.T) {

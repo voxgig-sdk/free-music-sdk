@@ -8,7 +8,8 @@
         "id_album": "ID_ALBUM01",
         "id_artist": "ID_ARTIST01",
         "id_track": "ID_TRACK01",
-        "music_brainz_id": "MUSIC_BRAINZ01"
+        "music_brainz_id": "MUSIC_BRAINZ01",
+        "id": "V2_LOOKUP00"
       },
       "V2_LOOKUP01": {
         "album": [],
@@ -17,7 +18,8 @@
         "id_album": "ID_ALBUM01",
         "id_artist": "ID_ARTIST01",
         "id_track": "ID_TRACK01",
-        "music_brainz_id": "MUSIC_BRAINZ01"
+        "music_brainz_id": "MUSIC_BRAINZ01",
+        "id": "V2_LOOKUP01"
       },
       "V2_LOOKUP02": {
         "album": [],
@@ -26,7 +28,8 @@
         "id_album": "ID_ALBUM01",
         "id_artist": "ID_ARTIST01",
         "id_track": "ID_TRACK01",
-        "music_brainz_id": "MUSIC_BRAINZ01"
+        "music_brainz_id": "MUSIC_BRAINZ01",
+        "id": "V2_LOOKUP02"
       }
     }
   },

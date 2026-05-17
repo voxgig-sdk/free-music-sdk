@@ -97,7 +97,8 @@
         "str_website": "s412",
         "str_wikidata_id": "STR_WIKIDATA01",
         "str_wikipedia_id": "STR_WIKIPEDIA01",
-        "api_key": "API_KEY01"
+        "api_key": "API_KEY01",
+        "id": "V1_LOOKUP00"
       },
       "V1_LOOKUP01": {
         "id_album": "s76c",
@@ -195,7 +196,8 @@
         "str_website": "s7c8",
         "str_wikidata_id": "STR_WIKIDATA01",
         "str_wikipedia_id": "STR_WIKIPEDIA01",
-        "api_key": "API_KEY01"
+        "api_key": "API_KEY01",
+        "id": "V1_LOOKUP01"
       },
       "V1_LOOKUP02": {
         "id_album": "sb22",
@@ -293,7 +295,8 @@
         "str_website": "sb7e",
         "str_wikidata_id": "STR_WIKIDATA01",
         "str_wikipedia_id": "STR_WIKIPEDIA01",
-        "api_key": "API_KEY01"
+        "api_key": "API_KEY01",
+        "id": "V1_LOOKUP02"
       }
     }
   },

@@ -3,15 +3,18 @@
     "v2_list": {
       "V2_LIST00": {
         "album": [],
-        "id_artist": "ID_ARTIST01"
+        "id_artist": "ID_ARTIST01",
+        "id": "V2_LIST00"
       },
       "V2_LIST01": {
         "album": [],
-        "id_artist": "ID_ARTIST01"
+        "id_artist": "ID_ARTIST01",
+        "id": "V2_LIST01"
       },
       "V2_LIST02": {
         "album": [],
-        "id_artist": "ID_ARTIST01"
+        "id_artist": "ID_ARTIST01",
+        "id": "V2_LIST02"
       }
     }
   },

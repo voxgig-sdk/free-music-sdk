@@ -1,9 +1,9 @@
 package entity
 
 import (
-	"github.com/voxgig-sdk/free-music-sdk/core"
+	"github.com/voxgig-sdk/free-music-sdk/go/core"
 
-	vs "github.com/voxgig/struct"
+	vs "github.com/voxgig-sdk/free-music-sdk/go/utility/struct"
 )
 
 type V2SearchEntity struct {

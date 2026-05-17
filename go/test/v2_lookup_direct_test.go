@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	sdk "github.com/voxgig-sdk/free-music-sdk"
-	"github.com/voxgig-sdk/free-music-sdk/core"
+	sdk "github.com/voxgig-sdk/free-music-sdk/go"
+	"github.com/voxgig-sdk/free-music-sdk/go/core"
 )
 
 func TestV2LookupDirect(t *testing.T) {
