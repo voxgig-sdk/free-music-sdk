@@ -100,7 +100,6 @@ function v1_list_basic_setup(extra)
     ["FREEMUSIC_TEST_V__LIST_ENTID"] = idmap,
     ["FREEMUSIC_TEST_LIVE"] = "FALSE",
     ["FREEMUSIC_TEST_EXPLAIN"] = "FALSE",
-    ["FREEMUSIC_APIKEY"] = "NONE",
   })
 
   local idmap_resolved = helpers.to_map(
@@ -112,7 +111,6 @@ function v1_list_basic_setup(extra)
   if env["FREEMUSIC_TEST_LIVE"] == "TRUE" then
     local merged_opts = vs.merge({
       {
-        apikey = env["FREEMUSIC_APIKEY"],
       },
       extra or {},
     })

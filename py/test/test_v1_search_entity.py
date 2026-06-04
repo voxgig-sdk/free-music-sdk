@@ -100,7 +100,6 @@ def _v1_search_basic_setup(extra):
         "FREEMUSIC_TEST_V__SEARCH_ENTID": idmap,
         "FREEMUSIC_TEST_LIVE": "FALSE",
         "FREEMUSIC_TEST_EXPLAIN": "FALSE",
-        "FREEMUSIC_APIKEY": "NONE",
     })
 
     idmap_resolved = helpers.to_map(
@@ -111,7 +110,6 @@ def _v1_search_basic_setup(extra):
     if env.get("FREEMUSIC_TEST_LIVE") == "TRUE":
         merged_opts = vs.merge([
             {
-                "apikey": env.get("FREEMUSIC_APIKEY"),
             },
             extra or {},
         ])

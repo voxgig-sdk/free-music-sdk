@@ -14,9 +14,6 @@ local function make_config()
     },
     options = {
       base = "https://www.theaudiodb.com/api/v1/json",
-      auth = {
-        prefix = "Bearer",
-      },
       headers = {
         ["content-type"] = "application/json",
       },

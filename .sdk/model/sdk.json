@@ -22,7 +22,22 @@
         ],
         "termsOfService": "https://www.theaudiodb.com",
         "title": "Free Music API",
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "tagline": "Look up artists, albums, tracks, and music videos through TheAudioDB's community-maintained music database",
+        "homepage": "https://www.theaudiodb.com/",
+        "docs_url": "https://www.theaudiodb.com/free_music_api",
+        "license_short": "Free tier requires an API key; usage governed by TheAudioDB terms of service.",
+        "license_md": "- Free public tier uses the shared test API key `123`, suitable for development and testing.\n- Higher-volume access (Premium / Business) requires a paid key.\n- No explicit open-source licence is declared; usage is governed by TheAudioDB's site terms.",
+        "about_md": "[TheAudioDB](https://www.theaudiodb.com/) is a community-maintained music metadata database that exposes its catalogue as a JSON HTTP API. It is run as a sister project to TheSportsDB and TheMealDB, and is widely used by hobby and media apps that need artist, album, and track information without paying for a commercial music service.\n\nWhat you get from the API:\n\n- Artist, album, and track records, looked up by ID or searched by name.\n- Music videos linked to an artist.\n- Top tracks for an artist, plus \"most loved\" and country-specific trending lists.\n- A v2 discography listing that returns an artist's albums.\n\nAuthentication is by API key. The v1 endpoints under `https://www.theaudiodb.com/api/v1/json/{key}/...` accept the key as a path segment (the shared test key `123` is documented for development). The v2 endpoints under `https://www.theaudiodb.com/api/v2/json/...` expect the key in an `X-API-KEY` header. Free keys are rate-limited to roughly 30 requests/minute; CORS is enabled.",
+        "entity_desc": {
+          "v1_list": "v1 list-style endpoints that return collections of items rather than a single record — music videos for an artist (`/mvid.php`), an artist's top 10 tracks (`/track-top10.php`), and trending/most-loved feeds (`/trending.php`, `/mostloved.php`).",
+          "v1_lookup": "v1 lookup endpoints that fetch a single record by ID — `/artist.php?i=...`, `/album.php?i=...` or `?m=...`, and `/track.php?h=...`.",
+          "v1_search": "v1 search endpoints that match by name — artists via `/search.php?s=...`, albums via `/searchalbum.php?s=...&a=...`, and tracks via `/searchtrack.php?s=...&t=...`.",
+          "v2_list": "v2 list endpoints, currently the artist discography at `/list/discography/{artistid}`.",
+          "v2_lookup": "v2 lookup endpoints with cleaner REST-style paths — `/lookup/artist/{id}`, `/lookup/album/{id}`, and `/lookup/track/{id}`.",
+          "v2_search": "v2 search endpoints — `/search/artist/{name}`, `/search/album/{name}`, and `/search/track/{name}`, authenticated via the `X-API-KEY` header."
+        },
+        "auth": false
       },
       "config": {
         "auth": {
@@ -30,7 +45,15 @@
         },
         "headers": {
           "content-type": "application/json"
-        }
+        },
+        "docs_order": [
+          "ts",
+          "py",
+          "php",
+          "go",
+          "rb",
+          "lua"
+        ]
       },
       "entity": {
         "v1_list": {
