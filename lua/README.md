@@ -10,7 +10,7 @@ The Lua SDK for the FreeMusic API — an entity-oriented client using Lua conven
 
 ## Install
 ```bash
-luarocks install free-music-sdk
+luarocks install voxgig-sdk-free-music
 ```
 
 If the module is not yet published, add the source directory to

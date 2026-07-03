@@ -10,13 +10,13 @@ The Ruby SDK for the FreeMusic API — an entity-oriented client using idiomatic
 
 ## Install
 ```bash
-gem install free-music-sdk
+gem install voxgig-sdk-free-music
 ```
 
 Or add to your `Gemfile`:
 
 ```ruby
-gem "free-music-sdk"
+gem "voxgig-sdk-free-music"
 ```
 
 Then run:
