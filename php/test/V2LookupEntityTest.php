@@ -85,6 +85,7 @@ function v2_lookup_basic_setup($extra)
         "FREEMUSIC_TEST_V__LOOKUP_ENTID" => $idmap,
         "FREEMUSIC_TEST_LIVE" => "FALSE",
         "FREEMUSIC_TEST_EXPLAIN" => "FALSE",
+        "FREEMUSIC_APIKEY" => "NONE",
     ]);
 
     $idmap_resolved = Helpers::to_map(
@@ -96,6 +97,7 @@ function v2_lookup_basic_setup($extra)
     if ($env["FREEMUSIC_TEST_LIVE"] === "TRUE") {
         $merged_opts = Vs::merge([
             [
+                "apikey" => $env["FREEMUSIC_APIKEY"],
             ],
             $extra ?? [],
         ]);

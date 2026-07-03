@@ -137,12 +137,14 @@ function v1_lookup_direct_setup($mockres)
     $env = Runner::env_override([
         "FREEMUSIC_TEST_V__LOOKUP_ENTID" => [],
         "FREEMUSIC_TEST_LIVE" => "FALSE",
+        "FREEMUSIC_APIKEY" => "NONE",
     ]);
 
     $live = $env["FREEMUSIC_TEST_LIVE"] === "TRUE";
 
     if ($live) {
         $merged_opts = [
+            "apikey" => $env["FREEMUSIC_APIKEY"],
         ];
         $client = new FreeMusicSDK($merged_opts);
         return [

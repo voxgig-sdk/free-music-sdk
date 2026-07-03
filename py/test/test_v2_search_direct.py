@@ -66,12 +66,14 @@ def _v2_search_direct_setup(mockres):
     env = runner.env_override({
         "FREEMUSIC_TEST_V__SEARCH_ENTID": {},
         "FREEMUSIC_TEST_LIVE": "FALSE",
+        "FREEMUSIC_APIKEY": "NONE",
     })
 
     live = env.get("FREEMUSIC_TEST_LIVE") == "TRUE"
 
     if live:
         merged_opts = {
+            "apikey": env.get("FREEMUSIC_APIKEY"),
         }
         client = FreeMusicSDK(merged_opts)
         return {

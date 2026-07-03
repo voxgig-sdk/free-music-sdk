@@ -111,6 +111,7 @@ function basicSetup(extra?: any) {
     'FREE_MUSIC_TEST_V__LOOKUP_ENTID': idmap,
     'FREE_MUSIC_TEST_LIVE': 'FALSE',
     'FREE_MUSIC_TEST_EXPLAIN': 'FALSE',
+    'FREE_MUSIC_APIKEY': 'NONE',
   })
 
   idmap = env['FREE_MUSIC_TEST_V__LOOKUP_ENTID']
@@ -120,6 +121,7 @@ function basicSetup(extra?: any) {
   if (live) {
     client = new FreeMusicSDK(merge([
       {
+        apikey: env.FREE_MUSIC_APIKEY,
       },
       extra
     ]))
