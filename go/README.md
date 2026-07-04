@@ -30,7 +30,12 @@ go mod edit -replace github.com/voxgig-sdk/free-music-sdk/go=../free-music-sdk/g
 This tutorial walks through creating a client, listing entities, and
 loading a specific record.
 
-### 1. Create a client
+### Quickstart
+
+A complete program: create a client, then call the entity operations.
+Each operation returns `(value, error)` — the value is the data itself
+(there is no `{ok, data}` wrapper), so check `err` and use the value
+directly.
 
 ```go
 package main
@@ -38,48 +43,29 @@ package main
 import (
     "fmt"
     "os"
-
     sdk "github.com/voxgig-sdk/free-music-sdk/go"
-    "github.com/voxgig-sdk/free-music-sdk/go/core"
 )
 
 func main() {
     client := sdk.NewFreeMusicSDK(map[string]any{
         "apikey": os.Getenv("FREE_MUSIC_APIKEY"),
     })
-```
 
-### 2. List v1lists
-
-```go
-    result, err := client.V1List(nil).List(nil, nil)
+    // List v1list records — the value is the array of records itself.
+    v1lists, err := client.V1List(nil).List(nil, nil)
     if err != nil {
         panic(err)
     }
-
-    rm := core.ToMapAny(result)
-    if rm["ok"] == true {
-        for _, item := range rm["data"].([]any) {
-            p := core.ToMapAny(item)
-            fmt.Println(p["id"], p["name"])
-        }
+    for _, item := range v1lists.([]any) {
+        fmt.Println(item)
     }
-```
 
-### 3. Load a v1list
-
-```go
-    result, err = client.V1List(nil).Load(
-        map[string]any{"id": "example_id"}, nil,
-    )
+    // Load a single v1list — the value is the loaded record.
+    v1list, err := client.V1List(nil).Load(map[string]any{"id": "example_id"}, nil)
     if err != nil {
         panic(err)
     }
-
-    rm = core.ToMapAny(result)
-    if rm["ok"] == true {
-        fmt.Println(rm["data"])
-    }
+    fmt.Println(v1list)
 }
 ```
 
@@ -130,10 +116,13 @@ Create a mock client for unit testing — no server required:
 ```go
 client := sdk.Test()
 
-result, err := client.V1List(nil).Load(
+v1list, err := client.V1List(nil).Load(
     map[string]any{"id": "test01"}, nil,
 )
-// result contains mock response data
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1list) // the loaded mock data
 ```
 
 ### Use a custom fetch function
@@ -237,17 +226,24 @@ All entities implement the `FreeMusicEntity` interface.
 
 ### Result shape
 
-Entity operations return `(any, error)`. The `any` value is a
-`map[string]any` with these keys:
+Entity operations return `(value, error)`. The `value` is the
+operation's data **directly** — there is no wrapper:
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `"ok"` | `bool` | `true` if the HTTP status is 2xx. |
-| `"status"` | `int` | HTTP status code. |
-| `"headers"` | `map[string]any` | Response headers. |
-| `"data"` | `any` | Parsed JSON response body. |
+| Operation | `value` |
+| --- | --- |
+| `Load` / `Create` / `Update` / `Remove` | the entity record (`map[string]any`) |
+| `List` | a `[]any` of entity records |
 
-On error, `"ok"` is `false` and `"err"` contains the error value.
+Check `err` first, then use the value directly (or the typed
+`...Typed` variants, which return the entity's model struct and a typed
+slice):
+
+    v1list, err := client.V1List(nil).Load(map[string]any{"id": "example_id"}, nil)
+    if err != nil { /* handle */ }
+    // v1list is the loaded record
+
+Only `Direct()` returns a response envelope — a `map[string]any` with
+`"ok"`, `"status"`, `"headers"`, and `"data"` keys.
 
 ### Entities
 
@@ -609,13 +605,21 @@ Create an instance: `v1_list := client.V1List(nil)`
 #### Example: Load
 
 ```go
-result, err := client.V1List(nil).Load(map[string]any{"id": "v1_list_id"}, nil)
+v1_list, err := client.V1List(nil).Load(map[string]any{"id": "v1_list_id"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1_list) // the loaded record
 ```
 
 #### Example: List
 
 ```go
-results, err := client.V1List(nil).List(nil, nil)
+v1_lists, err := client.V1List(nil).List(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1_lists) // the array of records
 ```
 
 
@@ -733,13 +737,21 @@ Create an instance: `v1_lookup := client.V1Lookup(nil)`
 #### Example: Load
 
 ```go
-result, err := client.V1Lookup(nil).Load(map[string]any{"id": "v1_lookup_id"}, nil)
+v1_lookup, err := client.V1Lookup(nil).Load(map[string]any{"id": "v1_lookup_id"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1_lookup) // the loaded record
 ```
 
 #### Example: List
 
 ```go
-results, err := client.V1Lookup(nil).List(nil, nil)
+v1_lookups, err := client.V1Lookup(nil).List(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1_lookups) // the array of records
 ```
 
 
@@ -858,13 +870,21 @@ Create an instance: `v1_search := client.V1Search(nil)`
 #### Example: Load
 
 ```go
-result, err := client.V1Search(nil).Load(map[string]any{"id": "v1_search_id"}, nil)
+v1_search, err := client.V1Search(nil).Load(map[string]any{"id": "v1_search_id"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1_search) // the loaded record
 ```
 
 #### Example: List
 
 ```go
-results, err := client.V1Search(nil).List(nil, nil)
+v1_searchs, err := client.V1Search(nil).List(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v1_searchs) // the array of records
 ```
 
 
@@ -887,7 +907,11 @@ Create an instance: `v2_list := client.V2List(nil)`
 #### Example: Load
 
 ```go
-result, err := client.V2List(nil).Load(map[string]any{"id": "v2_list_id"}, nil)
+v2_list, err := client.V2List(nil).Load(map[string]any{"id": "v2_list_id"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v2_list) // the loaded record
 ```
 
 
@@ -912,7 +936,11 @@ Create an instance: `v2_lookup := client.V2Lookup(nil)`
 #### Example: Load
 
 ```go
-result, err := client.V2Lookup(nil).Load(map[string]any{"id": "v2_lookup_id"}, nil)
+v2_lookup, err := client.V2Lookup(nil).Load(map[string]any{"id": "v2_lookup_id"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v2_lookup) // the loaded record
 ```
 
 
@@ -937,7 +965,11 @@ Create an instance: `v2_search := client.V2Search(nil)`
 #### Example: Load
 
 ```go
-result, err := client.V2Search(nil).Load(map[string]any{"id": "v2_search_id"}, nil)
+v2_search, err := client.V2Search(nil).Load(map[string]any{"id": "v2_search_id"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(v2_search) // the loaded record
 ```
 
 

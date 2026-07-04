@@ -31,18 +31,16 @@ $client = new FreeMusicSDK([
 ]);
 ```
 
-### 2. List v1lists
+### 2. List v1list records
 
 ```php
 try {
-    $result = $client->v1list()->list();
-    if (is_array($result)) {
-        foreach ($result as $item) {
-            $d = $item->data_get();
-            echo $d["id"] . " " . $d["name"] . "\n";
-        }
+    // list() returns an array of V1List records — iterate directly.
+    $v1lists = $client->V1List()->list();
+    foreach ($v1lists as $item) {
+        echo $item["id"] . " " . $item["name"] . "\n";
     }
-} catch (\Exception $err) {
+} catch (\Throwable $err) {
     echo "Error: " . $err->getMessage();
 }
 ```
@@ -51,9 +49,10 @@ try {
 
 ```php
 try {
-    $result = $client->v1list()->load(["id" => "example_id"]);
-    print_r($result);
-} catch (\Exception $err) {
+    // load() returns the bare V1List record (throws on error).
+    $v1list = $client->V1List()->load(["id" => "example_id"]);
+    print_r($v1list);
+} catch (\Throwable $err) {
     echo "Error: " . $err->getMessage();
 }
 ```
@@ -99,13 +98,17 @@ print_r($fetchdef["headers"]);
 
 ### Use test mode
 
-Create a mock client for unit testing — no server required:
+Create a mock client for unit testing — no server required. Seed fixture
+data via the `entity` option so offline calls resolve without a live server:
 
 ```php
-$client = FreeMusicSDK::test();
+$client = FreeMusicSDK::test([
+    "entity" => ["v1list" => ["test01" => ["id" => "test01"]]],
+]);
 
-$result = $client->v1list()->load(["id" => "test01"]);
-// $result contains mock response data
+// load() returns the bare mock record (throws on error).
+$v1list = $client->V1List()->load(["id" => "test01"]);
+print_r($v1list);
 ```
 
 ### Use a custom fetch function
@@ -531,7 +534,7 @@ API path: `/search/album/{albumName}`
 
 ### V1List
 
-Create an instance: `const v1_list = client.v1_list`
+Create an instance: `$v1_list = $client->V1List();`
 
 #### Operations
 
@@ -588,20 +591,22 @@ Create an instance: `const v1_list = client.v1_list`
 
 #### Example: Load
 
-```ts
-const v1_list = await client.v1_list.load({ id: 'v1_list_id' })
+```php
+// load() returns the bare V1List record (throws on error).
+$v1_list = $client->V1List()->load(["id" => "v1_list_id"]);
 ```
 
 #### Example: List
 
-```ts
-const v1_lists = await client.v1_list.list()
+```php
+// list() returns an array of V1List records (throws on error).
+$v1_lists = $client->V1List()->list();
 ```
 
 
 ### V1Lookup
 
-Create an instance: `const v1_lookup = client.v1_lookup`
+Create an instance: `$v1_lookup = $client->V1Lookup();`
 
 #### Operations
 
@@ -712,20 +717,22 @@ Create an instance: `const v1_lookup = client.v1_lookup`
 
 #### Example: Load
 
-```ts
-const v1_lookup = await client.v1_lookup.load({ id: 'v1_lookup_id' })
+```php
+// load() returns the bare V1Lookup record (throws on error).
+$v1_lookup = $client->V1Lookup()->load(["id" => "v1_lookup_id"]);
 ```
 
 #### Example: List
 
-```ts
-const v1_lookups = await client.v1_lookup.list()
+```php
+// list() returns an array of V1Lookup records (throws on error).
+$v1_lookups = $client->V1Lookup()->list();
 ```
 
 
 ### V1Search
 
-Create an instance: `const v1_search = client.v1_search`
+Create an instance: `$v1_search = $client->V1Search();`
 
 #### Operations
 
@@ -837,20 +844,22 @@ Create an instance: `const v1_search = client.v1_search`
 
 #### Example: Load
 
-```ts
-const v1_search = await client.v1_search.load({ id: 'v1_search_id' })
+```php
+// load() returns the bare V1Search record (throws on error).
+$v1_search = $client->V1Search()->load(["id" => "v1_search_id"]);
 ```
 
 #### Example: List
 
-```ts
-const v1_searchs = await client.v1_search.list()
+```php
+// list() returns an array of V1Search records (throws on error).
+$v1_searchs = $client->V1Search()->list();
 ```
 
 
 ### V2List
 
-Create an instance: `const v2_list = client.v2_list`
+Create an instance: `$v2_list = $client->V2List();`
 
 #### Operations
 
@@ -866,14 +875,15 @@ Create an instance: `const v2_list = client.v2_list`
 
 #### Example: Load
 
-```ts
-const v2_list = await client.v2_list.load({ id: 'v2_list_id' })
+```php
+// load() returns the bare V2List record (throws on error).
+$v2_list = $client->V2List()->load(["id" => "v2_list_id"]);
 ```
 
 
 ### V2Lookup
 
-Create an instance: `const v2_lookup = client.v2_lookup`
+Create an instance: `$v2_lookup = $client->V2Lookup();`
 
 #### Operations
 
@@ -891,14 +901,15 @@ Create an instance: `const v2_lookup = client.v2_lookup`
 
 #### Example: Load
 
-```ts
-const v2_lookup = await client.v2_lookup.load({ id: 'v2_lookup_id' })
+```php
+// load() returns the bare V2Lookup record (throws on error).
+$v2_lookup = $client->V2Lookup()->load(["id" => "v2_lookup_id"]);
 ```
 
 
 ### V2Search
 
-Create an instance: `const v2_search = client.v2_search`
+Create an instance: `$v2_search = $client->V2Search();`
 
 #### Operations
 
@@ -916,8 +927,9 @@ Create an instance: `const v2_search = client.v2_search`
 
 #### Example: Load
 
-```ts
-const v2_search = await client.v2_search.load({ id: 'v2_search_id' })
+```php
+// load() returns the bare V2Search record (throws on error).
+$v2_search = $client->V2Search()->load(["id" => "v2_search_id"]);
 ```
 
 
@@ -992,7 +1004,7 @@ Entity instances are stateful. After a successful `load`, the entity
 stores the returned data and match criteria internally.
 
 ```php
-$v1list = $client->v1list();
+$v1list = $client->V1List();
 $v1list->load(["id" => "example_id"]);
 
 // $v1list->dataGet() now returns the loaded v1list data

@@ -101,7 +101,7 @@ Prepare a fetch definition without sending. Returns the `fetchdef` and raises on
 ## V1ListEntity
 
 ```python
-v1_list = client.v1_list
+v1_list = client.V1List()
 ```
 
 ### Fields
@@ -157,7 +157,9 @@ v1_list = client.v1_list
 List entities matching the given criteria. Returns a list and raises on error.
 
 ```python
-results = client.v1_list.list({})
+results = client.V1List().list({})
+for v1_list in results:
+    print(v1_list)
 ```
 
 #### `load(reqmatch, ctrl=None) -> dict`
@@ -165,7 +167,7 @@ results = client.v1_list.list({})
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.v1_list.load({"id": "v1_list_id"})
+result = client.V1List().load({"id": "v1_list_id"})
 ```
 
 ### Common Methods
@@ -200,7 +202,7 @@ Return the entity name.
 ## V1LookupEntity
 
 ```python
-v1_lookup = client.v1_lookup
+v1_lookup = client.V1Lookup()
 ```
 
 ### Fields
@@ -310,7 +312,9 @@ v1_lookup = client.v1_lookup
 List entities matching the given criteria. Returns a list and raises on error.
 
 ```python
-results = client.v1_lookup.list({})
+results = client.V1Lookup().list({})
+for v1_lookup in results:
+    print(v1_lookup)
 ```
 
 #### `load(reqmatch, ctrl=None) -> dict`
@@ -318,7 +322,7 @@ results = client.v1_lookup.list({})
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.v1_lookup.load({"id": "v1_lookup_id"})
+result = client.V1Lookup().load({"id": "v1_lookup_id"})
 ```
 
 ### Common Methods
@@ -353,7 +357,7 @@ Return the entity name.
 ## V1SearchEntity
 
 ```python
-v1_search = client.v1_search
+v1_search = client.V1Search()
 ```
 
 ### Fields
@@ -464,7 +468,9 @@ v1_search = client.v1_search
 List entities matching the given criteria. Returns a list and raises on error.
 
 ```python
-results = client.v1_search.list({})
+results = client.V1Search().list({})
+for v1_search in results:
+    print(v1_search)
 ```
 
 #### `load(reqmatch, ctrl=None) -> dict`
@@ -472,7 +478,7 @@ results = client.v1_search.list({})
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.v1_search.load({"id": "v1_search_id"})
+result = client.V1Search().load({"id": "v1_search_id"})
 ```
 
 ### Common Methods
@@ -507,7 +513,7 @@ Return the entity name.
 ## V2ListEntity
 
 ```python
-v2_list = client.v2_list
+v2_list = client.V2List()
 ```
 
 ### Fields
@@ -523,7 +529,7 @@ v2_list = client.v2_list
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.v2_list.load({"id": "v2_list_id"})
+result = client.V2List().load({"id": "v2_list_id"})
 ```
 
 ### Common Methods
@@ -558,7 +564,7 @@ Return the entity name.
 ## V2LookupEntity
 
 ```python
-v2_lookup = client.v2_lookup
+v2_lookup = client.V2Lookup()
 ```
 
 ### Fields
@@ -576,7 +582,7 @@ v2_lookup = client.v2_lookup
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.v2_lookup.load({"id": "v2_lookup_id"})
+result = client.V2Lookup().load({"id": "v2_lookup_id"})
 ```
 
 ### Common Methods
@@ -611,7 +617,7 @@ Return the entity name.
 ## V2SearchEntity
 
 ```python
-v2_search = client.v2_search
+v2_search = client.V2Search()
 ```
 
 ### Fields
@@ -629,7 +635,7 @@ v2_search = client.v2_search
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.v2_search.load({"id": "v2_search_id"})
+result = client.V2Search().load({"id": "v2_search_id"})
 ```
 
 ### Common Methods
