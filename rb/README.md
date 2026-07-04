@@ -9,21 +9,10 @@ The Ruby SDK for the FreeMusic API — an entity-oriented client using idiomatic
 
 
 ## Install
-```bash
-gem install voxgig-sdk-free-music
-```
+This package is not yet published to RubyGems. Install it from the
+GitHub release tag (`rb/vX.Y.Z`):
 
-Or add to your `Gemfile`:
-
-```ruby
-gem "voxgig-sdk-free-music"
-```
-
-Then run:
-
-```bash
-bundle install
-```
+- Releases: [https://github.com/voxgig-sdk/free-music-sdk/releases](https://github.com/voxgig-sdk/free-music-sdk/releases)
 
 
 ## Tutorial: your first API call
@@ -37,30 +26,35 @@ loading a specific record.
 require_relative "FreeMusic_sdk"
 
 client = FreeMusicSDK.new({
-  "apikey" => ENV["FREE-MUSIC_APIKEY"],
+  "apikey" => ENV["FREE_MUSIC_APIKEY"],
 })
 ```
 
 ### 2. List v1lists
 
 ```ruby
-result, err = client.V1List().list
-raise err if err
-
-if result.is_a?(Array)
-  result.each do |item|
-    d = item.data_get
-    puts "#{d["id"]} #{d["name"]}"
+begin
+  result = client.v1list.list
+  if result.is_a?(Array)
+    result.each do |item|
+      d = item.data_get
+      puts "#{d["id"]} #{d["name"]}"
+    end
   end
+rescue => err
+  warn "list failed: #{err}"
 end
 ```
 
 ### 3. Load a v1list
 
 ```ruby
-result, err = client.V1List().load({ "id" => "example_id" })
-raise err if err
-puts result
+begin
+  result = client.v1list.load({ "id" => "example_id" })
+  puts result
+rescue => err
+  warn "load failed: #{err}"
+end
 ```
 
 
@@ -71,32 +65,35 @@ puts result
 For endpoints not covered by entity methods:
 
 ```ruby
-result, err = client.direct({
+result = client.direct({
   "path" => "/api/resource/{id}",
   "method" => "GET",
   "params" => { "id" => "example" },
 })
-raise err if err
 
 if result["ok"]
   puts result["status"]  # 200
   puts result["data"]    # response body
+else
+  warn result["err"]
 end
 ```
 
 ### Prepare a request without sending it
 
 ```ruby
-fetchdef, err = client.prepare({
-  "path" => "/api/resource/{id}",
-  "method" => "DELETE",
-  "params" => { "id" => "example" },
-})
-raise err if err
-
-puts fetchdef["url"]
-puts fetchdef["method"]
-puts fetchdef["headers"]
+begin
+  fetchdef = client.prepare({
+    "path" => "/api/resource/{id}",
+    "method" => "DELETE",
+    "params" => { "id" => "example" },
+  })
+  puts fetchdef["url"]
+  puts fetchdef["method"]
+  puts fetchdef["headers"]
+rescue => err
+  warn "prepare failed: #{err}"
+end
 ```
 
 ### Use test mode
@@ -106,7 +103,7 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = FreeMusicSDK.test
 
-result, err = client.FreeMusic().load({ "id" => "test01" })
+result = client.v1list.load({ "id" => "test01" })
 # result contains mock response data
 ```
 
@@ -137,8 +134,8 @@ client = FreeMusicSDK.new({
 Create a `.env.local` file at the project root:
 
 ```
-FREE-MUSIC_TEST_LIVE=TRUE
-FREE-MUSIC_APIKEY=<your-key>
+FREE_MUSIC_TEST_LIVE=TRUE
+FREE_MUSIC_APIKEY=<your-key>
 ```
 
 Then run:
@@ -183,8 +180,8 @@ Creates a test-mode client with mock transport. Both arguments may be `nil`.
 | --- | --- | --- |
 | `options_map` | `() -> Hash` | Deep copy of current SDK options. |
 | `get_utility` | `() -> Utility` | Copy of the SDK utility object. |
-| `prepare` | `(fetchargs) -> [Hash, err]` | Build an HTTP request definition without sending. |
-| `direct` | `(fetchargs) -> [Hash, err]` | Build and send an HTTP request. |
+| `prepare` | `(fetchargs) -> Hash` | Build an HTTP request definition without sending. Raises on error. |
+| `direct` | `(fetchargs) -> Hash` | Build and send an HTTP request. Returns a result hash (`result["ok"]`); does not raise. |
 | `V1List` | `(data) -> V1ListEntity` | Create a V1List entity instance. |
 | `V1Lookup` | `(data) -> V1LookupEntity` | Create a V1Lookup entity instance. |
 | `V1Search` | `(data) -> V1SearchEntity` | Create a V1Search entity instance. |
@@ -198,11 +195,11 @@ All entities share the same interface.
 
 | Method | Signature | Description |
 | --- | --- | --- |
-| `load` | `(reqmatch, ctrl) -> [any, err]` | Load a single entity by match criteria. |
-| `list` | `(reqmatch, ctrl) -> [any, err]` | List entities matching the criteria. |
-| `create` | `(reqdata, ctrl) -> [any, err]` | Create a new entity. |
-| `update` | `(reqdata, ctrl) -> [any, err]` | Update an existing entity. |
-| `remove` | `(reqmatch, ctrl) -> [any, err]` | Remove an entity. |
+| `load` | `(reqmatch, ctrl) -> any` | Load a single entity by match criteria. Raises on error. |
+| `list` | `(reqmatch, ctrl) -> Array` | List entities matching the criteria. Raises on error. |
+| `create` | `(reqdata, ctrl) -> any` | Create a new entity. Raises on error. |
+| `update` | `(reqdata, ctrl) -> any` | Update an existing entity. Raises on error. |
+| `remove` | `(reqmatch, ctrl) -> any` | Remove an entity. Raises on error. |
 | `data_get` | `() -> Hash` | Get entity data. |
 | `data_set` | `(data)` | Set entity data. |
 | `match_get` | `() -> Hash` | Get entity match criteria. |
@@ -212,8 +209,12 @@ All entities share the same interface.
 
 ### Result shape
 
-Entity operations return `[any, err]`. The first value is a
-`Hash` with these keys:
+Entity operations return the result data directly. On failure they
+raise a `FreeMusicError` (a `StandardError` subclass), so wrap
+calls in `begin`/`rescue` where you need to handle errors.
+
+The `direct` escape hatch is the exception: it never raises and instead
+returns a result `Hash` with these keys:
 
 | Key | Type | Description |
 | --- | --- | --- |
@@ -221,8 +222,7 @@ Entity operations return `[any, err]`. The first value is a
 | `status` | `Integer` | HTTP status code. |
 | `headers` | `Hash` | Response headers. |
 | `data` | `any` | Parsed JSON response body. |
-
-On error, `ok` is `false` and `err` contains the error value.
+| `err` | `Error` | Present when `ok` is `false`. |
 
 ### Entities
 
@@ -526,7 +526,7 @@ API path: `/search/album/{albumName}`
 
 ### V1List
 
-Create an instance: `const v1_list = client.V1List()`
+Create an instance: `const v1_list = client.v1_list`
 
 #### Operations
 
@@ -584,19 +584,19 @@ Create an instance: `const v1_list = client.V1List()`
 #### Example: Load
 
 ```ts
-const v1_list = await client.V1List().load({ id: 'v1_list_id' })
+const v1_list = await client.v1_list.load({ id: 'v1_list_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_lists = await client.V1List().list()
+const v1_lists = await client.v1_list.list()
 ```
 
 
 ### V1Lookup
 
-Create an instance: `const v1_lookup = client.V1Lookup()`
+Create an instance: `const v1_lookup = client.v1_lookup`
 
 #### Operations
 
@@ -708,19 +708,19 @@ Create an instance: `const v1_lookup = client.V1Lookup()`
 #### Example: Load
 
 ```ts
-const v1_lookup = await client.V1Lookup().load({ id: 'v1_lookup_id' })
+const v1_lookup = await client.v1_lookup.load({ id: 'v1_lookup_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_lookups = await client.V1Lookup().list()
+const v1_lookups = await client.v1_lookup.list()
 ```
 
 
 ### V1Search
 
-Create an instance: `const v1_search = client.V1Search()`
+Create an instance: `const v1_search = client.v1_search`
 
 #### Operations
 
@@ -833,19 +833,19 @@ Create an instance: `const v1_search = client.V1Search()`
 #### Example: Load
 
 ```ts
-const v1_search = await client.V1Search().load({ id: 'v1_search_id' })
+const v1_search = await client.v1_search.load({ id: 'v1_search_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_searchs = await client.V1Search().list()
+const v1_searchs = await client.v1_search.list()
 ```
 
 
 ### V2List
 
-Create an instance: `const v2_list = client.V2List()`
+Create an instance: `const v2_list = client.v2_list`
 
 #### Operations
 
@@ -862,13 +862,13 @@ Create an instance: `const v2_list = client.V2List()`
 #### Example: Load
 
 ```ts
-const v2_list = await client.V2List().load({ id: 'v2_list_id' })
+const v2_list = await client.v2_list.load({ id: 'v2_list_id' })
 ```
 
 
 ### V2Lookup
 
-Create an instance: `const v2_lookup = client.V2Lookup()`
+Create an instance: `const v2_lookup = client.v2_lookup`
 
 #### Operations
 
@@ -887,13 +887,13 @@ Create an instance: `const v2_lookup = client.V2Lookup()`
 #### Example: Load
 
 ```ts
-const v2_lookup = await client.V2Lookup().load({ id: 'v2_lookup_id' })
+const v2_lookup = await client.v2_lookup.load({ id: 'v2_lookup_id' })
 ```
 
 
 ### V2Search
 
-Create an instance: `const v2_search = client.V2Search()`
+Create an instance: `const v2_search = client.v2_search`
 
 #### Operations
 
@@ -912,7 +912,7 @@ Create an instance: `const v2_search = client.V2Search()`
 #### Example: Load
 
 ```ts
-const v2_search = await client.V2Search().load({ id: 'v2_search_id' })
+const v2_search = await client.v2_search.load({ id: 'v2_search_id' })
 ```
 
 
@@ -987,11 +987,11 @@ Entity instances are stateful. After a successful `load`, the entity
 stores the returned data and match criteria internally.
 
 ```ruby
-moon = client.Moon
-moon.load({ "planet_id" => "earth", "id" => "luna" })
+v1list = client.v1list
+v1list.load({ "id" => "example_id" })
 
-# moon.data_get now returns the loaded moon data
-# moon.match_get returns the last match criteria
+# v1list.data_get now returns the loaded v1list data
+# v1list.match_get returns the last match criteria
 ```
 
 Call `make` to create a fresh instance with the same configuration

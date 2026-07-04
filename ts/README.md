@@ -9,9 +9,12 @@ The TypeScript SDK for the FreeMusic API — a type-safe, entity-oriented client
 
 
 ## Install
-```bash
-npm install @voxgig-sdk/free-music
-```
+This package is not yet published to npm. Install it from the GitHub
+release tag (`ts/vX.Y.Z`):
+
+- Releases: [https://github.com/voxgig-sdk/free-music-sdk/releases](https://github.com/voxgig-sdk/free-music-sdk/releases)
+
+
 ## Tutorial: your first API call
 
 This tutorial walks through creating a client, listing entities, and
@@ -20,17 +23,17 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { FreeMusicSDK } from 'free-music'
+import { FreeMusicSDK } from '@voxgig-sdk/free-music'
 
 const client = new FreeMusicSDK({
-  apikey: process.env.FREE-MUSIC_APIKEY,
+  apikey: process.env.FREE_MUSIC_APIKEY,
 })
 ```
 
 ### 2. List v1lists
 
 ```ts
-const result = await client.V1List().list()
+const result = await client.v1list.list()
 
 if (result.ok) {
   for (const item of result.data) {
@@ -42,7 +45,7 @@ if (result.ok) {
 ### 3. Load a v1list
 
 ```ts
-const result = await client.V1List().load({ id: 'example_id' })
+const result = await client.v1list.load({ id: 'example_id' })
 
 if (result.ok) {
   console.log(result.data)
@@ -91,7 +94,7 @@ Create a mock client for unit testing — no server required:
 ```ts
 const client = FreeMusicSDK.test()
 
-const result = await client.Planet().load({ id: 'test01' })
+const result = await client.v1list.load({ id: 'test01' })
 // result.ok === true
 // result.data contains mock response data
 ```
@@ -108,7 +111,7 @@ const testClient = client.tester()
 Entity instances remember their last match and data:
 
 ```ts
-const entity = client.Planet()
+const entity = client.v1list
 
 // First call sets internal match
 await entity.load({ id: 'example' })
@@ -145,8 +148,8 @@ const client = new FreeMusicSDK({
 Create a `.env.local` file at the project root:
 
 ```
-FREE-MUSIC_TEST_LIVE=TRUE
-FREE-MUSIC_APIKEY=<your-key>
+FREE_MUSIC_TEST_LIVE=TRUE
+FREE_MUSIC_APIKEY=<your-key>
 ```
 
 Then run:
@@ -566,7 +569,7 @@ API path: `/search/album/{albumName}`
 
 ### V1List
 
-Create an instance: `const v1_list = client.V1List()`
+Create an instance: `const v1_list = client.v1_list`
 
 #### Operations
 
@@ -624,19 +627,19 @@ Create an instance: `const v1_list = client.V1List()`
 #### Example: Load
 
 ```ts
-const v1_list = await client.V1List().load({ id: 'v1_list_id' })
+const v1_list = await client.v1_list.load({ id: 'v1_list_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_lists = await client.V1List().list()
+const v1_lists = await client.v1_list.list()
 ```
 
 
 ### V1Lookup
 
-Create an instance: `const v1_lookup = client.V1Lookup()`
+Create an instance: `const v1_lookup = client.v1_lookup`
 
 #### Operations
 
@@ -748,19 +751,19 @@ Create an instance: `const v1_lookup = client.V1Lookup()`
 #### Example: Load
 
 ```ts
-const v1_lookup = await client.V1Lookup().load({ id: 'v1_lookup_id' })
+const v1_lookup = await client.v1_lookup.load({ id: 'v1_lookup_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_lookups = await client.V1Lookup().list()
+const v1_lookups = await client.v1_lookup.list()
 ```
 
 
 ### V1Search
 
-Create an instance: `const v1_search = client.V1Search()`
+Create an instance: `const v1_search = client.v1_search`
 
 #### Operations
 
@@ -873,19 +876,19 @@ Create an instance: `const v1_search = client.V1Search()`
 #### Example: Load
 
 ```ts
-const v1_search = await client.V1Search().load({ id: 'v1_search_id' })
+const v1_search = await client.v1_search.load({ id: 'v1_search_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_searchs = await client.V1Search().list()
+const v1_searchs = await client.v1_search.list()
 ```
 
 
 ### V2List
 
-Create an instance: `const v2_list = client.V2List()`
+Create an instance: `const v2_list = client.v2_list`
 
 #### Operations
 
@@ -902,13 +905,13 @@ Create an instance: `const v2_list = client.V2List()`
 #### Example: Load
 
 ```ts
-const v2_list = await client.V2List().load({ id: 'v2_list_id' })
+const v2_list = await client.v2_list.load({ id: 'v2_list_id' })
 ```
 
 
 ### V2Lookup
 
-Create an instance: `const v2_lookup = client.V2Lookup()`
+Create an instance: `const v2_lookup = client.v2_lookup`
 
 #### Operations
 
@@ -927,13 +930,13 @@ Create an instance: `const v2_lookup = client.V2Lookup()`
 #### Example: Load
 
 ```ts
-const v2_lookup = await client.V2Lookup().load({ id: 'v2_lookup_id' })
+const v2_lookup = await client.v2_lookup.load({ id: 'v2_lookup_id' })
 ```
 
 
 ### V2Search
 
-Create an instance: `const v2_search = client.V2Search()`
+Create an instance: `const v2_search = client.v2_search`
 
 #### Operations
 
@@ -952,7 +955,7 @@ Create an instance: `const v2_search = client.V2Search()`
 #### Example: Load
 
 ```ts
-const v2_search = await client.V2Search().load({ id: 'v2_search_id' })
+const v2_search = await client.v2_search.load({ id: 'v2_search_id' })
 ```
 
 
@@ -1013,7 +1016,7 @@ free-music/
 Import the SDK from the package root:
 
 ```ts
-import { FreeMusicSDK } from 'free-music'
+import { FreeMusicSDK } from '@voxgig-sdk/free-music'
 ```
 
 ### Entity state
@@ -1023,11 +1026,11 @@ stores the returned data and match criteria internally. Subsequent
 calls on the same instance can rely on this state.
 
 ```ts
-const moon = client.Moon()
-await moon.load({ planet_id: 'earth', id: 'luna' })
+const v1list = client.v1list
+await v1list.load({ id: "example_id" })
 
-// moon.data() now returns the loaded moon data
-// moon.match() returns { planet_id: 'earth', id: 'luna' }
+// v1list.data() now returns the loaded v1list data
+// v1list.match() returns { id: "example_id" }
 ```
 
 Call `make()` to create a fresh instance with the same configuration

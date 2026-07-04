@@ -52,14 +52,12 @@ class TestV1LookupEntity:
             "api_key": setup["idmap"]["api_key01"],
         }
 
-        v1_lookup_ref01_list_result, err = v1_lookup_ref01_ent.list(v1_lookup_ref01_match, None)
-        assert err is None
+        v1_lookup_ref01_list_result = v1_lookup_ref01_ent.list(v1_lookup_ref01_match, None)
         assert isinstance(v1_lookup_ref01_list_result, list)
 
         # LOAD
         v1_lookup_ref01_match_dt0 = {}
-        v1_lookup_ref01_data_dt0_loaded, err = v1_lookup_ref01_ent.load(v1_lookup_ref01_match_dt0, None)
-        assert err is None
+        v1_lookup_ref01_data_dt0_loaded = v1_lookup_ref01_ent.load(v1_lookup_ref01_match_dt0, None)
         assert v1_lookup_ref01_data_dt0_loaded is not None
 
 

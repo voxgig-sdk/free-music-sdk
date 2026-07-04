@@ -337,6 +337,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -403,6 +404,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -450,6 +452,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -505,6 +508,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -552,6 +556,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -599,6 +604,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1328,6 +1334,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1384,6 +1391,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1441,6 +1449,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1496,6 +1505,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1543,6 +1553,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1591,6 +1602,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -1638,6 +1650,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -2374,6 +2387,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -2432,6 +2446,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -2490,6 +2505,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -2538,6 +2554,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -2593,6 +2610,7 @@ func MakeConfig() map[string]any {
 											"orig": "api_key",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 									"query": []any{
@@ -2665,6 +2683,7 @@ func MakeConfig() map[string]any {
 											"orig": "id_artist",
 											"reqd": true,
 											"type": "`$INTEGER`",
+											"index$": 0,
 										},
 									},
 								},
@@ -2745,6 +2764,7 @@ func MakeConfig() map[string]any {
 											"orig": "id_album",
 											"reqd": true,
 											"type": "`$INTEGER`",
+											"index$": 0,
 										},
 									},
 								},
@@ -2783,6 +2803,7 @@ func MakeConfig() map[string]any {
 											"orig": "id_artist",
 											"reqd": true,
 											"type": "`$INTEGER`",
+											"index$": 0,
 										},
 									},
 								},
@@ -2821,6 +2842,7 @@ func MakeConfig() map[string]any {
 											"orig": "id_track",
 											"reqd": true,
 											"type": "`$INTEGER`",
+											"index$": 0,
 										},
 									},
 								},
@@ -2859,6 +2881,7 @@ func MakeConfig() map[string]any {
 											"orig": "music_brainz_id",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 								},
@@ -2897,6 +2920,7 @@ func MakeConfig() map[string]any {
 											"orig": "music_brainz_id",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 								},
@@ -2935,6 +2959,7 @@ func MakeConfig() map[string]any {
 											"orig": "music_brainz_id",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 								},
@@ -3030,6 +3055,7 @@ func MakeConfig() map[string]any {
 											"orig": "album_name",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 								},
@@ -3068,6 +3094,7 @@ func MakeConfig() map[string]any {
 											"orig": "artist_name",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 								},
@@ -3106,6 +3133,7 @@ func MakeConfig() map[string]any {
 											"orig": "track_name",
 											"reqd": true,
 											"type": "`$STRING`",
+											"index$": 0,
 										},
 									},
 								},

@@ -9,12 +9,9 @@ The Lua SDK for the FreeMusic API — an entity-oriented client using Lua conven
 
 
 ## Install
-```bash
-luarocks install voxgig-sdk-free-music
-```
-
-If the module is not yet published, add the source directory to
-your `LUA_PATH`:
+This package is not yet published to LuaRocks. Install it from the
+GitHub release tag (`lua/vX.Y.Z`, see [Releases](https://github.com/voxgig-sdk/free-music-sdk/releases)),
+or add the source directory to your `LUA_PATH`:
 
 ```bash
 export LUA_PATH="path/to/lua/?.lua;path/to/lua/?/init.lua;;"
@@ -32,14 +29,14 @@ loading a specific record.
 local sdk = require("free-music_sdk")
 
 local client = sdk.new({
-  apikey = os.getenv("FREE-MUSIC_APIKEY"),
+  apikey = os.getenv("FREE_MUSIC_APIKEY"),
 })
 ```
 
 ### 2. List v1lists
 
 ```lua
-local result, err = client:V1List():list()
+local result, err = client:v1list():list()
 if err then error(err) end
 
 if type(result) == "table" then
@@ -53,7 +50,7 @@ end
 ### 3. Load a v1list
 
 ```lua
-local result, err = client:V1List():load({ id = "example_id" })
+local result, err = client:v1list():load({ id = "example_id" })
 if err then error(err) end
 print(result)
 ```
@@ -101,7 +98,7 @@ Create a mock client for unit testing — no server required:
 ```lua
 local client = sdk.test()
 
-local result, err = client:FreeMusic():load({ id = "test01" })
+local result, err = client:v1list():load({ id = "test01" })
 -- result contains mock response data
 ```
 
@@ -134,8 +131,8 @@ local client = sdk.new({
 Create a `.env.local` file at the project root:
 
 ```
-FREE-MUSIC_TEST_LIVE=TRUE
-FREE-MUSIC_APIKEY=<your-key>
+FREE_MUSIC_TEST_LIVE=TRUE
+FREE_MUSIC_APIKEY=<your-key>
 ```
 
 Then run:
@@ -523,7 +520,7 @@ API path: `/search/album/{albumName}`
 
 ### V1List
 
-Create an instance: `const v1_list = client.V1List()`
+Create an instance: `const v1_list = client.v1_list`
 
 #### Operations
 
@@ -581,19 +578,19 @@ Create an instance: `const v1_list = client.V1List()`
 #### Example: Load
 
 ```ts
-const v1_list = await client.V1List().load({ id: 'v1_list_id' })
+const v1_list = await client.v1_list.load({ id: 'v1_list_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_lists = await client.V1List().list()
+const v1_lists = await client.v1_list.list()
 ```
 
 
 ### V1Lookup
 
-Create an instance: `const v1_lookup = client.V1Lookup()`
+Create an instance: `const v1_lookup = client.v1_lookup`
 
 #### Operations
 
@@ -705,19 +702,19 @@ Create an instance: `const v1_lookup = client.V1Lookup()`
 #### Example: Load
 
 ```ts
-const v1_lookup = await client.V1Lookup().load({ id: 'v1_lookup_id' })
+const v1_lookup = await client.v1_lookup.load({ id: 'v1_lookup_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_lookups = await client.V1Lookup().list()
+const v1_lookups = await client.v1_lookup.list()
 ```
 
 
 ### V1Search
 
-Create an instance: `const v1_search = client.V1Search()`
+Create an instance: `const v1_search = client.v1_search`
 
 #### Operations
 
@@ -830,19 +827,19 @@ Create an instance: `const v1_search = client.V1Search()`
 #### Example: Load
 
 ```ts
-const v1_search = await client.V1Search().load({ id: 'v1_search_id' })
+const v1_search = await client.v1_search.load({ id: 'v1_search_id' })
 ```
 
 #### Example: List
 
 ```ts
-const v1_searchs = await client.V1Search().list()
+const v1_searchs = await client.v1_search.list()
 ```
 
 
 ### V2List
 
-Create an instance: `const v2_list = client.V2List()`
+Create an instance: `const v2_list = client.v2_list`
 
 #### Operations
 
@@ -859,13 +856,13 @@ Create an instance: `const v2_list = client.V2List()`
 #### Example: Load
 
 ```ts
-const v2_list = await client.V2List().load({ id: 'v2_list_id' })
+const v2_list = await client.v2_list.load({ id: 'v2_list_id' })
 ```
 
 
 ### V2Lookup
 
-Create an instance: `const v2_lookup = client.V2Lookup()`
+Create an instance: `const v2_lookup = client.v2_lookup`
 
 #### Operations
 
@@ -884,13 +881,13 @@ Create an instance: `const v2_lookup = client.V2Lookup()`
 #### Example: Load
 
 ```ts
-const v2_lookup = await client.V2Lookup().load({ id: 'v2_lookup_id' })
+const v2_lookup = await client.v2_lookup.load({ id: 'v2_lookup_id' })
 ```
 
 
 ### V2Search
 
-Create an instance: `const v2_search = client.V2Search()`
+Create an instance: `const v2_search = client.v2_search`
 
 #### Operations
 
@@ -909,7 +906,7 @@ Create an instance: `const v2_search = client.V2Search()`
 #### Example: Load
 
 ```ts
-const v2_search = await client.V2Search().load({ id: 'v2_search_id' })
+const v2_search = await client.v2_search.load({ id: 'v2_search_id' })
 ```
 
 
@@ -984,11 +981,11 @@ Entity instances are stateful. After a successful `load`, the entity
 stores the returned data and match criteria internally.
 
 ```lua
-local moon = client:Moon(nil)
-moon:load({ planet_id = "earth", id = "luna" }, nil)
+local v1list = client:v1list()
+v1list:load({ id = "example_id" })
 
--- moon:data_get() now returns the loaded moon data
--- moon:match_get() returns the last match criteria
+-- v1list:data_get() now returns the loaded v1list data
+-- v1list:match_get() returns the last match criteria
 ```
 
 Call `make()` to create a fresh instance with the same configuration

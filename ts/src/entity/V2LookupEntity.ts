@@ -14,9 +14,13 @@ import type {
   Control,
 } from '../types'
 
+import type {
+  V2Lookup,
+  V2LookupLoadMatch,
+} from '../FreeMusicTypes'
 
 // TODO: needs Entity superclass
-class V2LookupEntity extends FreeMusicEntityBase {
+class V2LookupEntity extends FreeMusicEntityBase<V2Lookup> {
 
   constructor(client: FreeMusicSDK, entopts: any) {
     super(client, entopts)
@@ -32,7 +36,7 @@ class V2LookupEntity extends FreeMusicEntityBase {
 
 
 
-  async load(this: any, reqmatch?: any, ctrl?: Control) {
+  async load(this: any, reqmatch?: V2LookupLoadMatch, ctrl?: Control): Promise<V2Lookup> {
 
     const utility = this._utility
 
@@ -136,7 +140,9 @@ class V2LookupEntity extends FreeMusicEntityBase {
         throw err
       }
       else {
-        return undefined
+        // Off-happy-path (throw disabled): typed as any so the method's
+        // Promise<V2Lookup> return stays clean under strict null checks.
+        return undefined as any
       }
     }
   }

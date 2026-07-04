@@ -45,6 +45,7 @@ class V1SearchEntity
     end
   end
 
+  # @return [V1Search, Hash] the current V1Search data
   def data_get
     @_utility.feature_hook.call(@_entctx, "GetData")
     VoxgigStruct.clone(@_data)
@@ -57,12 +58,18 @@ class V1SearchEntity
     end
   end
 
+  # @return [Hash] the current match filter (any subset of V1Search fields)
   def match_get
     @_utility.feature_hook.call(@_entctx, "GetMatch")
     VoxgigStruct.clone(@_match)
   end
 
   
+  # Load a single V1Search.
+  #
+  # @param reqmatch [V1SearchLoadMatch, Hash, nil] match criteria (id/query fields)
+  # @param ctrl [Object, nil] optional per-call control
+  # @return [V1Search, Hash] the loaded V1Search; raises FreeMusicError on failure
   def load(reqmatch, ctrl = nil)
     utility = @_utility
     ctx = utility.make_context.call({
@@ -86,6 +93,11 @@ class V1SearchEntity
 
 
   
+  # List V1Search items matching the given filter.
+  #
+  # @param reqmatch [V1SearchListMatch, Hash, nil] match filter (any subset of V1Search fields)
+  # @param ctrl [Object, nil] optional per-call control
+  # @return [Array<V1Search>, Array] the matching V1Search items; raises FreeMusicError on failure
   def list(reqmatch, ctrl = nil)
     utility = @_utility
     ctx = utility.make_context.call({

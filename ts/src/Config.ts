@@ -377,7 +377,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -443,7 +444,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -490,7 +492,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -545,7 +548,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -592,7 +596,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -639,7 +644,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1368,7 +1374,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1424,7 +1431,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1481,7 +1489,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1536,7 +1545,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1583,7 +1593,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1631,7 +1642,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -1678,7 +1690,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -2414,7 +2427,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -2472,7 +2486,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -2530,7 +2545,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -2578,7 +2594,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -2633,7 +2650,8 @@ class Config {
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ],
                 "query": [
@@ -2705,7 +2723,8 @@ class Config {
                     "name": "id_artist",
                     "orig": "id_artist",
                     "reqd": true,
-                    "type": "`$INTEGER`"
+                    "type": "`$INTEGER`",
+                    "index$": 0
                   }
                 ]
               },
@@ -2785,7 +2804,8 @@ class Config {
                     "name": "id_album",
                     "orig": "id_album",
                     "reqd": true,
-                    "type": "`$INTEGER`"
+                    "type": "`$INTEGER`",
+                    "index$": 0
                   }
                 ]
               },
@@ -2823,7 +2843,8 @@ class Config {
                     "name": "id_artist",
                     "orig": "id_artist",
                     "reqd": true,
-                    "type": "`$INTEGER`"
+                    "type": "`$INTEGER`",
+                    "index$": 0
                   }
                 ]
               },
@@ -2861,7 +2882,8 @@ class Config {
                     "name": "id_track",
                     "orig": "id_track",
                     "reqd": true,
-                    "type": "`$INTEGER`"
+                    "type": "`$INTEGER`",
+                    "index$": 0
                   }
                 ]
               },
@@ -2899,7 +2921,8 @@ class Config {
                     "name": "music_brainz_id",
                     "orig": "music_brainz_id",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ]
               },
@@ -2937,7 +2960,8 @@ class Config {
                     "name": "music_brainz_id",
                     "orig": "music_brainz_id",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ]
               },
@@ -2975,7 +2999,8 @@ class Config {
                     "name": "music_brainz_id",
                     "orig": "music_brainz_id",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ]
               },
@@ -3070,7 +3095,8 @@ class Config {
                     "name": "album_name",
                     "orig": "album_name",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ]
               },
@@ -3108,7 +3134,8 @@ class Config {
                     "name": "artist_name",
                     "orig": "artist_name",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ]
               },
@@ -3146,7 +3173,8 @@ class Config {
                     "name": "track_name",
                     "orig": "track_name",
                     "reqd": true,
-                    "type": "`$STRING`"
+                    "type": "`$STRING`",
+                    "index$": 0
                   }
                 ]
               },

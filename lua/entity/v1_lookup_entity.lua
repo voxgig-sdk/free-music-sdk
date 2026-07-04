@@ -79,6 +79,10 @@ end
 
 
 
+---@param reqmatch V1LookupLoadMatch
+---@param ctrl? table
+---@return V1Lookup
+---@return string? err
 function V1LookupEntity:load(reqmatch, ctrl)
   local utility = self._utility
   local ctx = utility.make_context({
@@ -104,6 +108,10 @@ end
 
 
 
+---@param reqmatch V1LookupListMatch
+---@param ctrl? table
+---@return V1Lookup[]
+---@return string? err
 function V1LookupEntity:list(reqmatch, ctrl)
   local utility = self._utility
   local ctx = utility.make_context({

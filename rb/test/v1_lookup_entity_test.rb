@@ -45,14 +45,12 @@ class V1LookupEntityTest < Minitest::Test
       "api_key" => setup[:idmap]["api_key01"],
     }
 
-    v1_lookup_ref01_list_result, err = v1_lookup_ref01_ent.list(v1_lookup_ref01_match, nil)
-    assert_nil err
+    v1_lookup_ref01_list_result = v1_lookup_ref01_ent.list(v1_lookup_ref01_match, nil)
     assert v1_lookup_ref01_list_result.is_a?(Array)
 
     # LOAD
     v1_lookup_ref01_match_dt0 = {}
-    v1_lookup_ref01_data_dt0_loaded, err = v1_lookup_ref01_ent.load(v1_lookup_ref01_match_dt0, nil)
-    assert_nil err
+    v1_lookup_ref01_data_dt0_loaded = v1_lookup_ref01_ent.load(v1_lookup_ref01_match_dt0, nil)
     assert !v1_lookup_ref01_data_dt0_loaded.nil?
 
   end

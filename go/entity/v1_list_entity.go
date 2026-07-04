@@ -85,6 +85,27 @@ func (e *V1ListEntity) Match(args ...any) any {
 	return out
 }
 
+// DataTyped is the statically-typed accessor for this entity's data. With no
+// argument it returns the current data as an V1List; with an argument it
+// sets the data and returns the stored value. It delegates to the untyped Data
+// (identical runtime) and converts at the typed boundary.
+func (e *V1ListEntity) DataTyped(data ...V1List) V1List {
+	if len(data) > 0 {
+		return typedFrom[V1List](e.Data(asMap(data[0])))
+	}
+	return typedFrom[V1List](e.Data())
+}
+
+// MatchTyped mirrors DataTyped for the entity's match filter. The match is a
+// partial of the entity, so it round-trips through V1List (all fields
+// optional at the wire level).
+func (e *V1ListEntity) MatchTyped(match ...V1List) V1List {
+	if len(match) > 0 {
+		return typedFrom[V1List](e.Match(asMap(match[0])))
+	}
+	return typedFrom[V1List](e.Match())
+}
+
 
 func (e *V1ListEntity) Load(reqmatch map[string]any, ctrl map[string]any) (any, error) {
 	utility := e.utility
@@ -111,6 +132,17 @@ func (e *V1ListEntity) Load(reqmatch map[string]any, ctrl map[string]any) (any, 
 	})
 }
 
+// LoadTyped is the statically-typed variant of Load: it takes an
+// V1ListLoadMatch and returns an V1List. It delegates to the untyped
+// Load (identical runtime) and converts at the typed boundary.
+func (e *V1ListEntity) LoadTyped(reqmatch V1ListLoadMatch, ctrl map[string]any) (V1List, error) {
+	res, err := e.Load(asMap(reqmatch), ctrl)
+	if err != nil {
+		return V1List{}, err
+	}
+	return typedFrom[V1List](res), nil
+}
+
 
 
 
@@ -131,6 +163,17 @@ func (e *V1ListEntity) List(reqmatch map[string]any, ctrl map[string]any) (any, 
 			}
 		}
 	})
+}
+
+// ListTyped is the statically-typed variant of List: it takes an
+// V1ListListMatch and returns []V1List. It delegates to the untyped
+// List (identical runtime) and converts at the typed boundary.
+func (e *V1ListEntity) ListTyped(reqmatch V1ListListMatch, ctrl map[string]any) ([]V1List, error) {
+	res, err := e.List(asMap(reqmatch), ctrl)
+	if err != nil {
+		return nil, err
+	}
+	return typedSliceFrom[V1List](res), nil
 }
 
 

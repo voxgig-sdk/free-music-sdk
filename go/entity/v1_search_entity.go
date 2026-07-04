@@ -85,6 +85,27 @@ func (e *V1SearchEntity) Match(args ...any) any {
 	return out
 }
 
+// DataTyped is the statically-typed accessor for this entity's data. With no
+// argument it returns the current data as an V1Search; with an argument it
+// sets the data and returns the stored value. It delegates to the untyped Data
+// (identical runtime) and converts at the typed boundary.
+func (e *V1SearchEntity) DataTyped(data ...V1Search) V1Search {
+	if len(data) > 0 {
+		return typedFrom[V1Search](e.Data(asMap(data[0])))
+	}
+	return typedFrom[V1Search](e.Data())
+}
+
+// MatchTyped mirrors DataTyped for the entity's match filter. The match is a
+// partial of the entity, so it round-trips through V1Search (all fields
+// optional at the wire level).
+func (e *V1SearchEntity) MatchTyped(match ...V1Search) V1Search {
+	if len(match) > 0 {
+		return typedFrom[V1Search](e.Match(asMap(match[0])))
+	}
+	return typedFrom[V1Search](e.Match())
+}
+
 
 func (e *V1SearchEntity) Load(reqmatch map[string]any, ctrl map[string]any) (any, error) {
 	utility := e.utility
@@ -111,6 +132,17 @@ func (e *V1SearchEntity) Load(reqmatch map[string]any, ctrl map[string]any) (any
 	})
 }
 
+// LoadTyped is the statically-typed variant of Load: it takes an
+// V1SearchLoadMatch and returns an V1Search. It delegates to the untyped
+// Load (identical runtime) and converts at the typed boundary.
+func (e *V1SearchEntity) LoadTyped(reqmatch V1SearchLoadMatch, ctrl map[string]any) (V1Search, error) {
+	res, err := e.Load(asMap(reqmatch), ctrl)
+	if err != nil {
+		return V1Search{}, err
+	}
+	return typedFrom[V1Search](res), nil
+}
+
 
 
 
@@ -131,6 +163,17 @@ func (e *V1SearchEntity) List(reqmatch map[string]any, ctrl map[string]any) (any
 			}
 		}
 	})
+}
+
+// ListTyped is the statically-typed variant of List: it takes an
+// V1SearchListMatch and returns []V1Search. It delegates to the untyped
+// List (identical runtime) and converts at the typed boundary.
+func (e *V1SearchEntity) ListTyped(reqmatch V1SearchListMatch, ctrl map[string]any) ([]V1Search, error) {
+	res, err := e.List(asMap(reqmatch), ctrl)
+	if err != nil {
+		return nil, err
+	}
+	return typedSliceFrom[V1Search](res), nil
 }
 
 

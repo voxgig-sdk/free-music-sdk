@@ -1,7 +1,14 @@
 # FreeMusic SDK V1Lookup entity
 
+from __future__ import annotations
+
 from utility.voxgig_struct import voxgig_struct as vs
 from core import helpers
+from freemusic_types import (
+    V1Lookup,
+    V1LookupLoadMatch,
+    V1LookupListMatch,
+)
 
 
 class V1LookupEntity:
@@ -44,7 +51,7 @@ class V1LookupEntity:
             self._data = helpers.to_map(vs.clone(args)) or {}
             self._utility.feature_hook(self._entctx, "SetData")
 
-    def data_get(self):
+    def data_get(self) -> V1Lookup:
         self._utility.feature_hook(self._entctx, "GetData")
         return vs.clone(self._data)
 
@@ -53,12 +60,12 @@ class V1LookupEntity:
             self._match = helpers.to_map(vs.clone(args)) or {}
             self._utility.feature_hook(self._entctx, "SetMatch")
 
-    def match_get(self):
+    def match_get(self) -> V1Lookup:
         self._utility.feature_hook(self._entctx, "GetMatch")
         return vs.clone(self._match)
 
     
-    def load(self, reqmatch, ctrl=None):
+    def load(self, reqmatch: V1LookupLoadMatch, ctrl=None) -> V1Lookup:
         utility = self._utility
         ctx = utility.make_context({
             "opname": "load",
@@ -80,7 +87,7 @@ class V1LookupEntity:
 
 
     
-    def list(self, reqmatch, ctrl=None):
+    def list(self, reqmatch: V1LookupListMatch, ctrl=None) -> list[V1Lookup]:
         utility = self._utility
         ctx = utility.make_context({
             "opname": "list",

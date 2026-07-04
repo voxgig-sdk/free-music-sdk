@@ -343,6 +343,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -409,6 +410,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -456,6 +458,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -511,6 +514,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -558,6 +562,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -605,6 +610,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1334,6 +1340,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1390,6 +1397,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1447,6 +1455,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1502,6 +1511,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1549,6 +1559,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1597,6 +1608,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -1644,6 +1656,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -2380,6 +2393,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -2438,6 +2452,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -2496,6 +2511,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -2544,6 +2560,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -2599,6 +2616,7 @@ class FreeMusicConfig
                         'orig' => 'api_key',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                     'query' => [
@@ -2671,6 +2689,7 @@ class FreeMusicConfig
                         'orig' => 'id_artist',
                         'reqd' => true,
                         'type' => '`$INTEGER`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -2751,6 +2770,7 @@ class FreeMusicConfig
                         'orig' => 'id_album',
                         'reqd' => true,
                         'type' => '`$INTEGER`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -2789,6 +2809,7 @@ class FreeMusicConfig
                         'orig' => 'id_artist',
                         'reqd' => true,
                         'type' => '`$INTEGER`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -2827,6 +2848,7 @@ class FreeMusicConfig
                         'orig' => 'id_track',
                         'reqd' => true,
                         'type' => '`$INTEGER`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -2865,6 +2887,7 @@ class FreeMusicConfig
                         'orig' => 'music_brainz_id',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -2903,6 +2926,7 @@ class FreeMusicConfig
                         'orig' => 'music_brainz_id',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -2941,6 +2965,7 @@ class FreeMusicConfig
                         'orig' => 'music_brainz_id',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -3036,6 +3061,7 @@ class FreeMusicConfig
                         'orig' => 'album_name',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -3074,6 +3100,7 @@ class FreeMusicConfig
                         'orig' => 'artist_name',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
@@ -3112,6 +3139,7 @@ class FreeMusicConfig
                         'orig' => 'track_name',
                         'reqd' => true,
                         'type' => '`$STRING`',
+                        'index$' => 0,
                       ],
                     ],
                   ],
