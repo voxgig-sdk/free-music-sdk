@@ -221,37 +221,37 @@ class FreeMusicSDK:
 
 
     def V1List(self, data=None) -> "V1ListEntity":
-        """Entity factory: client.V1List().list({}) / client.V1List().load({"id": ...})."""
+        """Entity factory: client.V1List().list() / client.V1List().load({"id": ...})."""
         from entity.v1_list_entity import V1ListEntity
         return V1ListEntity(self, data)
 
 
     def V1Lookup(self, data=None) -> "V1LookupEntity":
-        """Entity factory: client.V1Lookup().list({}) / client.V1Lookup().load({"id": ...})."""
+        """Entity factory: client.V1Lookup().list() / client.V1Lookup().load({"id": ...})."""
         from entity.v1_lookup_entity import V1LookupEntity
         return V1LookupEntity(self, data)
 
 
     def V1Search(self, data=None) -> "V1SearchEntity":
-        """Entity factory: client.V1Search().list({}) / client.V1Search().load({"id": ...})."""
+        """Entity factory: client.V1Search().list() / client.V1Search().load({"id": ...})."""
         from entity.v1_search_entity import V1SearchEntity
         return V1SearchEntity(self, data)
 
 
     def V2List(self, data=None) -> "V2ListEntity":
-        """Entity factory: client.V2List().list({}) / client.V2List().load({"id": ...})."""
+        """Entity factory: client.V2List().list() / client.V2List().load({"id": ...})."""
         from entity.v2_list_entity import V2ListEntity
         return V2ListEntity(self, data)
 
 
     def V2Lookup(self, data=None) -> "V2LookupEntity":
-        """Entity factory: client.V2Lookup().list({}) / client.V2Lookup().load({"id": ...})."""
+        """Entity factory: client.V2Lookup().list() / client.V2Lookup().load({"id": ...})."""
         from entity.v2_lookup_entity import V2LookupEntity
         return V2LookupEntity(self, data)
 
 
     def V2Search(self, data=None) -> "V2SearchEntity":
-        """Entity factory: client.V2Search().list({}) / client.V2Search().load({"id": ...})."""
+        """Entity factory: client.V2Search().list() / client.V2Search().load({"id": ...})."""
         from entity.v2_search_entity import V2SearchEntity
         return V2SearchEntity(self, data)
 

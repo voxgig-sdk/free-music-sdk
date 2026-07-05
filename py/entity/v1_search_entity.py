@@ -65,8 +65,13 @@ class V1SearchEntity:
         return vs.clone(self._match)
 
     
-    def load(self, reqmatch: V1SearchLoadMatch, ctrl=None) -> V1Search:
+    def load(self, reqmatch=None, ctrl=None) -> V1Search:
         utility = self._utility
+        # reqmatch is optional: an entity with no id-like key loads with no
+        # match. Treat None as an empty match so client.V1Search().load()
+        # works with no args.
+        if reqmatch is None:
+            reqmatch = {}
         ctx = utility.make_context({
             "opname": "load",
             "ctrl": ctrl,
@@ -87,8 +92,12 @@ class V1SearchEntity:
 
 
     
-    def list(self, reqmatch: V1SearchListMatch, ctrl=None) -> list[V1Search]:
+    def list(self, reqmatch=None, ctrl=None) -> list[V1Search]:
         utility = self._utility
+        # reqmatch is optional: an omitted match lists all records. Treat None
+        # as an empty match so client.V1Search().list() works with no args.
+        if reqmatch is None:
+            reqmatch = {}
         ctx = utility.make_context({
             "opname": "list",
             "ctrl": ctrl,

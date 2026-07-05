@@ -65,8 +65,13 @@ class V1LookupEntity:
         return vs.clone(self._match)
 
     
-    def load(self, reqmatch: V1LookupLoadMatch, ctrl=None) -> V1Lookup:
+    def load(self, reqmatch=None, ctrl=None) -> V1Lookup:
         utility = self._utility
+        # reqmatch is optional: an entity with no id-like key loads with no
+        # match. Treat None as an empty match so client.V1Lookup().load()
+        # works with no args.
+        if reqmatch is None:
+            reqmatch = {}
         ctx = utility.make_context({
             "opname": "load",
             "ctrl": ctrl,
@@ -87,8 +92,12 @@ class V1LookupEntity:
 
 
     
-    def list(self, reqmatch: V1LookupListMatch, ctrl=None) -> list[V1Lookup]:
+    def list(self, reqmatch=None, ctrl=None) -> list[V1Lookup]:
         utility = self._utility
+        # reqmatch is optional: an omitted match lists all records. Treat None
+        # as an empty match so client.V1Lookup().list() works with no args.
+        if reqmatch is None:
+            reqmatch = {}
         ctx = utility.make_context({
             "opname": "list",
             "ctrl": ctrl,

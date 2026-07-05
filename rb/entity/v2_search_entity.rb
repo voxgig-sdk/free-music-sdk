@@ -67,10 +67,12 @@ class V2SearchEntity
   
   # Load a single V2Search.
   #
-  # @param reqmatch [V2SearchLoadMatch, Hash, nil] match criteria (id/query fields)
+  # @param reqmatch [V2SearchLoadMatch, Hash, nil] match criteria (id/query fields);
+  #   optional — an entity with no id-like key loads with no match (nil is treated
+  #   as an empty match, so client.V2Search.load works with no args).
   # @param ctrl [Object, nil] optional per-call control
   # @return [V2Search, Hash] the loaded V2Search; raises FreeMusicError on failure
-  def load(reqmatch, ctrl = nil)
+  def load(reqmatch = nil, ctrl = nil)
     utility = @_utility
     ctx = utility.make_context.call({
       "opname" => "load",
