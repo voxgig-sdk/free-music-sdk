@@ -168,7 +168,7 @@ local results, err = client:V1List():list()
 Load a single entity matching the given criteria.
 
 ```lua
-local result, err = client:V1List():load()
+local result, err = client:V1List():load({ api_key = "api_key" })
 ```
 
 ### Common Methods
@@ -322,7 +322,7 @@ local results, err = client:V1Lookup():list()
 Load a single entity matching the given criteria.
 
 ```lua
-local result, err = client:V1Lookup():load()
+local result, err = client:V1Lookup():load({ api_key = "api_key" })
 ```
 
 ### Common Methods
@@ -477,7 +477,7 @@ local results, err = client:V1Search():list()
 Load a single entity matching the given criteria.
 
 ```lua
-local result, err = client:V1Search():load()
+local result, err = client:V1Search():load({ api_key = "api_key" })
 ```
 
 ### Common Methods
@@ -529,7 +529,7 @@ local v2_list = client:V2List(nil)
 Load a single entity matching the given criteria.
 
 ```lua
-local result, err = client:V2List():load()
+local result, err = client:V2List():load({ id_artist = 1 })
 ```
 
 ### Common Methods

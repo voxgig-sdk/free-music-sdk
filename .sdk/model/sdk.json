@@ -6,9 +6,6 @@
     },
     "kit": {
       "config": {
-        "auth": {
-          "prefix": "Bearer"
-        },
         "docs_order": [
           "ts",
           "py",
@@ -3238,6 +3235,14 @@
           "url": "https://www.theaudiodb.com"
         },
         "description": "TheAudioDB provides a free music API to use in test or development environments. Access real-time music data including Artists, Albums, Songs, and Music Venues.",
+        "meta_source": "https://www.freepublicapis.com",
+        "security": {
+          "in": "header",
+          "name": "X-API-KEY",
+          "prefix": "",
+          "scheme": "ApiKeyAuth",
+          "type": "apiKey"
+        },
         "servers": [
           {
             "description": "V1 API Server",
@@ -3248,9 +3253,11 @@
             "url": "https://www.theaudiodb.com/api/v2/json"
           }
         ],
+        "summary": "TheAudioDB provides a free music API to use in test or development environments.",
         "termsOfService": "https://www.theaudiodb.com",
         "title": "Free Music API",
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "website": "https://theaudiodb.com"
       },
       "option": {},
       "target": {
@@ -3303,6 +3310,9 @@
           },
           "name": "go-cli",
           "phase": {
+            "agentguide": {
+              "active": false
+            },
             "entity": {
               "active": false
             },
@@ -3353,6 +3363,9 @@
           },
           "name": "go-mcp",
           "phase": {
+            "agentguide": {
+              "active": false
+            },
             "entity": {
               "active": false
             },

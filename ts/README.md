@@ -47,14 +47,17 @@ for (const v1list of v1lists) {
 }
 ```
 
-### 3. Load a v1list
+### 3. Load a v2list
 
+V2List is nested under id_artist, so provide the `id_artist`.
 `load()` returns the entity directly and throws on failure:
 
 ```ts
 try {
-  const v1list = await client.V1List().load()
-  console.log(v1list)
+  const v2list = await client.V2List().load({
+    id_artist: 1,
+  })
+  console.log(v2list)
 } catch (err) {
   console.error('load failed:', err)
 }
@@ -664,7 +667,7 @@ Create an instance: `const v1_list = client.V1List()`
 #### Example: Load
 
 ```ts
-const v1_list = await client.V1List().load()
+const v1_list = await client.V1List().load({ api_key: 'api_key' })
 ```
 
 #### Example: List
@@ -788,7 +791,7 @@ Create an instance: `const v1_lookup = client.V1Lookup()`
 #### Example: Load
 
 ```ts
-const v1_lookup = await client.V1Lookup().load()
+const v1_lookup = await client.V1Lookup().load({ api_key: 'api_key' })
 ```
 
 #### Example: List
@@ -913,7 +916,7 @@ Create an instance: `const v1_search = client.V1Search()`
 #### Example: Load
 
 ```ts
-const v1_search = await client.V1Search().load()
+const v1_search = await client.V1Search().load({ api_key: 'api_key' })
 ```
 
 #### Example: List
@@ -942,7 +945,7 @@ Create an instance: `const v2_list = client.V2List()`
 #### Example: Load
 
 ```ts
-const v2_list = await client.V2List().load()
+const v2_list = await client.V2List().load({ id_artist: 1 })
 ```
 
 

@@ -170,7 +170,7 @@ $results = $client->V1List()->list();
 Load a single entity matching the given criteria. Throws on error.
 
 ```php
-$result = $client->V1List()->load();
+$result = $client->V1List()->load(["api_key" => "api_key"]);
 ```
 
 ### Common Methods
@@ -324,7 +324,7 @@ $results = $client->V1Lookup()->list();
 Load a single entity matching the given criteria. Throws on error.
 
 ```php
-$result = $client->V1Lookup()->load();
+$result = $client->V1Lookup()->load(["api_key" => "api_key"]);
 ```
 
 ### Common Methods
@@ -479,7 +479,7 @@ $results = $client->V1Search()->list();
 Load a single entity matching the given criteria. Throws on error.
 
 ```php
-$result = $client->V1Search()->load();
+$result = $client->V1Search()->load(["api_key" => "api_key"]);
 ```
 
 ### Common Methods
@@ -531,7 +531,7 @@ $v2_list = $client->V2List();
 Load a single entity matching the given criteria. Throws on error.
 
 ```php
-$result = $client->V2List()->load();
+$result = $client->V2List()->load(["id_artist" => 1]);
 ```
 
 ### Common Methods

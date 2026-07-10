@@ -318,10 +318,10 @@ class V2Lookup
 /** Request payload for V2Lookup#load. */
 class V2LookupLoadMatch
 {
-    public int $id_album;
-    public int $id_artist;
-    public int $id_track;
-    public string $music_brainz_id;
+    public ?int $id_album = null;
+    public ?int $id_artist = null;
+    public ?int $id_track = null;
+    public ?string $music_brainz_id = null;
 }
 
 /** V2Search entity data model. */
@@ -335,8 +335,8 @@ class V2Search
 /** Request payload for V2Search#load. */
 class V2SearchLoadMatch
 {
-    public string $album_name;
-    public string $artist_name;
-    public string $track_name;
+    public ?string $album_name = null;
+    public ?string $artist_name = null;
+    public ?string $track_name = null;
 }
 

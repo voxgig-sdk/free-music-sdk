@@ -295,7 +295,7 @@ class V2Lookup(TypedDict, total=False):
     track: list
 
 
-class V2LookupLoadMatch(TypedDict):
+class V2LookupLoadMatch(TypedDict, total=False):
     id_album: int
     id_artist: int
     id_track: int
@@ -308,7 +308,7 @@ class V2Search(TypedDict, total=False):
     track: list
 
 
-class V2SearchLoadMatch(TypedDict):
+class V2SearchLoadMatch(TypedDict, total=False):
     album_name: str
     artist_name: str
     track_name: str

@@ -53,14 +53,15 @@ except Exception as err:
     print(f"list failed: {err}")
 ```
 
-### 3. Load a v1list
+### 3. Load a v2list
 
+V2List is nested under id_artist, so provide the `id_artist`.
 `load()` returns the bare record (a `dict`) and raises on error.
 
 ```python
 try:
-    v1list = client.V1List().load()
-    print(v1list)
+    v2list = client.V2List().load({"id_artist": 1})
+    print(v2list)
 except Exception as err:
     print(f"load failed: {err}")
 ```
@@ -619,7 +620,7 @@ Create an instance: `v1_list = client.V1List()`
 #### Example: Load
 
 ```python
-v1_list = client.V1List().load()
+v1_list = client.V1List().load({"api_key": "api_key"})
 ```
 
 #### Example: List
@@ -743,7 +744,7 @@ Create an instance: `v1_lookup = client.V1Lookup()`
 #### Example: Load
 
 ```python
-v1_lookup = client.V1Lookup().load()
+v1_lookup = client.V1Lookup().load({"api_key": "api_key"})
 ```
 
 #### Example: List
@@ -868,7 +869,7 @@ Create an instance: `v1_search = client.V1Search()`
 #### Example: Load
 
 ```python
-v1_search = client.V1Search().load()
+v1_search = client.V1Search().load({"api_key": "api_key"})
 ```
 
 #### Example: List
@@ -897,7 +898,7 @@ Create an instance: `v2_list = client.V2List()`
 #### Example: Load
 
 ```python
-v2_list = client.V2List().load()
+v2_list = client.V2List().load({"id_artist": 1})
 ```
 
 

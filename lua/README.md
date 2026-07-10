@@ -49,12 +49,14 @@ for _, item in ipairs(v1lists) do
 end
 ```
 
-### 3. Load a v1list
+### 3. Load a v2list
+
+V2List is nested under id_artist, so provide the `id_artist`.
 
 ```lua
-local v1list, err = client:V1List():load()
+local v2list, err = client:V2List():load({ id_artist = 1 })
 if err then error(err) end
-print(v1list)
+print(v2list)
 ```
 
 
@@ -604,7 +606,7 @@ Create an instance: `local v1_list = client:V1List(nil)`
 #### Example: Load
 
 ```lua
-local v1_list, err = client:V1List():load()
+local v1_list, err = client:V1List():load({ api_key = "api_key" })
 ```
 
 #### Example: List
@@ -728,7 +730,7 @@ Create an instance: `local v1_lookup = client:V1Lookup(nil)`
 #### Example: Load
 
 ```lua
-local v1_lookup, err = client:V1Lookup():load()
+local v1_lookup, err = client:V1Lookup():load({ api_key = "api_key" })
 ```
 
 #### Example: List
@@ -853,7 +855,7 @@ Create an instance: `local v1_search = client:V1Search(nil)`
 #### Example: Load
 
 ```lua
-local v1_search, err = client:V1Search():load()
+local v1_search, err = client:V1Search():load({ api_key = "api_key" })
 ```
 
 #### Example: List
@@ -882,7 +884,7 @@ Create an instance: `local v2_list = client:V2List(nil)`
 #### Example: Load
 
 ```lua
-local v2_list, err = client:V2List():load()
+local v2_list, err = client:V2List():load({ id_artist = 1 })
 ```
 
 

@@ -53,21 +53,21 @@ func main() {
         "apikey": os.Getenv("FREE_MUSIC_APIKEY"),
     })
 
-    // List v1list records — the value is the array of records itself.
-    v1lists, err := client.V1List(nil).List(nil, nil)
+    // List v1List records — the value is the array of records itself.
+    v1Lists, err := client.V1List(nil).List(nil, nil)
     if err != nil {
         panic(err)
     }
-    for _, item := range v1lists.([]any) {
+    for _, item := range v1Lists.([]any) {
         fmt.Println(item)
     }
 
-    // Load a single v1list — the value is the loaded record.
-    v1list, err := client.V1List(nil).Load(nil, nil)
+    // Load a single v1List — the value is the loaded record.
+    v1List, err := client.V1List(nil).Load(map[string]any{"api_key": "example_api_key"}, nil)
     if err != nil {
         panic(err)
     }
-    fmt.Println(v1list)
+    fmt.Println(v1List)
 }
 ```
 
@@ -147,13 +147,13 @@ Create a mock client for unit testing — no server required:
 ```go
 client := sdk.Test()
 
-v1list, err := client.V1List(nil).List(
+v1List, err := client.V1List(nil).List(
     nil, nil,
 )
 if err != nil {
     panic(err)
 }
-fmt.Println(v1list) // the returned mock data
+fmt.Println(v1List) // the returned mock data
 ```
 
 ### Use a custom fetch function
@@ -266,9 +266,9 @@ Check `err` first, then use the value directly (or the typed
 `...Typed` variants, which return the entity's model struct and a typed
 slice):
 
-    v1list, err := client.V1List(nil).List(map[string]any{/* fields */}, nil)
+    v1List, err := client.V1List(nil).List(map[string]any{/* fields */}, nil)
     if err != nil { /* handle */ }
-    // v1list is the returned record
+    // v1List is the returned record
 
 Only `Direct()` returns a response envelope — a `map[string]any` with
 `"ok"`, `"status"`, `"headers"`, and `"data"` keys.
@@ -575,7 +575,7 @@ API path: `/search/album/{albumName}`
 
 ### V1List
 
-Create an instance: `v1_list := client.V1List(nil)`
+Create an instance: `v1List := client.V1List(nil)`
 
 #### Operations
 
@@ -633,27 +633,27 @@ Create an instance: `v1_list := client.V1List(nil)`
 #### Example: Load
 
 ```go
-v1_list, err := client.V1List(nil).Load(nil, nil)
+v1List, err := client.V1List(nil).Load(map[string]any{"api_key": "api_key"}, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v1_list) // the loaded record
+fmt.Println(v1List) // the loaded record
 ```
 
 #### Example: List
 
 ```go
-v1_lists, err := client.V1List(nil).List(nil, nil)
+v1Lists, err := client.V1List(nil).List(nil, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v1_lists) // the array of records
+fmt.Println(v1Lists) // the array of records
 ```
 
 
 ### V1Lookup
 
-Create an instance: `v1_lookup := client.V1Lookup(nil)`
+Create an instance: `v1Lookup := client.V1Lookup(nil)`
 
 #### Operations
 
@@ -765,27 +765,27 @@ Create an instance: `v1_lookup := client.V1Lookup(nil)`
 #### Example: Load
 
 ```go
-v1_lookup, err := client.V1Lookup(nil).Load(nil, nil)
+v1Lookup, err := client.V1Lookup(nil).Load(map[string]any{"api_key": "api_key"}, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v1_lookup) // the loaded record
+fmt.Println(v1Lookup) // the loaded record
 ```
 
 #### Example: List
 
 ```go
-v1_lookups, err := client.V1Lookup(nil).List(nil, nil)
+v1Lookups, err := client.V1Lookup(nil).List(nil, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v1_lookups) // the array of records
+fmt.Println(v1Lookups) // the array of records
 ```
 
 
 ### V1Search
 
-Create an instance: `v1_search := client.V1Search(nil)`
+Create an instance: `v1Search := client.V1Search(nil)`
 
 #### Operations
 
@@ -898,27 +898,27 @@ Create an instance: `v1_search := client.V1Search(nil)`
 #### Example: Load
 
 ```go
-v1_search, err := client.V1Search(nil).Load(nil, nil)
+v1Search, err := client.V1Search(nil).Load(map[string]any{"api_key": "api_key"}, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v1_search) // the loaded record
+fmt.Println(v1Search) // the loaded record
 ```
 
 #### Example: List
 
 ```go
-v1_searchs, err := client.V1Search(nil).List(nil, nil)
+v1Searchs, err := client.V1Search(nil).List(nil, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v1_searchs) // the array of records
+fmt.Println(v1Searchs) // the array of records
 ```
 
 
 ### V2List
 
-Create an instance: `v2_list := client.V2List(nil)`
+Create an instance: `v2List := client.V2List(nil)`
 
 #### Operations
 
@@ -935,17 +935,17 @@ Create an instance: `v2_list := client.V2List(nil)`
 #### Example: Load
 
 ```go
-v2_list, err := client.V2List(nil).Load(nil, nil)
+v2List, err := client.V2List(nil).Load(map[string]any{"id_artist": 1}, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v2_list) // the loaded record
+fmt.Println(v2List) // the loaded record
 ```
 
 
 ### V2Lookup
 
-Create an instance: `v2_lookup := client.V2Lookup(nil)`
+Create an instance: `v2Lookup := client.V2Lookup(nil)`
 
 #### Operations
 
@@ -964,17 +964,17 @@ Create an instance: `v2_lookup := client.V2Lookup(nil)`
 #### Example: Load
 
 ```go
-v2_lookup, err := client.V2Lookup(nil).Load(nil, nil)
+v2Lookup, err := client.V2Lookup(nil).Load(nil, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v2_lookup) // the loaded record
+fmt.Println(v2Lookup) // the loaded record
 ```
 
 
 ### V2Search
 
-Create an instance: `v2_search := client.V2Search(nil)`
+Create an instance: `v2Search := client.V2Search(nil)`
 
 #### Operations
 
@@ -993,11 +993,11 @@ Create an instance: `v2_search := client.V2Search(nil)`
 #### Example: Load
 
 ```go
-v2_search, err := client.V2Search(nil).Load(nil, nil)
+v2Search, err := client.V2Search(nil).Load(nil, nil)
 if err != nil {
     panic(err)
 }
-fmt.Println(v2_search) // the loaded record
+fmt.Println(v2Search) // the loaded record
 ```
 
 

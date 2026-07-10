@@ -167,7 +167,7 @@ for v1_list in results:
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.V1List().load()
+result = client.V1List().load({"api_key": "api_key"})
 ```
 
 ### Common Methods
@@ -322,7 +322,7 @@ for v1_lookup in results:
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.V1Lookup().load()
+result = client.V1Lookup().load({"api_key": "api_key"})
 ```
 
 ### Common Methods
@@ -478,7 +478,7 @@ for v1_search in results:
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.V1Search().load()
+result = client.V1Search().load({"api_key": "api_key"})
 ```
 
 ### Common Methods
@@ -529,7 +529,7 @@ v2_list = client.V2List()
 Load a single entity matching the given criteria. Returns the entity data and raises on error.
 
 ```python
-result = client.V2List().load()
+result = client.V2List().load({"id_artist": 1})
 ```
 
 ### Common Methods

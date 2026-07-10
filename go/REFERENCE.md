@@ -111,7 +111,8 @@ same parameters as `Direct()`.
 ## V1ListEntity
 
 ```go
-v1_list := client.V1List(nil)
+v1List := client.V1List(nil)
+fmt.Println(v1List.GetName()) // "v1_list"
 ```
 
 ### Fields
@@ -168,6 +169,10 @@ List entities matching the given criteria. Returns an array.
 
 ```go
 results, err := client.V1List(nil).List(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(results)
 ```
 
 #### `Load(reqmatch, ctrl map[string]any) (any, error)`
@@ -175,7 +180,11 @@ results, err := client.V1List(nil).List(nil, nil)
 Load a single entity matching the given criteria.
 
 ```go
-result, err := client.V1List(nil).Load(nil, nil)
+result, err := client.V1List(nil).Load(map[string]any{"api_key": "api_key"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(result)
 ```
 
 ### Common Methods
@@ -205,7 +214,8 @@ Return the entity name.
 ## V1LookupEntity
 
 ```go
-v1_lookup := client.V1Lookup(nil)
+v1Lookup := client.V1Lookup(nil)
+fmt.Println(v1Lookup.GetName()) // "v1_lookup"
 ```
 
 ### Fields
@@ -316,6 +326,10 @@ List entities matching the given criteria. Returns an array.
 
 ```go
 results, err := client.V1Lookup(nil).List(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(results)
 ```
 
 #### `Load(reqmatch, ctrl map[string]any) (any, error)`
@@ -323,7 +337,11 @@ results, err := client.V1Lookup(nil).List(nil, nil)
 Load a single entity matching the given criteria.
 
 ```go
-result, err := client.V1Lookup(nil).Load(nil, nil)
+result, err := client.V1Lookup(nil).Load(map[string]any{"api_key": "api_key"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(result)
 ```
 
 ### Common Methods
@@ -353,7 +371,8 @@ Return the entity name.
 ## V1SearchEntity
 
 ```go
-v1_search := client.V1Search(nil)
+v1Search := client.V1Search(nil)
+fmt.Println(v1Search.GetName()) // "v1_search"
 ```
 
 ### Fields
@@ -465,6 +484,10 @@ List entities matching the given criteria. Returns an array.
 
 ```go
 results, err := client.V1Search(nil).List(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(results)
 ```
 
 #### `Load(reqmatch, ctrl map[string]any) (any, error)`
@@ -472,7 +495,11 @@ results, err := client.V1Search(nil).List(nil, nil)
 Load a single entity matching the given criteria.
 
 ```go
-result, err := client.V1Search(nil).Load(nil, nil)
+result, err := client.V1Search(nil).Load(map[string]any{"api_key": "api_key"}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(result)
 ```
 
 ### Common Methods
@@ -502,7 +529,8 @@ Return the entity name.
 ## V2ListEntity
 
 ```go
-v2_list := client.V2List(nil)
+v2List := client.V2List(nil)
+fmt.Println(v2List.GetName()) // "v2_list"
 ```
 
 ### Fields
@@ -518,7 +546,11 @@ v2_list := client.V2List(nil)
 Load a single entity matching the given criteria.
 
 ```go
-result, err := client.V2List(nil).Load(nil, nil)
+result, err := client.V2List(nil).Load(map[string]any{"id_artist": 1}, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(result)
 ```
 
 ### Common Methods
@@ -548,7 +580,8 @@ Return the entity name.
 ## V2LookupEntity
 
 ```go
-v2_lookup := client.V2Lookup(nil)
+v2Lookup := client.V2Lookup(nil)
+fmt.Println(v2Lookup.GetName()) // "v2_lookup"
 ```
 
 ### Fields
@@ -567,6 +600,10 @@ Load a single entity matching the given criteria.
 
 ```go
 result, err := client.V2Lookup(nil).Load(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(result)
 ```
 
 ### Common Methods
@@ -596,7 +633,8 @@ Return the entity name.
 ## V2SearchEntity
 
 ```go
-v2_search := client.V2Search(nil)
+v2Search := client.V2Search(nil)
+fmt.Println(v2Search.GetName()) // "v2_search"
 ```
 
 ### Fields
@@ -615,6 +653,10 @@ Load a single entity matching the given criteria.
 
 ```go
 result, err := client.V2Search(nil).Load(nil, nil)
+if err != nil {
+    panic(err)
+}
+fmt.Println(result)
 ```
 
 ### Common Methods

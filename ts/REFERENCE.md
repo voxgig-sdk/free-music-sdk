@@ -234,7 +234,7 @@ const results = await client.V1List().list()
 Load a single entity matching the given criteria.
 
 ```ts
-const result = await client.V1List().load()
+const result = await client.V1List().load({ api_key: 'api_key' })
 ```
 
 ### Common Methods
@@ -386,7 +386,7 @@ const results = await client.V1Lookup().list()
 Load a single entity matching the given criteria.
 
 ```ts
-const result = await client.V1Lookup().load()
+const result = await client.V1Lookup().load({ api_key: 'api_key' })
 ```
 
 ### Common Methods
@@ -539,7 +539,7 @@ const results = await client.V1Search().list()
 Load a single entity matching the given criteria.
 
 ```ts
-const result = await client.V1Search().load()
+const result = await client.V1Search().load({ api_key: 'api_key' })
 ```
 
 ### Common Methods
@@ -589,7 +589,7 @@ const v2_list = client.V2List()
 Load a single entity matching the given criteria.
 
 ```ts
-const result = await client.V2List().load()
+const result = await client.V2List().load({ id_artist: 1 })
 ```
 
 ### Common Methods

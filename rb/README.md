@@ -46,13 +46,15 @@ rescue => err
 end
 ```
 
-### 3. Load a v1list
+### 3. Load a v2list
+
+V2List is nested under id_artist, so provide the `id_artist`.
 
 ```ruby
 begin
-  # load returns the bare V1List record (raises on error).
-  v1list = client.V1List.load()
-  puts v1list
+  # load returns the bare V2List record (raises on error).
+  v2list = client.V2List.load({ "id_artist" => 1 })
+  puts v2list
 rescue => err
   warn "load failed: #{err}"
 end
@@ -613,7 +615,7 @@ Create an instance: `v1_list = client.V1List`
 
 ```ruby
 # load returns the bare V1List record (raises on error).
-v1_list = client.V1List.load()
+v1_list = client.V1List.load({ "api_key" => "api_key" })
 ```
 
 #### Example: List
@@ -739,7 +741,7 @@ Create an instance: `v1_lookup = client.V1Lookup`
 
 ```ruby
 # load returns the bare V1Lookup record (raises on error).
-v1_lookup = client.V1Lookup.load()
+v1_lookup = client.V1Lookup.load({ "api_key" => "api_key" })
 ```
 
 #### Example: List
@@ -866,7 +868,7 @@ Create an instance: `v1_search = client.V1Search`
 
 ```ruby
 # load returns the bare V1Search record (raises on error).
-v1_search = client.V1Search.load()
+v1_search = client.V1Search.load({ "api_key" => "api_key" })
 ```
 
 #### Example: List
@@ -897,7 +899,7 @@ Create an instance: `v2_list = client.V2List`
 
 ```ruby
 # load returns the bare V2List record (raises on error).
-v2_list = client.V2List.load()
+v2_list = client.V2List.load({ "id_artist" => 1 })
 ```
 
 
