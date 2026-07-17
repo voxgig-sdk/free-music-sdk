@@ -1,4 +1,4 @@
--- ProjectName SDK exists test
+-- FreeMusic SDK exists test
 
 local sdk = require("free-music_sdk")
 
