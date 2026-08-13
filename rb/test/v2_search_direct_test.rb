@@ -67,16 +67,16 @@ def v2_search_direct_setup(mockres)
   calls = []
 
   env = Runner.env_override({
-    "FREEMUSIC_TEST_V__SEARCH_ENTID" => {},
-    "FREEMUSIC_TEST_LIVE" => "FALSE",
-    "FREEMUSIC_APIKEY" => "NONE",
+    "FREE_MUSIC_TEST_V2_SEARCH_ENTID" => {},
+    "FREE_MUSIC_TEST_LIVE" => "FALSE",
+    "FREE_MUSIC_APIKEY" => "NONE",
   })
 
-  live = env["FREEMUSIC_TEST_LIVE"] == "TRUE"
+  live = env["FREE_MUSIC_TEST_LIVE"] == "TRUE"
 
   if live
     merged_opts = {
-      "apikey" => env["FREEMUSIC_APIKEY"],
+      "apikey" => env["FREE_MUSIC_APIKEY"],
     }
     client = FreeMusicSDK.new(merged_opts)
     return {

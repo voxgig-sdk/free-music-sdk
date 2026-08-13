@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# FreeMusic SDK exists test
 
 import pytest
 from freemusic_sdk import FreeMusicSDK

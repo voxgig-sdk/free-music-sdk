@@ -26,8 +26,8 @@ import {
 describe('V1LookupEntity', async () => {
 
   // Per-test live pacing. Delay is read from sdk-test-control.json's
-  // `test.live.delayMs`; only sleeps when FREEMUSIC_TEST_LIVE=TRUE.
-  afterEach(liveDelay('FREEMUSIC_TEST_LIVE'))
+  // `test.live.delayMs`; only sleeps when FREE_MUSIC_TEST_LIVE=TRUE.
+  afterEach(liveDelay('FREE_MUSIC_TEST_LIVE'))
 
   test('instance', async () => {
     const testsdk = FreeMusicSDK.test()
@@ -48,7 +48,7 @@ describe('V1LookupEntity', async () => {
     // fixture (entity TestData.json). Those don't exist on the live API.
     // Skip live runs unless the user provided a real ENTID env override.
     if (setup.syntheticOnly) {
-      t.skip('live entity test uses synthetic IDs from fixture — set FREE_MUSIC_TEST_V__LOOKUP_ENTID JSON to run live')
+      t.skip('live entity test uses synthetic IDs from fixture — set FREE_MUSIC_TEST_V1_LOOKUP_ENTID JSON to run live')
       return
     }
     const client = setup.client
@@ -64,7 +64,7 @@ describe('V1LookupEntity', async () => {
     const v1_lookup_ref01_match: any = {}
     v1_lookup_ref01_match['api_key'] = setup.idmap['api_key01']
 
-    const v1_lookup_ref01_list = await v1_lookup_ref01_ent.list(v1_lookup_ref01_match)
+    const v1_lookup_ref01_list = (await v1_lookup_ref01_ent.list(v1_lookup_ref01_match)).map((e: any) => e.data())
 
 
 
@@ -108,17 +108,17 @@ function basicSetup(extra?: any) {
   // basic flow consumes synthetic IDs from the fixture file; without an
   // override those synthetic IDs reach the live API and 4xx. Surface this
   // to the test so it can skip rather than fail.
-  const idmapEnvVal = process.env['FREE_MUSIC_TEST_V__LOOKUP_ENTID']
+  const idmapEnvVal = process.env['FREE_MUSIC_TEST_V1_LOOKUP_ENTID']
   const idmapOverridden = null != idmapEnvVal && idmapEnvVal.trim().startsWith('{')
 
   const env = envOverride({
-    'FREE_MUSIC_TEST_V__LOOKUP_ENTID': idmap,
+    'FREE_MUSIC_TEST_V1_LOOKUP_ENTID': idmap,
     'FREE_MUSIC_TEST_LIVE': 'FALSE',
     'FREE_MUSIC_TEST_EXPLAIN': 'FALSE',
     'FREE_MUSIC_APIKEY': 'NONE',
   })
 
-  idmap = env['FREE_MUSIC_TEST_V__LOOKUP_ENTID']
+  idmap = env['FREE_MUSIC_TEST_V1_LOOKUP_ENTID']
 
   const live = 'TRUE' === env.FREE_MUSIC_TEST_LIVE
 

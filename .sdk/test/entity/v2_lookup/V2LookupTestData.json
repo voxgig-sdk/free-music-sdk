@@ -3,7 +3,7 @@
     "v2_lookup": {
       "V2_LOOKUP00": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": [],
         "id_album": "ID_ALBUM01",
         "id_artist": "ID_ARTIST01",
@@ -13,7 +13,7 @@
       },
       "V2_LOOKUP01": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": [],
         "id_album": "ID_ALBUM01",
         "id_artist": "ID_ARTIST01",
@@ -23,7 +23,7 @@
       },
       "V2_LOOKUP02": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": [],
         "id_album": "ID_ALBUM01",
         "id_artist": "ID_ARTIST01",
@@ -37,7 +37,7 @@
     "v2_lookup": {
       "v2_lookup_ref01": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": []
       }
     }

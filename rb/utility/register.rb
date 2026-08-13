@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ FreeMusicUtility.registrar = ->(u) {
   u.prepare_params = FreeMusicUtilities::PrepareParams
   u.prepare_path = FreeMusicUtilities::PreparePath
   u.prepare_query = FreeMusicUtilities::PrepareQuery
+  u.graphql_body = FreeMusicUtilities::GraphqlBody
+  u.graphql_errors = FreeMusicUtilities::GraphqlErrors
   u.result_basic = FreeMusicUtilities::ResultBasic
   u.result_body = FreeMusicUtilities::ResultBody
   u.result_headers = FreeMusicUtilities::ResultHeaders

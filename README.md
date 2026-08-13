@@ -23,7 +23,7 @@ support (`list`, `load`):
 
 ```ts
 const client = new FreeMusicSDK()
-const items = await client.V1List().list()
+const items = await client.V1List().list({ api_key: "example" })
 ```
 
 Thinking in entities keeps the mental model small — for people and AI agents alike —
@@ -38,18 +38,27 @@ network, and no credentials:
 ### TypeScript
 
 ```ts
-const client = FreeMusicSDK.test()
-const v1lists = await client.V1List().list()
-// v1lists is an array of bare V1List records populated with mock data
-console.log(v1lists)
+// The offline mock starts EMPTY — seed it with the records the test needs.
+// Shape: { entity: { <entity-name>: { <id>: <record> } } }
+const client = FreeMusicSDK.test({
+  entity: {
+    v2_lookup: {
+      test01: { id: 'test01' },
+    },
+  },
+})
+const v2lookup = await client.V2Lookup().load()
+// v2lookup is the V2Lookup entity, populated with mock data
+// — call v2lookup.data() for the record itself
+console.log(v2lookup)
 ```
 
 ### Python
 
 ```python
 client = FreeMusicSDK.test()
-v1lists = client.V1List().list()
-print(v1lists)
+v2lookup = client.V2Lookup().load()
+print(v2lookup)
 ```
 
 ### PHP
@@ -57,16 +66,16 @@ print(v1lists)
 ```php
 // Seed fixture data so offline calls resolve without a live server.
 $client = FreeMusicSDK::test([
-    "entity" => ["v1list" => ["test01" => []]],
+    "entity" => ["v2lookup" => ["test01" => []]],
 ]);
-$v1lists = $client->V1List()->list();
+$v2lookup = $client->V2Lookup()->load();
 ```
 
 ### Golang
 
 ```go
 client := sdk.Test()
-result, err := client.V1List(nil).List(
+result, err := client.V2Lookup(nil).Load(
     nil, nil,
 )
 ```
@@ -76,16 +85,16 @@ result, err := client.V1List(nil).List(
 ```ruby
 # Seed fixture data so offline calls resolve without a live server.
 client = FreeMusicSDK.test({
-  "entity" => { "v1list" => { "test01" => {} } },
+  "entity" => { "v2lookup" => { "test01" => {} } },
 })
-v1lists = client.V1List.list()
+v2lookup = client.V2Lookup.load()
 ```
 
 ### Lua
 
 ```lua
 local client = sdk.test()
-local results, err = client:V1List():list()
+local result, err = client:V2Lookup():load()
 ```
 
 ## Packages
@@ -112,8 +121,8 @@ const client = new FreeMusicSDK({
   apikey: process.env.FREE_MUSIC_APIKEY,
 })
 
-// List all v1lists (returns V1List[])
-const v1lists = await client.V1List().list()
+// List all v1lists (returns V1ListEntity[] — .data() for the record)
+const v1lists = await client.V1List().list({ api_key: "example" })
 for (const v1list of v1lists) {
   console.log(v1list)
 }
@@ -186,7 +195,7 @@ client = FreeMusicSDK({
 })
 
 # List all v1lists (returns a list, raises on error)
-v1lists = client.V1List().list()
+v1lists = client.V1List().list({"api_key": "example"})
 for v1list in v1lists:
     print(v1list)
 
@@ -209,7 +218,7 @@ $client = new FreeMusicSDK([
 $v1lists = $client->V1List()->list();
 print_r($v1lists);
 
-// Load a specific v1list (returns the bare record; throws on error)
+// Load a specific v1list (returns the ENTITY; call data_get() for the record; throws on error)
 $v1list = $client->V1List()->load(["api_key" => "example_api_key"]);
 print_r($v1list);
 ```
@@ -253,7 +262,7 @@ client = FreeMusicSDK.new({
 v1lists = client.V1List.list
 puts v1lists
 
-# Load a specific v1list (returns the bare record; raises on error)
+# Load a specific v1list (returns the ENTITY; call data_get for the record)
 v1list = client.V1List.load({ "api_key" => "example_api_key" })
 puts v1list
 ```
@@ -392,6 +401,9 @@ Pass custom features via the `extend` option at construction time.
 
 This SDK is generated from the upstream OpenAPI specification. It is an
 unofficial client and is not affiliated with the API provider.
+
+The OpenAPI spec(s) this SDK was generated from are kept in the
+[`.sdk/def/`](.sdk/def/) folder.
 
 - Upstream API: [https://www.theaudiodb.com](https://www.theaudiodb.com)
 

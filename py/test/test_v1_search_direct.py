@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from freemusic_sdk.utility.voxgig_struct import voxgig_struct as vs
 from freemusic_sdk import FreeMusicSDK
-from core import helpers
+from freemusic_sdk.core import helpers
 from test import runner
 
 
@@ -117,16 +117,16 @@ def _v1_search_direct_setup(mockres):
     calls = []
 
     env = runner.env_override({
-        "FREEMUSIC_TEST_V__SEARCH_ENTID": {},
-        "FREEMUSIC_TEST_LIVE": "FALSE",
-        "FREEMUSIC_APIKEY": "NONE",
+        "FREE_MUSIC_TEST_V1_SEARCH_ENTID": {},
+        "FREE_MUSIC_TEST_LIVE": "FALSE",
+        "FREE_MUSIC_APIKEY": "NONE",
     })
 
-    live = env.get("FREEMUSIC_TEST_LIVE") == "TRUE"
+    live = env.get("FREE_MUSIC_TEST_LIVE") == "TRUE"
 
     if live:
         merged_opts = {
-            "apikey": env.get("FREEMUSIC_APIKEY"),
+            "apikey": env.get("FREE_MUSIC_APIKEY"),
         }
         client = FreeMusicSDK(merged_opts)
         return {

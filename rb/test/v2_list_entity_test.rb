@@ -26,7 +26,7 @@ class V2ListEntityTest < Minitest::Test
     # The basic flow consumes synthetic IDs from the fixture. In live mode
     # without an *_ENTID env override, those IDs hit the live API and 4xx.
     if setup[:synthetic_only]
-      skip "live entity test uses synthetic IDs from fixture — set FREEMUSIC_TEST_V__LIST_ENTID JSON to run live"
+      skip "live entity test uses synthetic IDs from fixture — set FREE_MUSIC_TEST_V2_LIST_ENTID JSON to run live"
       return
     end
     client = setup[:client]
@@ -74,39 +74,39 @@ def v2_list_basic_setup(extra)
   # Detect ENTID env override before envOverride consumes it. When live
   # mode is on without a real override, the basic test runs against synthetic
   # IDs from the fixture and 4xx's. Surface this so the test can skip.
-  entid_env_raw = ENV["FREEMUSIC_TEST_V__LIST_ENTID"]
+  entid_env_raw = ENV["FREE_MUSIC_TEST_V2_LIST_ENTID"]
   idmap_overridden = !entid_env_raw.nil? && entid_env_raw.strip.start_with?("{")
 
   env = Runner.env_override({
-    "FREEMUSIC_TEST_V__LIST_ENTID" => idmap,
-    "FREEMUSIC_TEST_LIVE" => "FALSE",
-    "FREEMUSIC_TEST_EXPLAIN" => "FALSE",
-    "FREEMUSIC_APIKEY" => "NONE",
+    "FREE_MUSIC_TEST_V2_LIST_ENTID" => idmap,
+    "FREE_MUSIC_TEST_LIVE" => "FALSE",
+    "FREE_MUSIC_TEST_EXPLAIN" => "FALSE",
+    "FREE_MUSIC_APIKEY" => "NONE",
   })
 
   idmap_resolved = Helpers.to_map(
-    env["FREEMUSIC_TEST_V__LIST_ENTID"])
+    env["FREE_MUSIC_TEST_V2_LIST_ENTID"])
   if idmap_resolved.nil?
     idmap_resolved = Helpers.to_map(idmap)
   end
 
-  if env["FREEMUSIC_TEST_LIVE"] == "TRUE"
+  if env["FREE_MUSIC_TEST_LIVE"] == "TRUE"
     merged_opts = Vs.merge([
       {
-        "apikey" => env["FREEMUSIC_APIKEY"],
+        "apikey" => env["FREE_MUSIC_APIKEY"],
       },
       extra || {},
     ])
     client = FreeMusicSDK.new(Helpers.to_map(merged_opts))
   end
 
-  live = env["FREEMUSIC_TEST_LIVE"] == "TRUE"
+  live = env["FREE_MUSIC_TEST_LIVE"] == "TRUE"
   {
     client: client,
     data: entity_data,
     idmap: idmap_resolved,
     env: env,
-    explain: env["FREEMUSIC_TEST_EXPLAIN"] == "TRUE",
+    explain: env["FREE_MUSIC_TEST_EXPLAIN"] == "TRUE",
     live: live,
     synthetic_only: live && !idmap_overridden,
     now: (Time.now.to_f * 1000).to_i,

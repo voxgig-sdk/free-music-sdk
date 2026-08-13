@@ -11,7 +11,7 @@ main: kit: entity: v2_lookup: {
       type: "`$ARRAY`"
     }
     {
-      name: "artist"
+      name: "artists"
       req: false
       type: "`$ARRAY`"
     }

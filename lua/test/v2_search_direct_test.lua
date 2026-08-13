@@ -68,16 +68,16 @@ function v2_search_direct_setup(mockres)
   local calls = {}
 
   local env = runner.env_override({
-    ["FREEMUSIC_TEST_V__SEARCH_ENTID"] = {},
-    ["FREEMUSIC_TEST_LIVE"] = "FALSE",
-    ["FREEMUSIC_APIKEY"] = "NONE",
+    ["FREE_MUSIC_TEST_V2_SEARCH_ENTID"] = {},
+    ["FREE_MUSIC_TEST_LIVE"] = "FALSE",
+    ["FREE_MUSIC_APIKEY"] = "NONE",
   })
 
-  local live = env["FREEMUSIC_TEST_LIVE"] == "TRUE"
+  local live = env["FREE_MUSIC_TEST_LIVE"] == "TRUE"
 
   if live then
     local merged_opts = {
-      apikey = env["FREEMUSIC_APIKEY"],
+      apikey = env["FREE_MUSIC_APIKEY"],
     }
     local client = sdk.new(merged_opts)
     return {

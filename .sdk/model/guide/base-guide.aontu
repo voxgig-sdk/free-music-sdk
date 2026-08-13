@@ -17,6 +17,7 @@ guide: {
     path: "/{apiKey}/mvid.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.mvids`")|top
     }
     path: "/{apiKey}/track-top10-mb.php": {
       rename: param: "apiKey": *"api_key"
@@ -25,10 +26,12 @@ guide: {
     path: "/{apiKey}/track-top10.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.track`")|top
     }
     path: "/{apiKey}/trending.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.trending`")|top
     }
   }
 
@@ -40,6 +43,7 @@ guide: {
     path: "/{apiKey}/album.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.album`")|top
     }
     path: "/{apiKey}/artist-mb.php": {
       rename: param: "apiKey": *"api_key"
@@ -52,6 +56,7 @@ guide: {
     path: "/{apiKey}/artist.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.artists`")|top
     }
     path: "/{apiKey}/track-mb.php": {
       rename: param: "apiKey": *"api_key"
@@ -60,6 +65,7 @@ guide: {
     path: "/{apiKey}/track.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.track`")|top
     }
   }
 
@@ -71,18 +77,22 @@ guide: {
     path: "/{apiKey}/discography.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.album`")|top
     }
     path: "/{apiKey}/search.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.artists`")|top
     }
     path: "/{apiKey}/searchalbum.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.album`")|top
     }
     path: "/{apiKey}/searchtrack.php": {
       rename: param: "apiKey": *"api_key"
       op: list: method: *GET
+      op: list: transform: res: *("`body.track`")|top
     }
   }
 

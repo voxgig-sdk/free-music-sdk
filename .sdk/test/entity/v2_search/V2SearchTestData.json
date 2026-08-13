@@ -3,7 +3,7 @@
     "v2_search": {
       "V2_SEARCH00": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": [],
         "album_name": "ALBUM_NAME01",
         "artist_name": "ARTIST_NAME01",
@@ -12,7 +12,7 @@
       },
       "V2_SEARCH01": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": [],
         "album_name": "ALBUM_NAME01",
         "artist_name": "ARTIST_NAME01",
@@ -21,7 +21,7 @@
       },
       "V2_SEARCH02": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": [],
         "album_name": "ALBUM_NAME01",
         "artist_name": "ARTIST_NAME01",
@@ -34,7 +34,7 @@
     "v2_search": {
       "v2_search_ref01": {
         "album": [],
-        "artist": [],
+        "artists": [],
         "track": []
       }
     }
