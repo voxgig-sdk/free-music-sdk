@@ -73,7 +73,7 @@ Entity operations raise on failure, so wrap them in `try` / `except`:
 
 ```python
 try:
-    v2lookup = client.V2Lookup().load()
+    v2lookup = client.V2Lookup().load({"id_album": 1})
     print(v2lookup)
 except Exception as err:
     print(f"load failed: {err}")
@@ -142,7 +142,7 @@ client = FreeMusicSDK.test()
 
 # Entity ops return the ENTITY and raises on error;
 # call data_get() for the record.
-v2lookup = client.V2Lookup().load()
+v2lookup = client.V2Lookup().load({"id_album": 1})
 # v2lookup contains the mock response record
 ```
 
@@ -924,7 +924,7 @@ Create an instance: `v2_lookup = client.V2Lookup()`
 #### Example: Load
 
 ```python
-v2_lookup = client.V2Lookup().load()
+v2_lookup = client.V2Lookup().load({"id_album": 1})
 ```
 
 
@@ -949,7 +949,7 @@ Create an instance: `v2_search = client.V2Search()`
 #### Example: Load
 
 ```python
-v2_search = client.V2Search().load()
+v2_search = client.V2Search().load({"album_name": "album_name"})
 ```
 
 
@@ -1029,7 +1029,7 @@ stores the returned data and match criteria internally.
 
 ```python
 v2lookup = client.V2Lookup()
-v2lookup.load()
+v2lookup.load({"id_album": 1})
 
 # v2lookup.data_get() now returns the v2lookup data from the last load
 # v2lookup.match_get() returns the last match criteria

@@ -1043,21 +1043,9 @@ V2Lookup = Struct.new(
 # Request payload for V2Lookup#load.
 #
 # @!attribute [rw] id_album
-#   @return [Integer, nil]
-#
-# @!attribute [rw] id_artist
-#   @return [Integer, nil]
-#
-# @!attribute [rw] id_track
-#   @return [Integer, nil]
-#
-# @!attribute [rw] music_brainz_id
-#   @return [String, nil]
+#   @return [Integer]
 V2LookupLoadMatch = Struct.new(
   :id_album,
-  :id_artist,
-  :id_track,
-  :music_brainz_id,
   keyword_init: true
 )
 
@@ -1081,17 +1069,9 @@ V2Search = Struct.new(
 # Request payload for V2Search#load.
 #
 # @!attribute [rw] album_name
-#   @return [String, nil]
-#
-# @!attribute [rw] artist_name
-#   @return [String, nil]
-#
-# @!attribute [rw] track_name
-#   @return [String, nil]
+#   @return [String]
 V2SearchLoadMatch = Struct.new(
   :album_name,
-  :artist_name,
-  :track_name,
   keyword_init: true
 )
 

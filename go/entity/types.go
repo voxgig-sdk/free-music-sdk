@@ -305,10 +305,7 @@ type V2Lookup struct {
 
 // V2LookupLoadMatch is the typed request payload for V2Lookup.LoadTyped.
 type V2LookupLoadMatch struct {
-	IdAlbum *int `json:"id_album,omitempty"`
-	IdArtist *int `json:"id_artist,omitempty"`
-	IdTrack *int `json:"id_track,omitempty"`
-	MusicBrainzId *string `json:"music_brainz_id,omitempty"`
+	IdAlbum int `json:"id_album"`
 }
 
 // V2Search is the typed data model for the v2_search entity.
@@ -320,9 +317,7 @@ type V2Search struct {
 
 // V2SearchLoadMatch is the typed request payload for V2Search.LoadTyped.
 type V2SearchLoadMatch struct {
-	AlbumName *string `json:"album_name,omitempty"`
-	ArtistName *string `json:"artist_name,omitempty"`
-	TrackName *string `json:"track_name,omitempty"`
+	AlbumName string `json:"album_name"`
 }
 
 // asMap turns a typed request/data struct into the map[string]any the

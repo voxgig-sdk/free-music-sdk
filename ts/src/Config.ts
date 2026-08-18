@@ -36,7 +36,7 @@ class Config {
 
 
   options = {
-    base: 'https://www.theaudiodb.com/api/v1/json',
+    base: "https://www.theaudiodb.com/api/v1/json",
 
     auth: {
       prefix: '',
@@ -74,291 +74,168 @@ class Config {
     "v1_list": {
       "fields": [
         {
-          "active": true,
           "name": "idAlbum",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 0
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idArtist",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 1
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idIMVDB",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 2
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idLyric",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 3
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idTrack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 4
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intCD",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 5
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intDuration",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 6
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intLoved",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 7
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidComments",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 8
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidDislikes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 9
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidFavorites",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 10
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidLikes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 11
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidViews",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 12
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intScore",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 13
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intScoreVotes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 14
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTotalListeners",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 15
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTotalPlays",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 16
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTrackNumber",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 17
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 18
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtist",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 19
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistAlternate",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 20
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDescriptionEN",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 21
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGenre",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 22
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLocked",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 23
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMood",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 24
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzAlbumID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 25
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzArtistID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 26
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 27
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVid",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 28
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidCompany",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 29
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidDirector",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 30
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen1",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 31
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen2",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 32
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 33
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strStyle",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 34
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTheme",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 35
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 36
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrack3x3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 37
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrackLyrics",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 38
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrackThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 39
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "trending",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 40
+          "type": "`$ARRAY`"
         }
       ],
       "name": "v1_list",
@@ -368,22 +245,18 @@ class Config {
           "name": "list",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": "us",
                     "kind": "query",
                     "name": "country",
@@ -392,7 +265,6 @@ class Config {
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "format",
                     "orig": "format",
@@ -400,7 +272,6 @@ class Config {
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "type",
                     "orig": "type",
@@ -432,26 +303,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.trending`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "i",
                     "orig": "i",
@@ -481,26 +347,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.mvids`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": "coldplay",
                     "kind": "query",
                     "name": "s",
@@ -531,33 +392,27 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.track`"
-              },
-              "index$": 2
+              }
             }
-          ],
-          "key$": "list"
+          ]
         },
         "load": {
           "input": "data",
           "name": "load",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "format",
                     "orig": "format",
@@ -587,26 +442,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "i",
                     "orig": "i",
@@ -636,26 +486,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "s",
                     "orig": "s",
@@ -685,11 +530,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 2
+              }
             }
-          ],
-          "key$": "load"
+          ]
         }
       },
       "relations": {
@@ -699,669 +542,384 @@ class Config {
     "v1_lookup": {
       "fields": [
         {
-          "active": true,
           "name": "idAlbum",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 0
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idArtist",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 1
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idIMVDB",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 2
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idLabel",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 3
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idLyric",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 4
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idTrack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 5
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intBornYear",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 6
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intCD",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 7
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intCharted",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 8
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intDiedYear",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 9
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intDuration",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 10
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intFormedYear",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 11
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intLoved",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 12
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMembers",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 13
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidComments",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 14
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidDislikes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 15
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidFavorites",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 16
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidLikes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 17
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidViews",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 18
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intSales",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 19
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intScore",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 20
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intScoreVotes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 21
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTotalListeners",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 22
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTotalPlays",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 23
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTrackNumber",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 24
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intYearReleased",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 25
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 26
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DCase",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 27
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DFace",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 28
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DFlat",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 29
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 30
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumCDart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 31
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumSpine",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 32
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumStripped",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 33
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 34
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumThumbBack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 35
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumThumbHQ",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 36
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAllMusicID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 37
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAmazonID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 38
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtist",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 39
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistAlternate",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 40
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistBanner",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 41
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistClearart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 42
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistCutout",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 43
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 44
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart2",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 45
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 46
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart4",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 47
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistLogo",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 48
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistStripped",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 49
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 50
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistWideThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 51
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strBBCReviewID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 52
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strBiographyEN",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 53
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strCountry",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 54
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strCountryCode",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 55
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDescriptionEN",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 56
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDisbanded",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 57
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDiscogsID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 58
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strFacebook",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 59
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGender",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 60
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGeniusID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 61
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGenre",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 62
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strISNIcode",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 63
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strItunesID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 64
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLabel",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 65
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLastFMChart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 66
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLocation",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 67
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLocked",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 68
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLyricWikiID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 69
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMood",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 70
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzAlbumID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 71
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzArtistID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 72
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 73
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicMozID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 74
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVid",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 75
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidCompany",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 76
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidDirector",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 77
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen1",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 78
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen2",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 79
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 80
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strRateYourMusicID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 81
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strReleaseFormat",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 82
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strReview",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 83
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strSpeed",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 84
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strStyle",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 85
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTheme",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 86
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 87
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrack3x3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 88
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrackLyrics",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 89
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrackThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 90
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTwitter",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 91
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strWebsite",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 92
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strWikidataID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 93
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strWikipediaID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 94
+          "type": "`$STRING`"
         }
       ],
       "name": "v1_lookup",
@@ -1371,34 +929,27 @@ class Config {
           "name": "list",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "h",
                     "orig": "h",
-                    "reqd": false,
                     "type": "`$INTEGER`"
                   },
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "m",
                     "orig": "m",
-                    "reqd": false,
                     "type": "`$INTEGER`"
                   }
                 ]
@@ -1425,39 +976,31 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.track`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "i",
                     "orig": "i",
-                    "reqd": false,
                     "type": "`$INTEGER`"
                   },
                   {
-                    "active": true,
                     "example": 2115888,
                     "kind": "query",
                     "name": "m",
                     "orig": "m",
-                    "reqd": false,
                     "type": "`$INTEGER`"
                   }
                 ]
@@ -1484,26 +1027,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.album`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": 112024,
                     "kind": "query",
                     "name": "i",
@@ -1534,33 +1072,27 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.artists`"
-              },
-              "index$": 2
+              }
             }
-          ],
-          "key$": "list"
+          ]
         },
         "load": {
           "input": "data",
           "name": "load",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "i",
                     "orig": "i",
@@ -1590,26 +1122,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
                     "kind": "query",
                     "name": "i",
@@ -1640,26 +1167,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "i",
                     "orig": "i",
@@ -1689,26 +1211,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 2
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "i",
                     "orig": "i",
@@ -1738,11 +1255,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 3
+              }
             }
-          ],
-          "key$": "load"
+          ]
         }
       },
       "relations": {
@@ -1752,676 +1267,388 @@ class Config {
     "v1_search": {
       "fields": [
         {
-          "active": true,
           "name": "album",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 0
+          "type": "`$ARRAY`"
         },
         {
-          "active": true,
           "name": "idAlbum",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 1
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idArtist",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 2
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idIMVDB",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 3
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idLabel",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 4
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idLyric",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 5
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "idTrack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 6
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intBornYear",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 7
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intCD",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 8
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intCharted",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 9
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intDiedYear",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 10
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intDuration",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 11
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intFormedYear",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 12
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intLoved",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 13
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMembers",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 14
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidComments",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 15
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidDislikes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 16
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidFavorites",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 17
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidLikes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 18
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intMusicVidViews",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 19
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intSales",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 20
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intScore",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 21
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intScoreVotes",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 22
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTotalListeners",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 23
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTotalPlays",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 24
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intTrackNumber",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 25
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "intYearReleased",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 26
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 27
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DCase",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 28
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DFace",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 29
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DFlat",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 30
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbum3DThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 31
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumCDart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 32
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumSpine",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 33
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumStripped",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 34
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 35
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumThumbBack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 36
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAlbumThumbHQ",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 37
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAllMusicID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 38
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strAmazonID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 39
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtist",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 40
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistAlternate",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 41
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistBanner",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 42
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistClearart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 43
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistCutout",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 44
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 45
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart2",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 46
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 47
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistFanart4",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 48
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistLogo",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 49
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistStripped",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 50
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 51
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strArtistWideThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 52
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strBBCReviewID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 53
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strBiographyEN",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 54
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strCountry",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 55
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strCountryCode",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 56
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDescriptionEN",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 57
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDisbanded",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 58
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strDiscogsID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 59
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strFacebook",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 60
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGender",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 61
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGeniusID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 62
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strGenre",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 63
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strISNIcode",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 64
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strItunesID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 65
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLabel",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 66
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLastFMChart",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 67
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLocation",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 68
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLocked",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 69
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strLyricWikiID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 70
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMood",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 71
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzAlbumID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 72
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzArtistID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 73
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicBrainzID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 74
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicMozID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 75
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVid",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 76
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidCompany",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 77
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidDirector",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 78
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen1",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 79
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen2",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 80
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strMusicVidScreen3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 81
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strRateYourMusicID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 82
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strReleaseFormat",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 83
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strReview",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 84
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strSpeed",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 85
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strStyle",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 86
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTheme",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 87
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrack",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 88
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrack3x3",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 89
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrackLyrics",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 90
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTrackThumb",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 91
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strTwitter",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 92
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strWebsite",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 93
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strWikidataID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 94
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "strWikipediaID",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 95
+          "type": "`$STRING`"
         }
       ],
       "name": "v1_search",
@@ -2431,31 +1658,25 @@ class Config {
           "name": "list",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": "Homework",
                     "kind": "query",
                     "name": "a",
                     "orig": "a",
-                    "reqd": false,
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": "daft_punk",
                     "kind": "query",
                     "name": "s",
@@ -2487,26 +1708,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.album`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": "coldplay",
                     "kind": "query",
                     "name": "s",
@@ -2515,7 +1731,6 @@ class Config {
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": "yellow",
                     "kind": "query",
                     "name": "t",
@@ -2547,26 +1762,21 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.track`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "s",
                     "orig": "s",
@@ -2596,27 +1806,22 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.album`"
-              },
-              "index$": 2
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "123",
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "example": "coldplay",
                     "kind": "query",
                     "name": "s",
@@ -2647,33 +1852,27 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.artists`"
-              },
-              "index$": 3
+              }
             }
-          ],
-          "key$": "list"
+          ]
         },
         "load": {
           "input": "data",
           "name": "load",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "kind": "param",
                     "name": "api_key",
                     "orig": "api_key",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ],
                 "query": [
                   {
-                    "active": true,
                     "kind": "query",
                     "name": "s",
                     "orig": "s",
@@ -2703,11 +1902,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 0
+              }
             }
-          ],
-          "key$": "load"
+          ]
         }
       },
       "relations": {
@@ -2717,11 +1914,8 @@ class Config {
     "v2_list": {
       "fields": [
         {
-          "active": true,
           "name": "album",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 0
+          "type": "`$ARRAY`"
         }
       ],
       "name": "v2_list",
@@ -2731,18 +1925,15 @@ class Config {
           "name": "load",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": 111239,
                     "kind": "param",
                     "name": "id_artist",
                     "orig": "id_artist",
                     "reqd": true,
-                    "type": "`$INTEGER`",
-                    "index$": 0
+                    "type": "`$INTEGER`"
                   }
                 ]
               },
@@ -2767,11 +1958,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 0
+              }
             }
-          ],
-          "key$": "load"
+          ]
         }
       },
       "relations": {
@@ -2785,25 +1974,16 @@ class Config {
     "v2_lookup": {
       "fields": [
         {
-          "active": true,
           "name": "album",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 0
+          "type": "`$ARRAY`"
         },
         {
-          "active": true,
           "name": "artists",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 1
+          "type": "`$ARRAY`"
         },
         {
-          "active": true,
           "name": "track",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 2
+          "type": "`$ARRAY`"
         }
       ],
       "name": "v2_lookup",
@@ -2813,18 +1993,15 @@ class Config {
           "name": "load",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": 2109615,
                     "kind": "param",
                     "name": "id_album",
                     "orig": "id_album",
                     "reqd": true,
-                    "type": "`$INTEGER`",
-                    "index$": 0
+                    "type": "`$INTEGER`"
                   }
                 ]
               },
@@ -2849,22 +2026,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": 111239,
                     "kind": "param",
                     "name": "id_artist",
                     "orig": "id_artist",
                     "reqd": true,
-                    "type": "`$INTEGER`",
-                    "index$": 0
+                    "type": "`$INTEGER`"
                   }
                 ]
               },
@@ -2889,22 +2062,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": 32724183,
                     "kind": "param",
                     "name": "id_track",
                     "orig": "id_track",
                     "reqd": true,
-                    "type": "`$INTEGER`",
-                    "index$": 0
+                    "type": "`$INTEGER`"
                   }
                 ]
               },
@@ -2929,22 +2098,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 2
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "1dc4c347-a1db-32aa-b14f-bc9cc507b843",
                     "kind": "param",
                     "name": "music_brainz_id",
                     "orig": "music_brainz_id",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ]
               },
@@ -2969,22 +2134,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 3
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
                     "kind": "param",
                     "name": "music_brainz_id",
                     "orig": "music_brainz_id",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ]
               },
@@ -3009,22 +2170,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 4
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "50369905-68ca-48d2-912d-b37330ff7dc3",
                     "kind": "param",
                     "name": "music_brainz_id",
                     "orig": "music_brainz_id",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ]
               },
@@ -3049,11 +2206,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 5
+              }
             }
-          ],
-          "key$": "load"
+          ]
         }
       },
       "relations": {
@@ -3082,25 +2237,16 @@ class Config {
     "v2_search": {
       "fields": [
         {
-          "active": true,
           "name": "album",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 0
+          "type": "`$ARRAY`"
         },
         {
-          "active": true,
           "name": "artists",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 1
+          "type": "`$ARRAY`"
         },
         {
-          "active": true,
           "name": "track",
-          "req": false,
-          "type": "`$ARRAY`",
-          "index$": 2
+          "type": "`$ARRAY`"
         }
       ],
       "name": "v2_search",
@@ -3110,18 +2256,15 @@ class Config {
           "name": "load",
           "points": [
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "parachutes",
                     "kind": "param",
                     "name": "album_name",
                     "orig": "album_name",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ]
               },
@@ -3146,22 +2289,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 0
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "coldplay",
                     "kind": "param",
                     "name": "artist_name",
                     "orig": "artist_name",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ]
               },
@@ -3186,22 +2325,18 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 1
+              }
             },
             {
-              "active": true,
               "args": {
                 "params": [
                   {
-                    "active": true,
                     "example": "yellow",
                     "kind": "param",
                     "name": "track_name",
                     "orig": "track_name",
                     "reqd": true,
-                    "type": "`$STRING`",
-                    "index$": 0
+                    "type": "`$STRING`"
                   }
                 ]
               },
@@ -3226,11 +2361,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body`"
-              },
-              "index$": 2
+              }
             }
-          ],
-          "key$": "load"
+          ]
         }
       },
       "relations": {

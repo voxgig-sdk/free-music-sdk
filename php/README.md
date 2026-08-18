@@ -69,7 +69,7 @@ Entity operations throw a `\Throwable` on failure, so wrap them in
 
 ```php
 try {
-    $v2lookup = $client->V2Lookup()->load();
+    $v2lookup = $client->V2Lookup()->load(["id_album" => 1]);
 } catch (\Throwable $err) {
     echo "Error: " . $err->getMessage();
 }
@@ -143,7 +143,7 @@ $client = FreeMusicSDK::test();
 
 // Entity ops return the ENTITY (throws on error);
 // call data_get() for the mock record.
-$v2lookup = $client->V2Lookup()->load();
+$v2lookup = $client->V2Lookup()->load(["id_album" => 1]);
 print_r($v2lookup);
 ```
 
@@ -936,7 +936,7 @@ Create an instance: `$v2_lookup = $client->V2Lookup();`
 
 ```php
 // load() returns the ENTITY — call data_get() for the V2Lookup record (throws on error).
-$v2_lookup = $client->V2Lookup()->load();
+$v2_lookup = $client->V2Lookup()->load(["id_album" => 1]);
 ```
 
 
@@ -962,7 +962,7 @@ Create an instance: `$v2_search = $client->V2Search();`
 
 ```php
 // load() returns the ENTITY — call data_get() for the V2Search record (throws on error).
-$v2_search = $client->V2Search()->load();
+$v2_search = $client->V2Search()->load(["album_name" => "album_name"]);
 ```
 
 
@@ -1043,7 +1043,7 @@ stores the returned data and match criteria internally.
 
 ```php
 $v2lookup = $client->V2Lookup();
-$v2lookup->load();
+$v2lookup->load(["id_album" => 1]);
 
 // $v2lookup->data_get() now returns the v2lookup data from the last load
 // $v2lookup->match_get() returns the last match criteria

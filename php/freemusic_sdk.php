@@ -40,7 +40,7 @@ class FreeMusicSDK
         $utility = new FreeMusicUtility();
         $this->_utility = $utility;
 
-        $config = FreeMusicConfig::make_config();
+        $config = FreeMusicConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

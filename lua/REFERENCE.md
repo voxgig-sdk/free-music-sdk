@@ -583,7 +583,7 @@ local v2_lookup = client:V2Lookup(nil)
 Load a single entity matching the given criteria.
 
 ```lua
-local result, err = client:V2Lookup():load()
+local result, err = client:V2Lookup():load({ id_album = 1 })
 ```
 
 ### Common Methods
@@ -637,7 +637,7 @@ local v2_search = client:V2Search(nil)
 Load a single entity matching the given criteria.
 
 ```lua
-local result, err = client:V2Search():load()
+local result, err = client:V2Search():load({ album_name = "album_name" })
 ```
 
 ### Common Methods

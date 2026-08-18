@@ -585,7 +585,7 @@ $v2_lookup = $client->V2Lookup();
 Load a single entity matching the given criteria. Throws on error.
 
 ```php
-$result = $client->V2Lookup()->load();
+$result = $client->V2Lookup()->load(["id_album" => 1]);
 ```
 
 ### Common Methods
@@ -639,7 +639,7 @@ $v2_search = $client->V2Search();
 Load a single entity matching the given criteria. Throws on error.
 
 ```php
-$result = $client->V2Search()->load();
+$result = $client->V2Search()->load(["album_name" => "album_name"]);
 ```
 
 ### Common Methods

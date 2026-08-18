@@ -47,7 +47,7 @@ const client = FreeMusicSDK.test({
     },
   },
 })
-const v2lookup = await client.V2Lookup().load()
+const v2lookup = await client.V2Lookup().load({ id_album: 1 })
 // v2lookup is the V2Lookup entity, populated with mock data
 // — call v2lookup.data() for the record itself
 console.log(v2lookup)
@@ -57,7 +57,7 @@ console.log(v2lookup)
 
 ```python
 client = FreeMusicSDK.test()
-v2lookup = client.V2Lookup().load()
+v2lookup = client.V2Lookup().load({"id_album": 1})
 print(v2lookup)
 ```
 
@@ -68,7 +68,7 @@ print(v2lookup)
 $client = FreeMusicSDK::test([
     "entity" => ["v2lookup" => ["test01" => []]],
 ]);
-$v2lookup = $client->V2Lookup()->load();
+$v2lookup = $client->V2Lookup()->load(["id_album" => 1]);
 ```
 
 ### Golang
@@ -87,14 +87,14 @@ result, err := client.V2Lookup(nil).Load(
 client = FreeMusicSDK.test({
   "entity" => { "v2lookup" => { "test01" => {} } },
 })
-v2lookup = client.V2Lookup.load()
+v2lookup = client.V2Lookup.load({ "id_album" => 1 })
 ```
 
 ### Lua
 
 ```lua
 local client = sdk.test()
-local result, err = client:V2Lookup():load()
+local result, err = client:V2Lookup():load({ id_album = 1 })
 ```
 
 ## Packages
