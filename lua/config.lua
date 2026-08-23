@@ -7,6 +7,9 @@ local function make_config()
   return {
     main = {
       name = "FreeMusic",
+      slug = "free-music",
+      version = "0.0.1",
+      target = "lua",
     },
     feature = {
       ["test"] = {
@@ -37,162 +40,202 @@ local function make_config()
         ["fields"] = {
           {
             ["name"] = "idAlbum",
+            ["short"] = "Album ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idArtist",
+            ["short"] = "Artist ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idIMVDB",
+            ["short"] = "IMVDB ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idLyric",
+            ["short"] = "Lyrics ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idTrack",
+            ["short"] = "Unique track ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intCD",
+            ["short"] = "CD number",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intDuration",
+            ["short"] = "Track duration in milliseconds",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intLoved",
+            ["short"] = "Number of loves/likes",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidComments",
+            ["short"] = "Music video comment count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidDislikes",
+            ["short"] = "Music video dislike count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidFavorites",
+            ["short"] = "Music video favorite count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidLikes",
+            ["short"] = "Music video like count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidViews",
+            ["short"] = "Music video view count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intScore",
+            ["short"] = "Track score/rating",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intScoreVotes",
+            ["short"] = "Number of score votes",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTotalListeners",
+            ["short"] = "Total listener count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTotalPlays",
+            ["short"] = "Total play count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTrackNumber",
+            ["short"] = "Track number on album",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum",
+            ["short"] = "Album name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtist",
+            ["short"] = "Artist name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistAlternate",
+            ["short"] = "Alternative artist name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDescriptionEN",
+            ["short"] = "Track description in English",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGenre",
+            ["short"] = "Musical genre",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLocked",
+            ["short"] = "Lock status",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMood",
+            ["short"] = "Track mood",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzAlbumID",
+            ["short"] = "MusicBrainz Album ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzArtistID",
+            ["short"] = "MusicBrainz Artist ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzID",
+            ["short"] = "MusicBrainz Recording ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVid",
+            ["short"] = "Music video URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidCompany",
+            ["short"] = "Music video production company",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidDirector",
+            ["short"] = "Music video director",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen1",
+            ["short"] = "Music video screenshot 1",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen2",
+            ["short"] = "Music video screenshot 2",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen3",
+            ["short"] = "Music video screenshot 3",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strStyle",
+            ["short"] = "Musical style",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTheme",
+            ["short"] = "Track theme",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrack",
+            ["short"] = "Track name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrack3x3",
+            ["short"] = "3x3 track image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrackLyrics",
+            ["short"] = "Track lyrics",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrackThumb",
+            ["short"] = "Track thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
@@ -505,382 +548,477 @@ local function make_config()
         ["fields"] = {
           {
             ["name"] = "idAlbum",
+            ["short"] = "Album ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idArtist",
+            ["short"] = "Artist ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idIMVDB",
+            ["short"] = "IMVDB ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idLabel",
+            ["short"] = "Label ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idLyric",
+            ["short"] = "Lyrics ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idTrack",
+            ["short"] = "Unique track ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intBornYear",
+            ["short"] = "Birth year (for solo artists)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intCD",
+            ["short"] = "CD number",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intCharted",
+            ["short"] = "Chart position",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intDiedYear",
+            ["short"] = "Death year (if applicable)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intDuration",
+            ["short"] = "Track duration in milliseconds",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intFormedYear",
+            ["short"] = "Year the artist was formed",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intLoved",
+            ["short"] = "Number of loves/likes",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMembers",
+            ["short"] = "Number of band members",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidComments",
+            ["short"] = "Music video comment count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidDislikes",
+            ["short"] = "Music video dislike count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidFavorites",
+            ["short"] = "Music video favorite count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidLikes",
+            ["short"] = "Music video like count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidViews",
+            ["short"] = "Music video view count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intSales",
+            ["short"] = "Sales figures",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intScore",
+            ["short"] = "Track score/rating",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intScoreVotes",
+            ["short"] = "Number of score votes",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTotalListeners",
+            ["short"] = "Total listener count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTotalPlays",
+            ["short"] = "Total play count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTrackNumber",
+            ["short"] = "Track number on album",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intYearReleased",
+            ["short"] = "Release year",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum",
+            ["short"] = "Album name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DCase",
+            ["short"] = "3D case image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DFace",
+            ["short"] = "3D face image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DFlat",
+            ["short"] = "3D flat image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DThumb",
+            ["short"] = "3D thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumCDart",
+            ["short"] = "CD art URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumSpine",
+            ["short"] = "Album spine image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumStripped",
+            ["short"] = "Album name stripped of special characters",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumThumb",
+            ["short"] = "Album thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumThumbBack",
+            ["short"] = "Album back cover URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumThumbHQ",
+            ["short"] = "High quality album thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAllMusicID",
+            ["short"] = "AllMusic ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAmazonID",
+            ["short"] = "Amazon ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtist",
+            ["short"] = "Artist name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistAlternate",
+            ["short"] = "Alternative artist name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistBanner",
+            ["short"] = "Banner image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistClearart",
+            ["short"] = "Clear art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistCutout",
+            ["short"] = "Cutout image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart",
+            ["short"] = "Fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart2",
+            ["short"] = "Additional fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart3",
+            ["short"] = "Additional fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart4",
+            ["short"] = "Additional fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistLogo",
+            ["short"] = "Logo image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistStripped",
+            ["short"] = "Artist name stripped",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistThumb",
+            ["short"] = "Thumbnail image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistWideThumb",
+            ["short"] = "Wide thumbnail image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strBBCReviewID",
+            ["short"] = "BBC Review ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strBiographyEN",
+            ["short"] = "Biography in English",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strCountry",
+            ["short"] = "Country of origin",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strCountryCode",
+            ["short"] = "Country code",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDescriptionEN",
+            ["short"] = "Track description in English",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDisbanded",
+            ["short"] = "Disbandment status",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDiscogsID",
+            ["short"] = "Discogs ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strFacebook",
+            ["short"] = "Facebook URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGender",
+            ["short"] = "Gender",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGeniusID",
+            ["short"] = "Genius ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGenre",
+            ["short"] = "Musical genre",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strISNIcode",
+            ["short"] = "ISNI code",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strItunesID",
+            ["short"] = "iTunes ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLabel",
+            ["short"] = "Record label",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLastFMChart",
+            ["short"] = "Last.fm chart URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLocation",
+            ["short"] = "Recording location",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLocked",
+            ["short"] = "Lock status",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLyricWikiID",
+            ["short"] = "LyricWiki ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMood",
+            ["short"] = "Track mood",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzAlbumID",
+            ["short"] = "MusicBrainz Album ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzArtistID",
+            ["short"] = "MusicBrainz Artist ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzID",
+            ["short"] = "MusicBrainz Recording ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicMozID",
+            ["short"] = "MusicMoz ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVid",
+            ["short"] = "Music video URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidCompany",
+            ["short"] = "Music video production company",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidDirector",
+            ["short"] = "Music video director",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen1",
+            ["short"] = "Music video screenshot 1",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen2",
+            ["short"] = "Music video screenshot 2",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen3",
+            ["short"] = "Music video screenshot 3",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strRateYourMusicID",
+            ["short"] = "Rate Your Music ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strReleaseFormat",
+            ["short"] = "Release format (CD, Vinyl, etc.)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strReview",
+            ["short"] = "Album review",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strSpeed",
+            ["short"] = "Album speed/tempo",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strStyle",
+            ["short"] = "Musical style",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTheme",
+            ["short"] = "Track theme",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrack",
+            ["short"] = "Track name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrack3x3",
+            ["short"] = "3x3 track image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrackLyrics",
+            ["short"] = "Track lyrics",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrackThumb",
+            ["short"] = "Track thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTwitter",
+            ["short"] = "Twitter handle",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strWebsite",
+            ["short"] = "Official website URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strWikidataID",
+            ["short"] = "Wikidata ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strWikipediaID",
+            ["short"] = "Wikipedia ID",
             ["type"] = "`$STRING`",
           },
         },
@@ -1234,382 +1372,477 @@ local function make_config()
           },
           {
             ["name"] = "idAlbum",
+            ["short"] = "Unique album ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idArtist",
+            ["short"] = "Artist ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idIMVDB",
+            ["short"] = "IMVDB ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idLabel",
+            ["short"] = "Label ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idLyric",
+            ["short"] = "Lyrics ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "idTrack",
+            ["short"] = "Unique track ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intBornYear",
+            ["short"] = "Birth year (for solo artists)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intCD",
+            ["short"] = "CD number",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intCharted",
+            ["short"] = "Chart position",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intDiedYear",
+            ["short"] = "Death year (if applicable)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intDuration",
+            ["short"] = "Track duration in milliseconds",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intFormedYear",
+            ["short"] = "Year the artist was formed",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intLoved",
+            ["short"] = "Number of loves/likes",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMembers",
+            ["short"] = "Number of band members",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidComments",
+            ["short"] = "Music video comment count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidDislikes",
+            ["short"] = "Music video dislike count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidFavorites",
+            ["short"] = "Music video favorite count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidLikes",
+            ["short"] = "Music video like count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intMusicVidViews",
+            ["short"] = "Music video view count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intSales",
+            ["short"] = "Sales figures",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intScore",
+            ["short"] = "Album score/rating",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intScoreVotes",
+            ["short"] = "Number of score votes",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTotalListeners",
+            ["short"] = "Total listener count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTotalPlays",
+            ["short"] = "Total play count",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intTrackNumber",
+            ["short"] = "Track number on album",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "intYearReleased",
+            ["short"] = "Release year",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum",
+            ["short"] = "Album name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DCase",
+            ["short"] = "3D case image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DFace",
+            ["short"] = "3D face image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DFlat",
+            ["short"] = "3D flat image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbum3DThumb",
+            ["short"] = "3D thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumCDart",
+            ["short"] = "CD art URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumSpine",
+            ["short"] = "Album spine image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumStripped",
+            ["short"] = "Album name stripped of special characters",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumThumb",
+            ["short"] = "Album thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumThumbBack",
+            ["short"] = "Album back cover URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAlbumThumbHQ",
+            ["short"] = "High quality album thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAllMusicID",
+            ["short"] = "AllMusic ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strAmazonID",
+            ["short"] = "Amazon ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtist",
+            ["short"] = "Artist name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistAlternate",
+            ["short"] = "Alternative artist name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistBanner",
+            ["short"] = "Banner image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistClearart",
+            ["short"] = "Clear art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistCutout",
+            ["short"] = "Cutout image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart",
+            ["short"] = "Fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart2",
+            ["short"] = "Additional fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart3",
+            ["short"] = "Additional fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistFanart4",
+            ["short"] = "Additional fan art image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistLogo",
+            ["short"] = "Logo image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistStripped",
+            ["short"] = "Artist name stripped",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistThumb",
+            ["short"] = "Thumbnail image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strArtistWideThumb",
+            ["short"] = "Wide thumbnail image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strBBCReviewID",
+            ["short"] = "BBC Review ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strBiographyEN",
+            ["short"] = "Biography in English",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strCountry",
+            ["short"] = "Country of origin",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strCountryCode",
+            ["short"] = "Country code",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDescriptionEN",
+            ["short"] = "Album description in English",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDisbanded",
+            ["short"] = "Disbandment status",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strDiscogsID",
+            ["short"] = "Discogs ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strFacebook",
+            ["short"] = "Facebook URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGender",
+            ["short"] = "Gender",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGeniusID",
+            ["short"] = "Genius ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strGenre",
+            ["short"] = "Musical genre",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strISNIcode",
+            ["short"] = "ISNI code",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strItunesID",
+            ["short"] = "iTunes ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLabel",
+            ["short"] = "Record label",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLastFMChart",
+            ["short"] = "Last.fm chart URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLocation",
+            ["short"] = "Recording location",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLocked",
+            ["short"] = "Lock status",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strLyricWikiID",
+            ["short"] = "LyricWiki ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMood",
+            ["short"] = "Album mood",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzAlbumID",
+            ["short"] = "MusicBrainz Album ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzArtistID",
+            ["short"] = "MusicBrainz Artist ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicBrainzID",
+            ["short"] = "MusicBrainz Release Group ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicMozID",
+            ["short"] = "MusicMoz ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVid",
+            ["short"] = "Music video URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidCompany",
+            ["short"] = "Music video production company",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidDirector",
+            ["short"] = "Music video director",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen1",
+            ["short"] = "Music video screenshot 1",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen2",
+            ["short"] = "Music video screenshot 2",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strMusicVidScreen3",
+            ["short"] = "Music video screenshot 3",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strRateYourMusicID",
+            ["short"] = "Rate Your Music ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strReleaseFormat",
+            ["short"] = "Release format (CD, Vinyl, etc.)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strReview",
+            ["short"] = "Album review",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strSpeed",
+            ["short"] = "Album speed/tempo",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strStyle",
+            ["short"] = "Musical style",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTheme",
+            ["short"] = "Album theme",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrack",
+            ["short"] = "Track name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrack3x3",
+            ["short"] = "3x3 track image URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrackLyrics",
+            ["short"] = "Track lyrics",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTrackThumb",
+            ["short"] = "Track thumbnail URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strTwitter",
+            ["short"] = "Twitter handle",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strWebsite",
+            ["short"] = "Official website URL",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strWikidataID",
+            ["short"] = "Wikidata ID",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "strWikipediaID",
+            ["short"] = "Wikipedia ID",
             ["type"] = "`$STRING`",
           },
         },

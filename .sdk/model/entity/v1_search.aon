@@ -13,476 +13,571 @@ main: kit: entity: v1_search: {
     {
       name: "idAlbum"
       req: false
+      short: "Unique album ID"
       type: "`$STRING`"
     }
     {
       name: "idArtist"
       req: false
+      short: "Artist ID"
       type: "`$STRING`"
     }
     {
       name: "idIMVDB"
       req: false
+      short: "IMVDB ID"
       type: "`$STRING`"
     }
     {
       name: "idLabel"
       req: false
+      short: "Label ID"
       type: "`$STRING`"
     }
     {
       name: "idLyric"
       req: false
+      short: "Lyrics ID"
       type: "`$STRING`"
     }
     {
       name: "idTrack"
       req: false
+      short: "Unique track ID"
       type: "`$STRING`"
     }
     {
       name: "intBornYear"
       req: false
+      short: "Birth year (for solo artists)"
       type: "`$STRING`"
     }
     {
       name: "intCD"
       req: false
+      short: "CD number"
       type: "`$STRING`"
     }
     {
       name: "intCharted"
       req: false
+      short: "Chart position"
       type: "`$STRING`"
     }
     {
       name: "intDiedYear"
       req: false
+      short: "Death year (if applicable)"
       type: "`$STRING`"
     }
     {
       name: "intDuration"
       req: false
+      short: "Track duration in milliseconds"
       type: "`$STRING`"
     }
     {
       name: "intFormedYear"
       req: false
+      short: "Year the artist was formed"
       type: "`$STRING`"
     }
     {
       name: "intLoved"
       req: false
+      short: "Number of loves/likes"
       type: "`$STRING`"
     }
     {
       name: "intMembers"
       req: false
+      short: "Number of band members"
       type: "`$STRING`"
     }
     {
       name: "intMusicVidComments"
       req: false
+      short: "Music video comment count"
       type: "`$STRING`"
     }
     {
       name: "intMusicVidDislikes"
       req: false
+      short: "Music video dislike count"
       type: "`$STRING`"
     }
     {
       name: "intMusicVidFavorites"
       req: false
+      short: "Music video favorite count"
       type: "`$STRING`"
     }
     {
       name: "intMusicVidLikes"
       req: false
+      short: "Music video like count"
       type: "`$STRING`"
     }
     {
       name: "intMusicVidViews"
       req: false
+      short: "Music video view count"
       type: "`$STRING`"
     }
     {
       name: "intSales"
       req: false
+      short: "Sales figures"
       type: "`$STRING`"
     }
     {
       name: "intScore"
       req: false
+      short: "Album score/rating"
       type: "`$STRING`"
     }
     {
       name: "intScoreVotes"
       req: false
+      short: "Number of score votes"
       type: "`$STRING`"
     }
     {
       name: "intTotalListeners"
       req: false
+      short: "Total listener count"
       type: "`$STRING`"
     }
     {
       name: "intTotalPlays"
       req: false
+      short: "Total play count"
       type: "`$STRING`"
     }
     {
       name: "intTrackNumber"
       req: false
+      short: "Track number on album"
       type: "`$STRING`"
     }
     {
       name: "intYearReleased"
       req: false
+      short: "Release year"
       type: "`$STRING`"
     }
     {
       name: "strAlbum"
       req: false
+      short: "Album name"
       type: "`$STRING`"
     }
     {
       name: "strAlbum3DCase"
       req: false
+      short: "3D case image URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbum3DFace"
       req: false
+      short: "3D face image URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbum3DFlat"
       req: false
+      short: "3D flat image URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbum3DThumb"
       req: false
+      short: "3D thumbnail URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbumCDart"
       req: false
+      short: "CD art URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbumSpine"
       req: false
+      short: "Album spine image URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbumStripped"
       req: false
+      short: "Album name stripped of special characters"
       type: "`$STRING`"
     }
     {
       name: "strAlbumThumb"
       req: false
+      short: "Album thumbnail URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbumThumbBack"
       req: false
+      short: "Album back cover URL"
       type: "`$STRING`"
     }
     {
       name: "strAlbumThumbHQ"
       req: false
+      short: "High quality album thumbnail URL"
       type: "`$STRING`"
     }
     {
       name: "strAllMusicID"
       req: false
+      short: "AllMusic ID"
       type: "`$STRING`"
     }
     {
       name: "strAmazonID"
       req: false
+      short: "Amazon ID"
       type: "`$STRING`"
     }
     {
       name: "strArtist"
       req: false
+      short: "Artist name"
       type: "`$STRING`"
     }
     {
       name: "strArtistAlternate"
       req: false
+      short: "Alternative artist name"
       type: "`$STRING`"
     }
     {
       name: "strArtistBanner"
       req: false
+      short: "Banner image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistClearart"
       req: false
+      short: "Clear art image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistCutout"
       req: false
+      short: "Cutout image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistFanart"
       req: false
+      short: "Fan art image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistFanart2"
       req: false
+      short: "Additional fan art image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistFanart3"
       req: false
+      short: "Additional fan art image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistFanart4"
       req: false
+      short: "Additional fan art image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistLogo"
       req: false
+      short: "Logo image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistStripped"
       req: false
+      short: "Artist name stripped"
       type: "`$STRING`"
     }
     {
       name: "strArtistThumb"
       req: false
+      short: "Thumbnail image URL"
       type: "`$STRING`"
     }
     {
       name: "strArtistWideThumb"
       req: false
+      short: "Wide thumbnail image URL"
       type: "`$STRING`"
     }
     {
       name: "strBBCReviewID"
       req: false
+      short: "BBC Review ID"
       type: "`$STRING`"
     }
     {
       name: "strBiographyEN"
       req: false
+      short: "Biography in English"
       type: "`$STRING`"
     }
     {
       name: "strCountry"
       req: false
+      short: "Country of origin"
       type: "`$STRING`"
     }
     {
       name: "strCountryCode"
       req: false
+      short: "Country code"
       type: "`$STRING`"
     }
     {
       name: "strDescriptionEN"
       req: false
+      short: "Album description in English"
       type: "`$STRING`"
     }
     {
       name: "strDisbanded"
       req: false
+      short: "Disbandment status"
       type: "`$STRING`"
     }
     {
       name: "strDiscogsID"
       req: false
+      short: "Discogs ID"
       type: "`$STRING`"
     }
     {
       name: "strFacebook"
       req: false
+      short: "Facebook URL"
       type: "`$STRING`"
     }
     {
       name: "strGender"
       req: false
+      short: "Gender"
       type: "`$STRING`"
     }
     {
       name: "strGeniusID"
       req: false
+      short: "Genius ID"
       type: "`$STRING`"
     }
     {
       name: "strGenre"
       req: false
+      short: "Musical genre"
       type: "`$STRING`"
     }
     {
       name: "strISNIcode"
       req: false
+      short: "ISNI code"
       type: "`$STRING`"
     }
     {
       name: "strItunesID"
       req: false
+      short: "iTunes ID"
       type: "`$STRING`"
     }
     {
       name: "strLabel"
       req: false
+      short: "Record label"
       type: "`$STRING`"
     }
     {
       name: "strLastFMChart"
       req: false
+      short: "Last.fm chart URL"
       type: "`$STRING`"
     }
     {
       name: "strLocation"
       req: false
+      short: "Recording location"
       type: "`$STRING`"
     }
     {
       name: "strLocked"
       req: false
+      short: "Lock status"
       type: "`$STRING`"
     }
     {
       name: "strLyricWikiID"
       req: false
+      short: "LyricWiki ID"
       type: "`$STRING`"
     }
     {
       name: "strMood"
       req: false
+      short: "Album mood"
       type: "`$STRING`"
     }
     {
       name: "strMusicBrainzAlbumID"
       req: false
+      short: "MusicBrainz Album ID"
       type: "`$STRING`"
     }
     {
       name: "strMusicBrainzArtistID"
       req: false
+      short: "MusicBrainz Artist ID"
       type: "`$STRING`"
     }
     {
       name: "strMusicBrainzID"
       req: false
+      short: "MusicBrainz Release Group ID"
       type: "`$STRING`"
     }
     {
       name: "strMusicMozID"
       req: false
+      short: "MusicMoz ID"
       type: "`$STRING`"
     }
     {
       name: "strMusicVid"
       req: false
+      short: "Music video URL"
       type: "`$STRING`"
     }
     {
       name: "strMusicVidCompany"
       req: false
+      short: "Music video production company"
       type: "`$STRING`"
     }
     {
       name: "strMusicVidDirector"
       req: false
+      short: "Music video director"
       type: "`$STRING`"
     }
     {
       name: "strMusicVidScreen1"
       req: false
+      short: "Music video screenshot 1"
       type: "`$STRING`"
     }
     {
       name: "strMusicVidScreen2"
       req: false
+      short: "Music video screenshot 2"
       type: "`$STRING`"
     }
     {
       name: "strMusicVidScreen3"
       req: false
+      short: "Music video screenshot 3"
       type: "`$STRING`"
     }
     {
       name: "strRateYourMusicID"
       req: false
+      short: "Rate Your Music ID"
       type: "`$STRING`"
     }
     {
       name: "strReleaseFormat"
       req: false
+      short: "Release format (CD, Vinyl, etc.)"
       type: "`$STRING`"
     }
     {
       name: "strReview"
       req: false
+      short: "Album review"
       type: "`$STRING`"
     }
     {
       name: "strSpeed"
       req: false
+      short: "Album speed/tempo"
       type: "`$STRING`"
     }
     {
       name: "strStyle"
       req: false
+      short: "Musical style"
       type: "`$STRING`"
     }
     {
       name: "strTheme"
       req: false
+      short: "Album theme"
       type: "`$STRING`"
     }
     {
       name: "strTrack"
       req: false
+      short: "Track name"
       type: "`$STRING`"
     }
     {
       name: "strTrack3x3"
       req: false
+      short: "3x3 track image URL"
       type: "`$STRING`"
     }
     {
       name: "strTrackLyrics"
       req: false
+      short: "Track lyrics"
       type: "`$STRING`"
     }
     {
       name: "strTrackThumb"
       req: false
+      short: "Track thumbnail URL"
       type: "`$STRING`"
     }
     {
       name: "strTwitter"
       req: false
+      short: "Twitter handle"
       type: "`$STRING`"
     }
     {
       name: "strWebsite"
       req: false
+      short: "Official website URL"
       type: "`$STRING`"
     }
     {
       name: "strWikidataID"
       req: false
+      short: "Wikidata ID"
       type: "`$STRING`"
     }
     {
       name: "strWikipediaID"
       req: false
+      short: "Wikipedia ID"
       type: "`$STRING`"
     }
   ]

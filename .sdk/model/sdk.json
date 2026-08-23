@@ -36,240 +36,280 @@
               "active": true,
               "name": "idAlbum",
               "req": false,
+              "short": "Album ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idArtist",
               "req": false,
+              "short": "Artist ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idIMVDB",
               "req": false,
+              "short": "IMVDB ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idLyric",
               "req": false,
+              "short": "Lyrics ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idTrack",
               "req": false,
+              "short": "Unique track ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intCD",
               "req": false,
+              "short": "CD number",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intDuration",
               "req": false,
+              "short": "Track duration in milliseconds",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intLoved",
               "req": false,
+              "short": "Number of loves/likes",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidComments",
               "req": false,
+              "short": "Music video comment count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidDislikes",
               "req": false,
+              "short": "Music video dislike count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidFavorites",
               "req": false,
+              "short": "Music video favorite count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidLikes",
               "req": false,
+              "short": "Music video like count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidViews",
               "req": false,
+              "short": "Music video view count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intScore",
               "req": false,
+              "short": "Track score/rating",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intScoreVotes",
               "req": false,
+              "short": "Number of score votes",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTotalListeners",
               "req": false,
+              "short": "Total listener count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTotalPlays",
               "req": false,
+              "short": "Total play count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTrackNumber",
               "req": false,
+              "short": "Track number on album",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum",
               "req": false,
+              "short": "Album name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtist",
               "req": false,
+              "short": "Artist name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistAlternate",
               "req": false,
+              "short": "Alternative artist name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDescriptionEN",
               "req": false,
+              "short": "Track description in English",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGenre",
               "req": false,
+              "short": "Musical genre",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLocked",
               "req": false,
+              "short": "Lock status",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMood",
               "req": false,
+              "short": "Track mood",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzAlbumID",
               "req": false,
+              "short": "MusicBrainz Album ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzArtistID",
               "req": false,
+              "short": "MusicBrainz Artist ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzID",
               "req": false,
+              "short": "MusicBrainz Recording ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVid",
               "req": false,
+              "short": "Music video URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidCompany",
               "req": false,
+              "short": "Music video production company",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidDirector",
               "req": false,
+              "short": "Music video director",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen1",
               "req": false,
+              "short": "Music video screenshot 1",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen2",
               "req": false,
+              "short": "Music video screenshot 2",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen3",
               "req": false,
+              "short": "Music video screenshot 3",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strStyle",
               "req": false,
+              "short": "Musical style",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTheme",
               "req": false,
+              "short": "Track theme",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrack",
               "req": false,
+              "short": "Track name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrack3x3",
               "req": false,
+              "short": "3x3 track image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrackLyrics",
               "req": false,
+              "short": "Track lyrics",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrackThumb",
               "req": false,
+              "short": "Track thumbnail URL",
               "type": "`$STRING`"
             },
             {
@@ -610,570 +650,665 @@
               "active": true,
               "name": "idAlbum",
               "req": false,
+              "short": "Album ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idArtist",
               "req": false,
+              "short": "Artist ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idIMVDB",
               "req": false,
+              "short": "IMVDB ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idLabel",
               "req": false,
+              "short": "Label ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idLyric",
               "req": false,
+              "short": "Lyrics ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idTrack",
               "req": false,
+              "short": "Unique track ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intBornYear",
               "req": false,
+              "short": "Birth year (for solo artists)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intCD",
               "req": false,
+              "short": "CD number",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intCharted",
               "req": false,
+              "short": "Chart position",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intDiedYear",
               "req": false,
+              "short": "Death year (if applicable)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intDuration",
               "req": false,
+              "short": "Track duration in milliseconds",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intFormedYear",
               "req": false,
+              "short": "Year the artist was formed",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intLoved",
               "req": false,
+              "short": "Number of loves/likes",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMembers",
               "req": false,
+              "short": "Number of band members",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidComments",
               "req": false,
+              "short": "Music video comment count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidDislikes",
               "req": false,
+              "short": "Music video dislike count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidFavorites",
               "req": false,
+              "short": "Music video favorite count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidLikes",
               "req": false,
+              "short": "Music video like count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidViews",
               "req": false,
+              "short": "Music video view count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intSales",
               "req": false,
+              "short": "Sales figures",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intScore",
               "req": false,
+              "short": "Track score/rating",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intScoreVotes",
               "req": false,
+              "short": "Number of score votes",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTotalListeners",
               "req": false,
+              "short": "Total listener count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTotalPlays",
               "req": false,
+              "short": "Total play count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTrackNumber",
               "req": false,
+              "short": "Track number on album",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intYearReleased",
               "req": false,
+              "short": "Release year",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum",
               "req": false,
+              "short": "Album name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DCase",
               "req": false,
+              "short": "3D case image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DFace",
               "req": false,
+              "short": "3D face image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DFlat",
               "req": false,
+              "short": "3D flat image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DThumb",
               "req": false,
+              "short": "3D thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumCDart",
               "req": false,
+              "short": "CD art URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumSpine",
               "req": false,
+              "short": "Album spine image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumStripped",
               "req": false,
+              "short": "Album name stripped of special characters",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumThumb",
               "req": false,
+              "short": "Album thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumThumbBack",
               "req": false,
+              "short": "Album back cover URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumThumbHQ",
               "req": false,
+              "short": "High quality album thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAllMusicID",
               "req": false,
+              "short": "AllMusic ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAmazonID",
               "req": false,
+              "short": "Amazon ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtist",
               "req": false,
+              "short": "Artist name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistAlternate",
               "req": false,
+              "short": "Alternative artist name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistBanner",
               "req": false,
+              "short": "Banner image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistClearart",
               "req": false,
+              "short": "Clear art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistCutout",
               "req": false,
+              "short": "Cutout image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart",
               "req": false,
+              "short": "Fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart2",
               "req": false,
+              "short": "Additional fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart3",
               "req": false,
+              "short": "Additional fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart4",
               "req": false,
+              "short": "Additional fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistLogo",
               "req": false,
+              "short": "Logo image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistStripped",
               "req": false,
+              "short": "Artist name stripped",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistThumb",
               "req": false,
+              "short": "Thumbnail image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistWideThumb",
               "req": false,
+              "short": "Wide thumbnail image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strBBCReviewID",
               "req": false,
+              "short": "BBC Review ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strBiographyEN",
               "req": false,
+              "short": "Biography in English",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strCountry",
               "req": false,
+              "short": "Country of origin",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strCountryCode",
               "req": false,
+              "short": "Country code",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDescriptionEN",
               "req": false,
+              "short": "Track description in English",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDisbanded",
               "req": false,
+              "short": "Disbandment status",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDiscogsID",
               "req": false,
+              "short": "Discogs ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strFacebook",
               "req": false,
+              "short": "Facebook URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGender",
               "req": false,
+              "short": "Gender",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGeniusID",
               "req": false,
+              "short": "Genius ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGenre",
               "req": false,
+              "short": "Musical genre",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strISNIcode",
               "req": false,
+              "short": "ISNI code",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strItunesID",
               "req": false,
+              "short": "iTunes ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLabel",
               "req": false,
+              "short": "Record label",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLastFMChart",
               "req": false,
+              "short": "Last.fm chart URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLocation",
               "req": false,
+              "short": "Recording location",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLocked",
               "req": false,
+              "short": "Lock status",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLyricWikiID",
               "req": false,
+              "short": "LyricWiki ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMood",
               "req": false,
+              "short": "Track mood",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzAlbumID",
               "req": false,
+              "short": "MusicBrainz Album ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzArtistID",
               "req": false,
+              "short": "MusicBrainz Artist ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzID",
               "req": false,
+              "short": "MusicBrainz Recording ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicMozID",
               "req": false,
+              "short": "MusicMoz ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVid",
               "req": false,
+              "short": "Music video URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidCompany",
               "req": false,
+              "short": "Music video production company",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidDirector",
               "req": false,
+              "short": "Music video director",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen1",
               "req": false,
+              "short": "Music video screenshot 1",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen2",
               "req": false,
+              "short": "Music video screenshot 2",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen3",
               "req": false,
+              "short": "Music video screenshot 3",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strRateYourMusicID",
               "req": false,
+              "short": "Rate Your Music ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strReleaseFormat",
               "req": false,
+              "short": "Release format (CD, Vinyl, etc.)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strReview",
               "req": false,
+              "short": "Album review",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strSpeed",
               "req": false,
+              "short": "Album speed/tempo",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strStyle",
               "req": false,
+              "short": "Musical style",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTheme",
               "req": false,
+              "short": "Track theme",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrack",
               "req": false,
+              "short": "Track name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrack3x3",
               "req": false,
+              "short": "3x3 track image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrackLyrics",
               "req": false,
+              "short": "Track lyrics",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrackThumb",
               "req": false,
+              "short": "Track thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTwitter",
               "req": false,
+              "short": "Twitter handle",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strWebsite",
               "req": false,
+              "short": "Official website URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strWikidataID",
               "req": false,
+              "short": "Wikidata ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strWikipediaID",
               "req": false,
+              "short": "Wikipedia ID",
               "type": "`$STRING`"
             }
           ],
@@ -1562,570 +1697,665 @@
               "active": true,
               "name": "idAlbum",
               "req": false,
+              "short": "Unique album ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idArtist",
               "req": false,
+              "short": "Artist ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idIMVDB",
               "req": false,
+              "short": "IMVDB ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idLabel",
               "req": false,
+              "short": "Label ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idLyric",
               "req": false,
+              "short": "Lyrics ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "idTrack",
               "req": false,
+              "short": "Unique track ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intBornYear",
               "req": false,
+              "short": "Birth year (for solo artists)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intCD",
               "req": false,
+              "short": "CD number",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intCharted",
               "req": false,
+              "short": "Chart position",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intDiedYear",
               "req": false,
+              "short": "Death year (if applicable)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intDuration",
               "req": false,
+              "short": "Track duration in milliseconds",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intFormedYear",
               "req": false,
+              "short": "Year the artist was formed",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intLoved",
               "req": false,
+              "short": "Number of loves/likes",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMembers",
               "req": false,
+              "short": "Number of band members",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidComments",
               "req": false,
+              "short": "Music video comment count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidDislikes",
               "req": false,
+              "short": "Music video dislike count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidFavorites",
               "req": false,
+              "short": "Music video favorite count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidLikes",
               "req": false,
+              "short": "Music video like count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intMusicVidViews",
               "req": false,
+              "short": "Music video view count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intSales",
               "req": false,
+              "short": "Sales figures",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intScore",
               "req": false,
+              "short": "Album score/rating",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intScoreVotes",
               "req": false,
+              "short": "Number of score votes",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTotalListeners",
               "req": false,
+              "short": "Total listener count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTotalPlays",
               "req": false,
+              "short": "Total play count",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intTrackNumber",
               "req": false,
+              "short": "Track number on album",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "intYearReleased",
               "req": false,
+              "short": "Release year",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum",
               "req": false,
+              "short": "Album name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DCase",
               "req": false,
+              "short": "3D case image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DFace",
               "req": false,
+              "short": "3D face image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DFlat",
               "req": false,
+              "short": "3D flat image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbum3DThumb",
               "req": false,
+              "short": "3D thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumCDart",
               "req": false,
+              "short": "CD art URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumSpine",
               "req": false,
+              "short": "Album spine image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumStripped",
               "req": false,
+              "short": "Album name stripped of special characters",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumThumb",
               "req": false,
+              "short": "Album thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumThumbBack",
               "req": false,
+              "short": "Album back cover URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAlbumThumbHQ",
               "req": false,
+              "short": "High quality album thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAllMusicID",
               "req": false,
+              "short": "AllMusic ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strAmazonID",
               "req": false,
+              "short": "Amazon ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtist",
               "req": false,
+              "short": "Artist name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistAlternate",
               "req": false,
+              "short": "Alternative artist name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistBanner",
               "req": false,
+              "short": "Banner image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistClearart",
               "req": false,
+              "short": "Clear art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistCutout",
               "req": false,
+              "short": "Cutout image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart",
               "req": false,
+              "short": "Fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart2",
               "req": false,
+              "short": "Additional fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart3",
               "req": false,
+              "short": "Additional fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistFanart4",
               "req": false,
+              "short": "Additional fan art image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistLogo",
               "req": false,
+              "short": "Logo image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistStripped",
               "req": false,
+              "short": "Artist name stripped",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistThumb",
               "req": false,
+              "short": "Thumbnail image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strArtistWideThumb",
               "req": false,
+              "short": "Wide thumbnail image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strBBCReviewID",
               "req": false,
+              "short": "BBC Review ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strBiographyEN",
               "req": false,
+              "short": "Biography in English",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strCountry",
               "req": false,
+              "short": "Country of origin",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strCountryCode",
               "req": false,
+              "short": "Country code",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDescriptionEN",
               "req": false,
+              "short": "Album description in English",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDisbanded",
               "req": false,
+              "short": "Disbandment status",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strDiscogsID",
               "req": false,
+              "short": "Discogs ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strFacebook",
               "req": false,
+              "short": "Facebook URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGender",
               "req": false,
+              "short": "Gender",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGeniusID",
               "req": false,
+              "short": "Genius ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strGenre",
               "req": false,
+              "short": "Musical genre",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strISNIcode",
               "req": false,
+              "short": "ISNI code",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strItunesID",
               "req": false,
+              "short": "iTunes ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLabel",
               "req": false,
+              "short": "Record label",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLastFMChart",
               "req": false,
+              "short": "Last.fm chart URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLocation",
               "req": false,
+              "short": "Recording location",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLocked",
               "req": false,
+              "short": "Lock status",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strLyricWikiID",
               "req": false,
+              "short": "LyricWiki ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMood",
               "req": false,
+              "short": "Album mood",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzAlbumID",
               "req": false,
+              "short": "MusicBrainz Album ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzArtistID",
               "req": false,
+              "short": "MusicBrainz Artist ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicBrainzID",
               "req": false,
+              "short": "MusicBrainz Release Group ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicMozID",
               "req": false,
+              "short": "MusicMoz ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVid",
               "req": false,
+              "short": "Music video URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidCompany",
               "req": false,
+              "short": "Music video production company",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidDirector",
               "req": false,
+              "short": "Music video director",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen1",
               "req": false,
+              "short": "Music video screenshot 1",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen2",
               "req": false,
+              "short": "Music video screenshot 2",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strMusicVidScreen3",
               "req": false,
+              "short": "Music video screenshot 3",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strRateYourMusicID",
               "req": false,
+              "short": "Rate Your Music ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strReleaseFormat",
               "req": false,
+              "short": "Release format (CD, Vinyl, etc.)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strReview",
               "req": false,
+              "short": "Album review",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strSpeed",
               "req": false,
+              "short": "Album speed/tempo",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strStyle",
               "req": false,
+              "short": "Musical style",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTheme",
               "req": false,
+              "short": "Album theme",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrack",
               "req": false,
+              "short": "Track name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrack3x3",
               "req": false,
+              "short": "3x3 track image URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrackLyrics",
               "req": false,
+              "short": "Track lyrics",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTrackThumb",
               "req": false,
+              "short": "Track thumbnail URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strTwitter",
               "req": false,
+              "short": "Twitter handle",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strWebsite",
               "req": false,
+              "short": "Official website URL",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strWikidataID",
               "req": false,
+              "short": "Wikidata ID",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "strWikipediaID",
               "req": false,
+              "short": "Wikipedia ID",
               "type": "`$STRING`"
             }
           ],

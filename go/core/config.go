@@ -11,6 +11,9 @@ func MakeConfig() map[string]any {
 	return map[string]any{
 		"main": map[string]any{
 			"name": "FreeMusic",
+			"slug": "free-music",
+			"version": "0.0.1",
+			"target": "go",
 		},
 		"feature": map[string]any{
 			"test": map[string]any{
@@ -41,162 +44,202 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "idAlbum",
+						"short": "Album ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idArtist",
+						"short": "Artist ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idIMVDB",
+						"short": "IMVDB ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idLyric",
+						"short": "Lyrics ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idTrack",
+						"short": "Unique track ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intCD",
+						"short": "CD number",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intDuration",
+						"short": "Track duration in milliseconds",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intLoved",
+						"short": "Number of loves/likes",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidComments",
+						"short": "Music video comment count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidDislikes",
+						"short": "Music video dislike count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidFavorites",
+						"short": "Music video favorite count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidLikes",
+						"short": "Music video like count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidViews",
+						"short": "Music video view count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intScore",
+						"short": "Track score/rating",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intScoreVotes",
+						"short": "Number of score votes",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTotalListeners",
+						"short": "Total listener count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTotalPlays",
+						"short": "Total play count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTrackNumber",
+						"short": "Track number on album",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum",
+						"short": "Album name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtist",
+						"short": "Artist name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistAlternate",
+						"short": "Alternative artist name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDescriptionEN",
+						"short": "Track description in English",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGenre",
+						"short": "Musical genre",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLocked",
+						"short": "Lock status",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMood",
+						"short": "Track mood",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzAlbumID",
+						"short": "MusicBrainz Album ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzArtistID",
+						"short": "MusicBrainz Artist ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzID",
+						"short": "MusicBrainz Recording ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVid",
+						"short": "Music video URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidCompany",
+						"short": "Music video production company",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidDirector",
+						"short": "Music video director",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen1",
+						"short": "Music video screenshot 1",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen2",
+						"short": "Music video screenshot 2",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen3",
+						"short": "Music video screenshot 3",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strStyle",
+						"short": "Musical style",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTheme",
+						"short": "Track theme",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrack",
+						"short": "Track name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrack3x3",
+						"short": "3x3 track image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrackLyrics",
+						"short": "Track lyrics",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrackThumb",
+						"short": "Track thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
@@ -509,382 +552,477 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "idAlbum",
+						"short": "Album ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idArtist",
+						"short": "Artist ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idIMVDB",
+						"short": "IMVDB ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idLabel",
+						"short": "Label ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idLyric",
+						"short": "Lyrics ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idTrack",
+						"short": "Unique track ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intBornYear",
+						"short": "Birth year (for solo artists)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intCD",
+						"short": "CD number",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intCharted",
+						"short": "Chart position",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intDiedYear",
+						"short": "Death year (if applicable)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intDuration",
+						"short": "Track duration in milliseconds",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intFormedYear",
+						"short": "Year the artist was formed",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intLoved",
+						"short": "Number of loves/likes",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMembers",
+						"short": "Number of band members",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidComments",
+						"short": "Music video comment count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidDislikes",
+						"short": "Music video dislike count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidFavorites",
+						"short": "Music video favorite count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidLikes",
+						"short": "Music video like count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidViews",
+						"short": "Music video view count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intSales",
+						"short": "Sales figures",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intScore",
+						"short": "Track score/rating",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intScoreVotes",
+						"short": "Number of score votes",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTotalListeners",
+						"short": "Total listener count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTotalPlays",
+						"short": "Total play count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTrackNumber",
+						"short": "Track number on album",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intYearReleased",
+						"short": "Release year",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum",
+						"short": "Album name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DCase",
+						"short": "3D case image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DFace",
+						"short": "3D face image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DFlat",
+						"short": "3D flat image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DThumb",
+						"short": "3D thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumCDart",
+						"short": "CD art URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumSpine",
+						"short": "Album spine image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumStripped",
+						"short": "Album name stripped of special characters",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumThumb",
+						"short": "Album thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumThumbBack",
+						"short": "Album back cover URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumThumbHQ",
+						"short": "High quality album thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAllMusicID",
+						"short": "AllMusic ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAmazonID",
+						"short": "Amazon ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtist",
+						"short": "Artist name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistAlternate",
+						"short": "Alternative artist name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistBanner",
+						"short": "Banner image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistClearart",
+						"short": "Clear art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistCutout",
+						"short": "Cutout image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart",
+						"short": "Fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart2",
+						"short": "Additional fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart3",
+						"short": "Additional fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart4",
+						"short": "Additional fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistLogo",
+						"short": "Logo image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistStripped",
+						"short": "Artist name stripped",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistThumb",
+						"short": "Thumbnail image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistWideThumb",
+						"short": "Wide thumbnail image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strBBCReviewID",
+						"short": "BBC Review ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strBiographyEN",
+						"short": "Biography in English",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strCountry",
+						"short": "Country of origin",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strCountryCode",
+						"short": "Country code",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDescriptionEN",
+						"short": "Track description in English",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDisbanded",
+						"short": "Disbandment status",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDiscogsID",
+						"short": "Discogs ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strFacebook",
+						"short": "Facebook URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGender",
+						"short": "Gender",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGeniusID",
+						"short": "Genius ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGenre",
+						"short": "Musical genre",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strISNIcode",
+						"short": "ISNI code",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strItunesID",
+						"short": "iTunes ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLabel",
+						"short": "Record label",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLastFMChart",
+						"short": "Last.fm chart URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLocation",
+						"short": "Recording location",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLocked",
+						"short": "Lock status",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLyricWikiID",
+						"short": "LyricWiki ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMood",
+						"short": "Track mood",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzAlbumID",
+						"short": "MusicBrainz Album ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzArtistID",
+						"short": "MusicBrainz Artist ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzID",
+						"short": "MusicBrainz Recording ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicMozID",
+						"short": "MusicMoz ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVid",
+						"short": "Music video URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidCompany",
+						"short": "Music video production company",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidDirector",
+						"short": "Music video director",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen1",
+						"short": "Music video screenshot 1",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen2",
+						"short": "Music video screenshot 2",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen3",
+						"short": "Music video screenshot 3",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strRateYourMusicID",
+						"short": "Rate Your Music ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strReleaseFormat",
+						"short": "Release format (CD, Vinyl, etc.)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strReview",
+						"short": "Album review",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strSpeed",
+						"short": "Album speed/tempo",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strStyle",
+						"short": "Musical style",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTheme",
+						"short": "Track theme",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrack",
+						"short": "Track name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrack3x3",
+						"short": "3x3 track image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrackLyrics",
+						"short": "Track lyrics",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrackThumb",
+						"short": "Track thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTwitter",
+						"short": "Twitter handle",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strWebsite",
+						"short": "Official website URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strWikidataID",
+						"short": "Wikidata ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strWikipediaID",
+						"short": "Wikipedia ID",
 						"type": "`$STRING`",
 					},
 				},
@@ -1238,382 +1376,477 @@ func MakeConfig() map[string]any {
 					},
 					map[string]any{
 						"name": "idAlbum",
+						"short": "Unique album ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idArtist",
+						"short": "Artist ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idIMVDB",
+						"short": "IMVDB ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idLabel",
+						"short": "Label ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idLyric",
+						"short": "Lyrics ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "idTrack",
+						"short": "Unique track ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intBornYear",
+						"short": "Birth year (for solo artists)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intCD",
+						"short": "CD number",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intCharted",
+						"short": "Chart position",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intDiedYear",
+						"short": "Death year (if applicable)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intDuration",
+						"short": "Track duration in milliseconds",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intFormedYear",
+						"short": "Year the artist was formed",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intLoved",
+						"short": "Number of loves/likes",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMembers",
+						"short": "Number of band members",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidComments",
+						"short": "Music video comment count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidDislikes",
+						"short": "Music video dislike count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidFavorites",
+						"short": "Music video favorite count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidLikes",
+						"short": "Music video like count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intMusicVidViews",
+						"short": "Music video view count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intSales",
+						"short": "Sales figures",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intScore",
+						"short": "Album score/rating",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intScoreVotes",
+						"short": "Number of score votes",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTotalListeners",
+						"short": "Total listener count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTotalPlays",
+						"short": "Total play count",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intTrackNumber",
+						"short": "Track number on album",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "intYearReleased",
+						"short": "Release year",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum",
+						"short": "Album name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DCase",
+						"short": "3D case image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DFace",
+						"short": "3D face image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DFlat",
+						"short": "3D flat image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbum3DThumb",
+						"short": "3D thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumCDart",
+						"short": "CD art URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumSpine",
+						"short": "Album spine image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumStripped",
+						"short": "Album name stripped of special characters",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumThumb",
+						"short": "Album thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumThumbBack",
+						"short": "Album back cover URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAlbumThumbHQ",
+						"short": "High quality album thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAllMusicID",
+						"short": "AllMusic ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strAmazonID",
+						"short": "Amazon ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtist",
+						"short": "Artist name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistAlternate",
+						"short": "Alternative artist name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistBanner",
+						"short": "Banner image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistClearart",
+						"short": "Clear art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistCutout",
+						"short": "Cutout image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart",
+						"short": "Fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart2",
+						"short": "Additional fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart3",
+						"short": "Additional fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistFanart4",
+						"short": "Additional fan art image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistLogo",
+						"short": "Logo image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistStripped",
+						"short": "Artist name stripped",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistThumb",
+						"short": "Thumbnail image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strArtistWideThumb",
+						"short": "Wide thumbnail image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strBBCReviewID",
+						"short": "BBC Review ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strBiographyEN",
+						"short": "Biography in English",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strCountry",
+						"short": "Country of origin",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strCountryCode",
+						"short": "Country code",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDescriptionEN",
+						"short": "Album description in English",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDisbanded",
+						"short": "Disbandment status",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strDiscogsID",
+						"short": "Discogs ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strFacebook",
+						"short": "Facebook URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGender",
+						"short": "Gender",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGeniusID",
+						"short": "Genius ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strGenre",
+						"short": "Musical genre",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strISNIcode",
+						"short": "ISNI code",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strItunesID",
+						"short": "iTunes ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLabel",
+						"short": "Record label",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLastFMChart",
+						"short": "Last.fm chart URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLocation",
+						"short": "Recording location",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLocked",
+						"short": "Lock status",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strLyricWikiID",
+						"short": "LyricWiki ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMood",
+						"short": "Album mood",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzAlbumID",
+						"short": "MusicBrainz Album ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzArtistID",
+						"short": "MusicBrainz Artist ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicBrainzID",
+						"short": "MusicBrainz Release Group ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicMozID",
+						"short": "MusicMoz ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVid",
+						"short": "Music video URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidCompany",
+						"short": "Music video production company",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidDirector",
+						"short": "Music video director",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen1",
+						"short": "Music video screenshot 1",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen2",
+						"short": "Music video screenshot 2",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strMusicVidScreen3",
+						"short": "Music video screenshot 3",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strRateYourMusicID",
+						"short": "Rate Your Music ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strReleaseFormat",
+						"short": "Release format (CD, Vinyl, etc.)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strReview",
+						"short": "Album review",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strSpeed",
+						"short": "Album speed/tempo",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strStyle",
+						"short": "Musical style",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTheme",
+						"short": "Album theme",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrack",
+						"short": "Track name",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrack3x3",
+						"short": "3x3 track image URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrackLyrics",
+						"short": "Track lyrics",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTrackThumb",
+						"short": "Track thumbnail URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strTwitter",
+						"short": "Twitter handle",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strWebsite",
+						"short": "Official website URL",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strWikidataID",
+						"short": "Wikidata ID",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "strWikipediaID",
+						"short": "Wikipedia ID",
 						"type": "`$STRING`",
 					},
 				},

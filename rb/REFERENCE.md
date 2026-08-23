@@ -114,46 +114,46 @@ v1_list = client.V1List
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `idAlbum` | `String` | No |  |
-| `idArtist` | `String` | No |  |
-| `idIMVDB` | `String` | No |  |
-| `idLyric` | `String` | No |  |
-| `idTrack` | `String` | No |  |
-| `intCD` | `String` | No |  |
-| `intDuration` | `String` | No |  |
-| `intLoved` | `String` | No |  |
-| `intMusicVidComments` | `String` | No |  |
-| `intMusicVidDislikes` | `String` | No |  |
-| `intMusicVidFavorites` | `String` | No |  |
-| `intMusicVidLikes` | `String` | No |  |
-| `intMusicVidViews` | `String` | No |  |
-| `intScore` | `String` | No |  |
-| `intScoreVotes` | `String` | No |  |
-| `intTotalListeners` | `String` | No |  |
-| `intTotalPlays` | `String` | No |  |
-| `intTrackNumber` | `String` | No |  |
-| `strAlbum` | `String` | No |  |
-| `strArtist` | `String` | No |  |
-| `strArtistAlternate` | `String` | No |  |
-| `strDescriptionEN` | `String` | No |  |
-| `strGenre` | `String` | No |  |
-| `strLocked` | `String` | No |  |
-| `strMood` | `String` | No |  |
-| `strMusicBrainzAlbumID` | `String` | No |  |
-| `strMusicBrainzArtistID` | `String` | No |  |
-| `strMusicBrainzID` | `String` | No |  |
-| `strMusicVid` | `String` | No |  |
-| `strMusicVidCompany` | `String` | No |  |
-| `strMusicVidDirector` | `String` | No |  |
-| `strMusicVidScreen1` | `String` | No |  |
-| `strMusicVidScreen2` | `String` | No |  |
-| `strMusicVidScreen3` | `String` | No |  |
-| `strStyle` | `String` | No |  |
-| `strTheme` | `String` | No |  |
-| `strTrack` | `String` | No |  |
-| `strTrack3x3` | `String` | No |  |
-| `strTrackLyrics` | `String` | No |  |
-| `strTrackThumb` | `String` | No |  |
+| `idAlbum` | `String` | No | Album ID |
+| `idArtist` | `String` | No | Artist ID |
+| `idIMVDB` | `String` | No | IMVDB ID |
+| `idLyric` | `String` | No | Lyrics ID |
+| `idTrack` | `String` | No | Unique track ID |
+| `intCD` | `String` | No | CD number |
+| `intDuration` | `String` | No | Track duration in milliseconds |
+| `intLoved` | `String` | No | Number of loves/likes |
+| `intMusicVidComments` | `String` | No | Music video comment count |
+| `intMusicVidDislikes` | `String` | No | Music video dislike count |
+| `intMusicVidFavorites` | `String` | No | Music video favorite count |
+| `intMusicVidLikes` | `String` | No | Music video like count |
+| `intMusicVidViews` | `String` | No | Music video view count |
+| `intScore` | `String` | No | Track score/rating |
+| `intScoreVotes` | `String` | No | Number of score votes |
+| `intTotalListeners` | `String` | No | Total listener count |
+| `intTotalPlays` | `String` | No | Total play count |
+| `intTrackNumber` | `String` | No | Track number on album |
+| `strAlbum` | `String` | No | Album name |
+| `strArtist` | `String` | No | Artist name |
+| `strArtistAlternate` | `String` | No | Alternative artist name |
+| `strDescriptionEN` | `String` | No | Track description in English |
+| `strGenre` | `String` | No | Musical genre |
+| `strLocked` | `String` | No | Lock status |
+| `strMood` | `String` | No | Track mood |
+| `strMusicBrainzAlbumID` | `String` | No | MusicBrainz Album ID |
+| `strMusicBrainzArtistID` | `String` | No | MusicBrainz Artist ID |
+| `strMusicBrainzID` | `String` | No | MusicBrainz Recording ID |
+| `strMusicVid` | `String` | No | Music video URL |
+| `strMusicVidCompany` | `String` | No | Music video production company |
+| `strMusicVidDirector` | `String` | No | Music video director |
+| `strMusicVidScreen1` | `String` | No | Music video screenshot 1 |
+| `strMusicVidScreen2` | `String` | No | Music video screenshot 2 |
+| `strMusicVidScreen3` | `String` | No | Music video screenshot 3 |
+| `strStyle` | `String` | No | Musical style |
+| `strTheme` | `String` | No | Track theme |
+| `strTrack` | `String` | No | Track name |
+| `strTrack3x3` | `String` | No | 3x3 track image URL |
+| `strTrackLyrics` | `String` | No | Track lyrics |
+| `strTrackThumb` | `String` | No | Track thumbnail URL |
 | `trending` | `Array` | No |  |
 
 ### Operations
@@ -214,101 +214,101 @@ v1_lookup = client.V1Lookup
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `idAlbum` | `String` | No |  |
-| `idArtist` | `String` | No |  |
-| `idIMVDB` | `String` | No |  |
-| `idLabel` | `String` | No |  |
-| `idLyric` | `String` | No |  |
-| `idTrack` | `String` | No |  |
-| `intBornYear` | `String` | No |  |
-| `intCD` | `String` | No |  |
-| `intCharted` | `String` | No |  |
-| `intDiedYear` | `String` | No |  |
-| `intDuration` | `String` | No |  |
-| `intFormedYear` | `String` | No |  |
-| `intLoved` | `String` | No |  |
-| `intMembers` | `String` | No |  |
-| `intMusicVidComments` | `String` | No |  |
-| `intMusicVidDislikes` | `String` | No |  |
-| `intMusicVidFavorites` | `String` | No |  |
-| `intMusicVidLikes` | `String` | No |  |
-| `intMusicVidViews` | `String` | No |  |
-| `intSales` | `String` | No |  |
-| `intScore` | `String` | No |  |
-| `intScoreVotes` | `String` | No |  |
-| `intTotalListeners` | `String` | No |  |
-| `intTotalPlays` | `String` | No |  |
-| `intTrackNumber` | `String` | No |  |
-| `intYearReleased` | `String` | No |  |
-| `strAlbum` | `String` | No |  |
-| `strAlbum3DCase` | `String` | No |  |
-| `strAlbum3DFace` | `String` | No |  |
-| `strAlbum3DFlat` | `String` | No |  |
-| `strAlbum3DThumb` | `String` | No |  |
-| `strAlbumCDart` | `String` | No |  |
-| `strAlbumSpine` | `String` | No |  |
-| `strAlbumStripped` | `String` | No |  |
-| `strAlbumThumb` | `String` | No |  |
-| `strAlbumThumbBack` | `String` | No |  |
-| `strAlbumThumbHQ` | `String` | No |  |
-| `strAllMusicID` | `String` | No |  |
-| `strAmazonID` | `String` | No |  |
-| `strArtist` | `String` | No |  |
-| `strArtistAlternate` | `String` | No |  |
-| `strArtistBanner` | `String` | No |  |
-| `strArtistClearart` | `String` | No |  |
-| `strArtistCutout` | `String` | No |  |
-| `strArtistFanart` | `String` | No |  |
-| `strArtistFanart2` | `String` | No |  |
-| `strArtistFanart3` | `String` | No |  |
-| `strArtistFanart4` | `String` | No |  |
-| `strArtistLogo` | `String` | No |  |
-| `strArtistStripped` | `String` | No |  |
-| `strArtistThumb` | `String` | No |  |
-| `strArtistWideThumb` | `String` | No |  |
-| `strBBCReviewID` | `String` | No |  |
-| `strBiographyEN` | `String` | No |  |
-| `strCountry` | `String` | No |  |
-| `strCountryCode` | `String` | No |  |
-| `strDescriptionEN` | `String` | No |  |
-| `strDisbanded` | `String` | No |  |
-| `strDiscogsID` | `String` | No |  |
-| `strFacebook` | `String` | No |  |
-| `strGender` | `String` | No |  |
-| `strGeniusID` | `String` | No |  |
-| `strGenre` | `String` | No |  |
-| `strISNIcode` | `String` | No |  |
-| `strItunesID` | `String` | No |  |
-| `strLabel` | `String` | No |  |
-| `strLastFMChart` | `String` | No |  |
-| `strLocation` | `String` | No |  |
-| `strLocked` | `String` | No |  |
-| `strLyricWikiID` | `String` | No |  |
-| `strMood` | `String` | No |  |
-| `strMusicBrainzAlbumID` | `String` | No |  |
-| `strMusicBrainzArtistID` | `String` | No |  |
-| `strMusicBrainzID` | `String` | No |  |
-| `strMusicMozID` | `String` | No |  |
-| `strMusicVid` | `String` | No |  |
-| `strMusicVidCompany` | `String` | No |  |
-| `strMusicVidDirector` | `String` | No |  |
-| `strMusicVidScreen1` | `String` | No |  |
-| `strMusicVidScreen2` | `String` | No |  |
-| `strMusicVidScreen3` | `String` | No |  |
-| `strRateYourMusicID` | `String` | No |  |
-| `strReleaseFormat` | `String` | No |  |
-| `strReview` | `String` | No |  |
-| `strSpeed` | `String` | No |  |
-| `strStyle` | `String` | No |  |
-| `strTheme` | `String` | No |  |
-| `strTrack` | `String` | No |  |
-| `strTrack3x3` | `String` | No |  |
-| `strTrackLyrics` | `String` | No |  |
-| `strTrackThumb` | `String` | No |  |
-| `strTwitter` | `String` | No |  |
-| `strWebsite` | `String` | No |  |
-| `strWikidataID` | `String` | No |  |
-| `strWikipediaID` | `String` | No |  |
+| `idAlbum` | `String` | No | Album ID |
+| `idArtist` | `String` | No | Artist ID |
+| `idIMVDB` | `String` | No | IMVDB ID |
+| `idLabel` | `String` | No | Label ID |
+| `idLyric` | `String` | No | Lyrics ID |
+| `idTrack` | `String` | No | Unique track ID |
+| `intBornYear` | `String` | No | Birth year (for solo artists) |
+| `intCD` | `String` | No | CD number |
+| `intCharted` | `String` | No | Chart position |
+| `intDiedYear` | `String` | No | Death year (if applicable) |
+| `intDuration` | `String` | No | Track duration in milliseconds |
+| `intFormedYear` | `String` | No | Year the artist was formed |
+| `intLoved` | `String` | No | Number of loves/likes |
+| `intMembers` | `String` | No | Number of band members |
+| `intMusicVidComments` | `String` | No | Music video comment count |
+| `intMusicVidDislikes` | `String` | No | Music video dislike count |
+| `intMusicVidFavorites` | `String` | No | Music video favorite count |
+| `intMusicVidLikes` | `String` | No | Music video like count |
+| `intMusicVidViews` | `String` | No | Music video view count |
+| `intSales` | `String` | No | Sales figures |
+| `intScore` | `String` | No | Track score/rating |
+| `intScoreVotes` | `String` | No | Number of score votes |
+| `intTotalListeners` | `String` | No | Total listener count |
+| `intTotalPlays` | `String` | No | Total play count |
+| `intTrackNumber` | `String` | No | Track number on album |
+| `intYearReleased` | `String` | No | Release year |
+| `strAlbum` | `String` | No | Album name |
+| `strAlbum3DCase` | `String` | No | 3D case image URL |
+| `strAlbum3DFace` | `String` | No | 3D face image URL |
+| `strAlbum3DFlat` | `String` | No | 3D flat image URL |
+| `strAlbum3DThumb` | `String` | No | 3D thumbnail URL |
+| `strAlbumCDart` | `String` | No | CD art URL |
+| `strAlbumSpine` | `String` | No | Album spine image URL |
+| `strAlbumStripped` | `String` | No | Album name stripped of special characters |
+| `strAlbumThumb` | `String` | No | Album thumbnail URL |
+| `strAlbumThumbBack` | `String` | No | Album back cover URL |
+| `strAlbumThumbHQ` | `String` | No | High quality album thumbnail URL |
+| `strAllMusicID` | `String` | No | AllMusic ID |
+| `strAmazonID` | `String` | No | Amazon ID |
+| `strArtist` | `String` | No | Artist name |
+| `strArtistAlternate` | `String` | No | Alternative artist name |
+| `strArtistBanner` | `String` | No | Banner image URL |
+| `strArtistClearart` | `String` | No | Clear art image URL |
+| `strArtistCutout` | `String` | No | Cutout image URL |
+| `strArtistFanart` | `String` | No | Fan art image URL |
+| `strArtistFanart2` | `String` | No | Additional fan art image URL |
+| `strArtistFanart3` | `String` | No | Additional fan art image URL |
+| `strArtistFanart4` | `String` | No | Additional fan art image URL |
+| `strArtistLogo` | `String` | No | Logo image URL |
+| `strArtistStripped` | `String` | No | Artist name stripped |
+| `strArtistThumb` | `String` | No | Thumbnail image URL |
+| `strArtistWideThumb` | `String` | No | Wide thumbnail image URL |
+| `strBBCReviewID` | `String` | No | BBC Review ID |
+| `strBiographyEN` | `String` | No | Biography in English |
+| `strCountry` | `String` | No | Country of origin |
+| `strCountryCode` | `String` | No | Country code |
+| `strDescriptionEN` | `String` | No | Track description in English |
+| `strDisbanded` | `String` | No | Disbandment status |
+| `strDiscogsID` | `String` | No | Discogs ID |
+| `strFacebook` | `String` | No | Facebook URL |
+| `strGender` | `String` | No | Gender |
+| `strGeniusID` | `String` | No | Genius ID |
+| `strGenre` | `String` | No | Musical genre |
+| `strISNIcode` | `String` | No | ISNI code |
+| `strItunesID` | `String` | No | iTunes ID |
+| `strLabel` | `String` | No | Record label |
+| `strLastFMChart` | `String` | No | Last.fm chart URL |
+| `strLocation` | `String` | No | Recording location |
+| `strLocked` | `String` | No | Lock status |
+| `strLyricWikiID` | `String` | No | LyricWiki ID |
+| `strMood` | `String` | No | Track mood |
+| `strMusicBrainzAlbumID` | `String` | No | MusicBrainz Album ID |
+| `strMusicBrainzArtistID` | `String` | No | MusicBrainz Artist ID |
+| `strMusicBrainzID` | `String` | No | MusicBrainz Recording ID |
+| `strMusicMozID` | `String` | No | MusicMoz ID |
+| `strMusicVid` | `String` | No | Music video URL |
+| `strMusicVidCompany` | `String` | No | Music video production company |
+| `strMusicVidDirector` | `String` | No | Music video director |
+| `strMusicVidScreen1` | `String` | No | Music video screenshot 1 |
+| `strMusicVidScreen2` | `String` | No | Music video screenshot 2 |
+| `strMusicVidScreen3` | `String` | No | Music video screenshot 3 |
+| `strRateYourMusicID` | `String` | No | Rate Your Music ID |
+| `strReleaseFormat` | `String` | No | Release format (CD, Vinyl, etc.) |
+| `strReview` | `String` | No | Album review |
+| `strSpeed` | `String` | No | Album speed/tempo |
+| `strStyle` | `String` | No | Musical style |
+| `strTheme` | `String` | No | Track theme |
+| `strTrack` | `String` | No | Track name |
+| `strTrack3x3` | `String` | No | 3x3 track image URL |
+| `strTrackLyrics` | `String` | No | Track lyrics |
+| `strTrackThumb` | `String` | No | Track thumbnail URL |
+| `strTwitter` | `String` | No | Twitter handle |
+| `strWebsite` | `String` | No | Official website URL |
+| `strWikidataID` | `String` | No | Wikidata ID |
+| `strWikipediaID` | `String` | No | Wikipedia ID |
 
 ### Operations
 
@@ -369,101 +369,101 @@ v1_search = client.V1Search
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
 | `album` | `Array` | No |  |
-| `idAlbum` | `String` | No |  |
-| `idArtist` | `String` | No |  |
-| `idIMVDB` | `String` | No |  |
-| `idLabel` | `String` | No |  |
-| `idLyric` | `String` | No |  |
-| `idTrack` | `String` | No |  |
-| `intBornYear` | `String` | No |  |
-| `intCD` | `String` | No |  |
-| `intCharted` | `String` | No |  |
-| `intDiedYear` | `String` | No |  |
-| `intDuration` | `String` | No |  |
-| `intFormedYear` | `String` | No |  |
-| `intLoved` | `String` | No |  |
-| `intMembers` | `String` | No |  |
-| `intMusicVidComments` | `String` | No |  |
-| `intMusicVidDislikes` | `String` | No |  |
-| `intMusicVidFavorites` | `String` | No |  |
-| `intMusicVidLikes` | `String` | No |  |
-| `intMusicVidViews` | `String` | No |  |
-| `intSales` | `String` | No |  |
-| `intScore` | `String` | No |  |
-| `intScoreVotes` | `String` | No |  |
-| `intTotalListeners` | `String` | No |  |
-| `intTotalPlays` | `String` | No |  |
-| `intTrackNumber` | `String` | No |  |
-| `intYearReleased` | `String` | No |  |
-| `strAlbum` | `String` | No |  |
-| `strAlbum3DCase` | `String` | No |  |
-| `strAlbum3DFace` | `String` | No |  |
-| `strAlbum3DFlat` | `String` | No |  |
-| `strAlbum3DThumb` | `String` | No |  |
-| `strAlbumCDart` | `String` | No |  |
-| `strAlbumSpine` | `String` | No |  |
-| `strAlbumStripped` | `String` | No |  |
-| `strAlbumThumb` | `String` | No |  |
-| `strAlbumThumbBack` | `String` | No |  |
-| `strAlbumThumbHQ` | `String` | No |  |
-| `strAllMusicID` | `String` | No |  |
-| `strAmazonID` | `String` | No |  |
-| `strArtist` | `String` | No |  |
-| `strArtistAlternate` | `String` | No |  |
-| `strArtistBanner` | `String` | No |  |
-| `strArtistClearart` | `String` | No |  |
-| `strArtistCutout` | `String` | No |  |
-| `strArtistFanart` | `String` | No |  |
-| `strArtistFanart2` | `String` | No |  |
-| `strArtistFanart3` | `String` | No |  |
-| `strArtistFanart4` | `String` | No |  |
-| `strArtistLogo` | `String` | No |  |
-| `strArtistStripped` | `String` | No |  |
-| `strArtistThumb` | `String` | No |  |
-| `strArtistWideThumb` | `String` | No |  |
-| `strBBCReviewID` | `String` | No |  |
-| `strBiographyEN` | `String` | No |  |
-| `strCountry` | `String` | No |  |
-| `strCountryCode` | `String` | No |  |
-| `strDescriptionEN` | `String` | No |  |
-| `strDisbanded` | `String` | No |  |
-| `strDiscogsID` | `String` | No |  |
-| `strFacebook` | `String` | No |  |
-| `strGender` | `String` | No |  |
-| `strGeniusID` | `String` | No |  |
-| `strGenre` | `String` | No |  |
-| `strISNIcode` | `String` | No |  |
-| `strItunesID` | `String` | No |  |
-| `strLabel` | `String` | No |  |
-| `strLastFMChart` | `String` | No |  |
-| `strLocation` | `String` | No |  |
-| `strLocked` | `String` | No |  |
-| `strLyricWikiID` | `String` | No |  |
-| `strMood` | `String` | No |  |
-| `strMusicBrainzAlbumID` | `String` | No |  |
-| `strMusicBrainzArtistID` | `String` | No |  |
-| `strMusicBrainzID` | `String` | No |  |
-| `strMusicMozID` | `String` | No |  |
-| `strMusicVid` | `String` | No |  |
-| `strMusicVidCompany` | `String` | No |  |
-| `strMusicVidDirector` | `String` | No |  |
-| `strMusicVidScreen1` | `String` | No |  |
-| `strMusicVidScreen2` | `String` | No |  |
-| `strMusicVidScreen3` | `String` | No |  |
-| `strRateYourMusicID` | `String` | No |  |
-| `strReleaseFormat` | `String` | No |  |
-| `strReview` | `String` | No |  |
-| `strSpeed` | `String` | No |  |
-| `strStyle` | `String` | No |  |
-| `strTheme` | `String` | No |  |
-| `strTrack` | `String` | No |  |
-| `strTrack3x3` | `String` | No |  |
-| `strTrackLyrics` | `String` | No |  |
-| `strTrackThumb` | `String` | No |  |
-| `strTwitter` | `String` | No |  |
-| `strWebsite` | `String` | No |  |
-| `strWikidataID` | `String` | No |  |
-| `strWikipediaID` | `String` | No |  |
+| `idAlbum` | `String` | No | Unique album ID |
+| `idArtist` | `String` | No | Artist ID |
+| `idIMVDB` | `String` | No | IMVDB ID |
+| `idLabel` | `String` | No | Label ID |
+| `idLyric` | `String` | No | Lyrics ID |
+| `idTrack` | `String` | No | Unique track ID |
+| `intBornYear` | `String` | No | Birth year (for solo artists) |
+| `intCD` | `String` | No | CD number |
+| `intCharted` | `String` | No | Chart position |
+| `intDiedYear` | `String` | No | Death year (if applicable) |
+| `intDuration` | `String` | No | Track duration in milliseconds |
+| `intFormedYear` | `String` | No | Year the artist was formed |
+| `intLoved` | `String` | No | Number of loves/likes |
+| `intMembers` | `String` | No | Number of band members |
+| `intMusicVidComments` | `String` | No | Music video comment count |
+| `intMusicVidDislikes` | `String` | No | Music video dislike count |
+| `intMusicVidFavorites` | `String` | No | Music video favorite count |
+| `intMusicVidLikes` | `String` | No | Music video like count |
+| `intMusicVidViews` | `String` | No | Music video view count |
+| `intSales` | `String` | No | Sales figures |
+| `intScore` | `String` | No | Album score/rating |
+| `intScoreVotes` | `String` | No | Number of score votes |
+| `intTotalListeners` | `String` | No | Total listener count |
+| `intTotalPlays` | `String` | No | Total play count |
+| `intTrackNumber` | `String` | No | Track number on album |
+| `intYearReleased` | `String` | No | Release year |
+| `strAlbum` | `String` | No | Album name |
+| `strAlbum3DCase` | `String` | No | 3D case image URL |
+| `strAlbum3DFace` | `String` | No | 3D face image URL |
+| `strAlbum3DFlat` | `String` | No | 3D flat image URL |
+| `strAlbum3DThumb` | `String` | No | 3D thumbnail URL |
+| `strAlbumCDart` | `String` | No | CD art URL |
+| `strAlbumSpine` | `String` | No | Album spine image URL |
+| `strAlbumStripped` | `String` | No | Album name stripped of special characters |
+| `strAlbumThumb` | `String` | No | Album thumbnail URL |
+| `strAlbumThumbBack` | `String` | No | Album back cover URL |
+| `strAlbumThumbHQ` | `String` | No | High quality album thumbnail URL |
+| `strAllMusicID` | `String` | No | AllMusic ID |
+| `strAmazonID` | `String` | No | Amazon ID |
+| `strArtist` | `String` | No | Artist name |
+| `strArtistAlternate` | `String` | No | Alternative artist name |
+| `strArtistBanner` | `String` | No | Banner image URL |
+| `strArtistClearart` | `String` | No | Clear art image URL |
+| `strArtistCutout` | `String` | No | Cutout image URL |
+| `strArtistFanart` | `String` | No | Fan art image URL |
+| `strArtistFanart2` | `String` | No | Additional fan art image URL |
+| `strArtistFanart3` | `String` | No | Additional fan art image URL |
+| `strArtistFanart4` | `String` | No | Additional fan art image URL |
+| `strArtistLogo` | `String` | No | Logo image URL |
+| `strArtistStripped` | `String` | No | Artist name stripped |
+| `strArtistThumb` | `String` | No | Thumbnail image URL |
+| `strArtistWideThumb` | `String` | No | Wide thumbnail image URL |
+| `strBBCReviewID` | `String` | No | BBC Review ID |
+| `strBiographyEN` | `String` | No | Biography in English |
+| `strCountry` | `String` | No | Country of origin |
+| `strCountryCode` | `String` | No | Country code |
+| `strDescriptionEN` | `String` | No | Album description in English |
+| `strDisbanded` | `String` | No | Disbandment status |
+| `strDiscogsID` | `String` | No | Discogs ID |
+| `strFacebook` | `String` | No | Facebook URL |
+| `strGender` | `String` | No | Gender |
+| `strGeniusID` | `String` | No | Genius ID |
+| `strGenre` | `String` | No | Musical genre |
+| `strISNIcode` | `String` | No | ISNI code |
+| `strItunesID` | `String` | No | iTunes ID |
+| `strLabel` | `String` | No | Record label |
+| `strLastFMChart` | `String` | No | Last.fm chart URL |
+| `strLocation` | `String` | No | Recording location |
+| `strLocked` | `String` | No | Lock status |
+| `strLyricWikiID` | `String` | No | LyricWiki ID |
+| `strMood` | `String` | No | Album mood |
+| `strMusicBrainzAlbumID` | `String` | No | MusicBrainz Album ID |
+| `strMusicBrainzArtistID` | `String` | No | MusicBrainz Artist ID |
+| `strMusicBrainzID` | `String` | No | MusicBrainz Release Group ID |
+| `strMusicMozID` | `String` | No | MusicMoz ID |
+| `strMusicVid` | `String` | No | Music video URL |
+| `strMusicVidCompany` | `String` | No | Music video production company |
+| `strMusicVidDirector` | `String` | No | Music video director |
+| `strMusicVidScreen1` | `String` | No | Music video screenshot 1 |
+| `strMusicVidScreen2` | `String` | No | Music video screenshot 2 |
+| `strMusicVidScreen3` | `String` | No | Music video screenshot 3 |
+| `strRateYourMusicID` | `String` | No | Rate Your Music ID |
+| `strReleaseFormat` | `String` | No | Release format (CD, Vinyl, etc.) |
+| `strReview` | `String` | No | Album review |
+| `strSpeed` | `String` | No | Album speed/tempo |
+| `strStyle` | `String` | No | Musical style |
+| `strTheme` | `String` | No | Album theme |
+| `strTrack` | `String` | No | Track name |
+| `strTrack3x3` | `String` | No | 3x3 track image URL |
+| `strTrackLyrics` | `String` | No | Track lyrics |
+| `strTrackThumb` | `String` | No | Track thumbnail URL |
+| `strTwitter` | `String` | No | Twitter handle |
+| `strWebsite` | `String` | No | Official website URL |
+| `strWikidataID` | `String` | No | Wikidata ID |
+| `strWikipediaID` | `String` | No | Wikipedia ID |
 
 ### Operations
 
