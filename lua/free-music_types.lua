@@ -51,9 +51,17 @@
 
 ---@class V1ListLoadMatch
 ---@field api_key string
+---@field format? string
+---@field i? string
+---@field s? string
 
 ---@class V1ListListMatch
 ---@field api_key string
+---@field country? string
+---@field format? string
+---@field type? string
+---@field i? number
+---@field s? string
 
 ---@class V1Lookup
 ---@field idAlbum? string
@@ -154,9 +162,13 @@
 
 ---@class V1LookupLoadMatch
 ---@field api_key string
+---@field i string
 
 ---@class V1LookupListMatch
 ---@field api_key string
+---@field h? number
+---@field m? number
+---@field i? number
 
 ---@class V1Search
 ---@field album? table
@@ -258,9 +270,13 @@
 
 ---@class V1SearchLoadMatch
 ---@field api_key string
+---@field s string
 
 ---@class V1SearchListMatch
 ---@field api_key string
+---@field a? string
+---@field s string
+---@field t? string
 
 ---@class V2List
 ---@field album? table

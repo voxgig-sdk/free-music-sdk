@@ -51,10 +51,18 @@ export interface V1List {
 
 export interface V1ListLoadMatch {
   api_key: string
+  format?: string
+  i?: string
+  s?: string
 }
 
 export interface V1ListListMatch {
   api_key: string
+  country?: string
+  format?: string
+  type?: string
+  i?: number
+  s?: string
 }
 
 export interface V1Lookup {
@@ -157,10 +165,14 @@ export interface V1Lookup {
 
 export interface V1LookupLoadMatch {
   api_key: string
+  i: string
 }
 
 export interface V1LookupListMatch {
   api_key: string
+  h?: number
+  m?: number
+  i?: number
 }
 
 export interface V1Search {
@@ -264,10 +276,14 @@ export interface V1Search {
 
 export interface V1SearchLoadMatch {
   api_key: string
+  s: string
 }
 
 export interface V1SearchListMatch {
   api_key: string
+  a?: string
+  s: string
+  t?: string
 }
 
 export interface V2List {

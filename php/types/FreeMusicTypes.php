@@ -62,12 +62,20 @@ class V1List
 class V1ListLoadMatch
 {
     public string $api_key;
+    public ?string $format = null;
+    public ?string $i = null;
+    public ?string $s = null;
 }
 
 /** Request payload for V1List#list. */
 class V1ListListMatch
 {
     public string $api_key;
+    public ?string $country = null;
+    public ?string $format = null;
+    public ?string $type = null;
+    public ?int $i = null;
+    public ?string $s = null;
 }
 
 /** V1Lookup entity data model. */
@@ -174,12 +182,16 @@ class V1Lookup
 class V1LookupLoadMatch
 {
     public string $api_key;
+    public string $i;
 }
 
 /** Request payload for V1Lookup#list. */
 class V1LookupListMatch
 {
     public string $api_key;
+    public ?int $h = null;
+    public ?int $m = null;
+    public ?int $i = null;
 }
 
 /** V1Search entity data model. */
@@ -287,12 +299,16 @@ class V1Search
 class V1SearchLoadMatch
 {
     public string $api_key;
+    public string $s;
 }
 
 /** Request payload for V1Search#list. */
 class V1SearchListMatch
 {
     public string $api_key;
+    public ?string $a = null;
+    public string $s;
+    public ?string $t = null;
 }
 
 /** V2List entity data model. */

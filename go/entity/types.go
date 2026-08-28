@@ -60,11 +60,19 @@ type V1List struct {
 // V1ListLoadMatch is the typed request payload for V1List.LoadTyped.
 type V1ListLoadMatch struct {
 	ApiKey string `json:"api_key"`
+	Format *string `json:"format,omitempty"`
+	I *string `json:"i,omitempty"`
+	S *string `json:"s,omitempty"`
 }
 
 // V1ListListMatch is the typed request payload for V1List.ListTyped.
 type V1ListListMatch struct {
 	ApiKey string `json:"api_key"`
+	Country *string `json:"country,omitempty"`
+	Format *string `json:"format,omitempty"`
+	Type *string `json:"type,omitempty"`
+	I *int `json:"i,omitempty"`
+	S *string `json:"s,omitempty"`
 }
 
 // V1Lookup is the typed data model for the v1_lookup entity.
@@ -169,11 +177,15 @@ type V1Lookup struct {
 // V1LookupLoadMatch is the typed request payload for V1Lookup.LoadTyped.
 type V1LookupLoadMatch struct {
 	ApiKey string `json:"api_key"`
+	I string `json:"i"`
 }
 
 // V1LookupListMatch is the typed request payload for V1Lookup.ListTyped.
 type V1LookupListMatch struct {
 	ApiKey string `json:"api_key"`
+	H *int `json:"h,omitempty"`
+	M *int `json:"m,omitempty"`
+	I *int `json:"i,omitempty"`
 }
 
 // V1Search is the typed data model for the v1_search entity.
@@ -279,11 +291,15 @@ type V1Search struct {
 // V1SearchLoadMatch is the typed request payload for V1Search.LoadTyped.
 type V1SearchLoadMatch struct {
 	ApiKey string `json:"api_key"`
+	S string `json:"s"`
 }
 
 // V1SearchListMatch is the typed request payload for V1Search.ListTyped.
 type V1SearchListMatch struct {
 	ApiKey string `json:"api_key"`
+	A *string `json:"a,omitempty"`
+	S string `json:"s"`
+	T *string `json:"t,omitempty"`
 }
 
 // V2List is the typed data model for the v2_list entity.

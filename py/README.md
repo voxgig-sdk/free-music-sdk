@@ -745,7 +745,7 @@ Create an instance: `v1_lookup = client.V1Lookup()`
 #### Example: Load
 
 ```python
-v1_lookup = client.V1Lookup().load({"api_key": "api_key"})
+v1_lookup = client.V1Lookup().load({"api_key": "api_key", "i": "i"})
 ```
 
 #### Example: List
@@ -870,13 +870,13 @@ Create an instance: `v1_search = client.V1Search()`
 #### Example: Load
 
 ```python
-v1_search = client.V1Search().load({"api_key": "api_key"})
+v1_search = client.V1Search().load({"api_key": "api_key", "s": "s"})
 ```
 
 #### Example: List
 
 ```python
-v1_searchs = client.V1Search().list({"api_key": "example"})
+v1_searchs = client.V1Search().list({"api_key": "example", "s": "example"})
 ```
 
 
@@ -951,6 +951,29 @@ Create an instance: `v2_search = client.V2Search()`
 ```python
 v2_search = client.V2Search().load({"album_name": "album_name"})
 ```
+
+## Features
+
+This SDK ships 1 optional features. Each is **inactive until you
+switch it on**, so an SDK you have not configured behaves exactly as if none of
+them existed — no retries, no cache, no logging, no measurable overhead.
+
+Activate a feature by name in the client options, alongside the options shown
+above:
+
+| Feature | What it does |
+|---|---|
+| [`test`](#test) | In-memory mock transport for testing without a live server |
+
+### test
+
+In-memory mock transport for testing without a live server.
+
+| Option | Default |
+|---|---|
+| `active` | `false` |
+
+Set `feature.test.active` to enable it, then override any of the options above.
 
 
 ## Advanced

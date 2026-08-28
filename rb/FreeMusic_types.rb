@@ -181,8 +181,20 @@ V1List = Struct.new(
 #
 # @!attribute [rw] api_key
 #   @return [String]
+#
+# @!attribute [rw] format
+#   @return [String, nil]
+#
+# @!attribute [rw] i
+#   @return [String, nil]
+#
+# @!attribute [rw] s
+#   @return [String, nil]
 V1ListLoadMatch = Struct.new(
   :api_key,
+  :format,
+  :i,
+  :s,
   keyword_init: true
 )
 
@@ -190,8 +202,28 @@ V1ListLoadMatch = Struct.new(
 #
 # @!attribute [rw] api_key
 #   @return [String]
+#
+# @!attribute [rw] country
+#   @return [String, nil]
+#
+# @!attribute [rw] format
+#   @return [String, nil]
+#
+# @!attribute [rw] type
+#   @return [String, nil]
+#
+# @!attribute [rw] i
+#   @return [Integer, nil]
+#
+# @!attribute [rw] s
+#   @return [String, nil]
 V1ListListMatch = Struct.new(
   :api_key,
+  :country,
+  :format,
+  :type,
+  :i,
+  :s,
   keyword_init: true
 )
 
@@ -584,8 +616,12 @@ V1Lookup = Struct.new(
 #
 # @!attribute [rw] api_key
 #   @return [String]
+#
+# @!attribute [rw] i
+#   @return [String]
 V1LookupLoadMatch = Struct.new(
   :api_key,
+  :i,
   keyword_init: true
 )
 
@@ -593,8 +629,20 @@ V1LookupLoadMatch = Struct.new(
 #
 # @!attribute [rw] api_key
 #   @return [String]
+#
+# @!attribute [rw] h
+#   @return [Integer, nil]
+#
+# @!attribute [rw] m
+#   @return [Integer, nil]
+#
+# @!attribute [rw] i
+#   @return [Integer, nil]
 V1LookupListMatch = Struct.new(
   :api_key,
+  :h,
+  :m,
+  :i,
   keyword_init: true
 )
 
@@ -991,8 +1039,12 @@ V1Search = Struct.new(
 #
 # @!attribute [rw] api_key
 #   @return [String]
+#
+# @!attribute [rw] s
+#   @return [String]
 V1SearchLoadMatch = Struct.new(
   :api_key,
+  :s,
   keyword_init: true
 )
 
@@ -1000,8 +1052,20 @@ V1SearchLoadMatch = Struct.new(
 #
 # @!attribute [rw] api_key
 #   @return [String]
+#
+# @!attribute [rw] a
+#   @return [String, nil]
+#
+# @!attribute [rw] s
+#   @return [String]
+#
+# @!attribute [rw] t
+#   @return [String, nil]
 V1SearchListMatch = Struct.new(
   :api_key,
+  :a,
+  :s,
+  :t,
   keyword_init: true
 )
 

@@ -60,12 +60,26 @@ class V1List(TypedDict, total=False):
     trending: list
 
 
-class V1ListLoadMatch(TypedDict):
+class V1ListLoadMatchRequired(TypedDict):
     api_key: str
 
 
-class V1ListListMatch(TypedDict):
+class V1ListLoadMatch(V1ListLoadMatchRequired, total=False):
+    format: str
+    i: str
+    s: str
+
+
+class V1ListListMatchRequired(TypedDict):
     api_key: str
+
+
+class V1ListListMatch(V1ListListMatchRequired, total=False):
+    country: str
+    format: str
+    type: str
+    i: int
+    s: str
 
 
 class V1Lookup(TypedDict, total=False):
@@ -168,10 +182,17 @@ class V1Lookup(TypedDict, total=False):
 
 class V1LookupLoadMatch(TypedDict):
     api_key: str
+    i: str
 
 
-class V1LookupListMatch(TypedDict):
+class V1LookupListMatchRequired(TypedDict):
     api_key: str
+
+
+class V1LookupListMatch(V1LookupListMatchRequired, total=False):
+    h: int
+    m: int
+    i: int
 
 
 class V1Search(TypedDict, total=False):
@@ -275,10 +296,17 @@ class V1Search(TypedDict, total=False):
 
 class V1SearchLoadMatch(TypedDict):
     api_key: str
+    s: str
 
 
-class V1SearchListMatch(TypedDict):
+class V1SearchListMatchRequired(TypedDict):
     api_key: str
+    s: str
+
+
+class V1SearchListMatch(V1SearchListMatchRequired, total=False):
+    a: str
+    t: str
 
 
 class V2List(TypedDict, total=False):
