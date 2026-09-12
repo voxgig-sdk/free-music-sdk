@@ -293,13 +293,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/trending.php",
-								"parts": []any{
-									"{api_key}",
-									"trending.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "trending.php",
 									},
 								},
 								"select": map[string]any{
@@ -313,6 +317,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.trending`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"trending.php",
 								},
 							},
 							map[string]any{
@@ -339,13 +347,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/mvid.php",
-								"parts": []any{
-									"{api_key}",
-									"mvid.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "mvid.php",
 									},
 								},
 								"select": map[string]any{
@@ -357,6 +369,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.mvids`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"mvid.php",
 								},
 							},
 							map[string]any{
@@ -384,13 +400,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/track-top10.php",
-								"parts": []any{
-									"{api_key}",
-									"track-top10.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "track-top10.php",
 									},
 								},
 								"select": map[string]any{
@@ -402,6 +422,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.track`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"track-top10.php",
 								},
 							},
 						},
@@ -434,13 +458,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/mostloved.php",
-								"parts": []any{
-									"{api_key}",
-									"mostloved.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "mostloved.php",
 									},
 								},
 								"select": map[string]any{
@@ -452,6 +480,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"mostloved.php",
 								},
 							},
 							map[string]any{
@@ -478,13 +510,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/mvid-mb.php",
-								"parts": []any{
-									"{api_key}",
-									"mvid-mb.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "mvid-mb.php",
 									},
 								},
 								"select": map[string]any{
@@ -496,6 +532,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"mvid-mb.php",
 								},
 							},
 							map[string]any{
@@ -522,13 +562,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/track-top10-mb.php",
-								"parts": []any{
-									"{api_key}",
-									"track-top10-mb.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "track-top10-mb.php",
 									},
 								},
 								"select": map[string]any{
@@ -540,6 +584,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"track-top10-mb.php",
 								},
 							},
 						},
@@ -1062,13 +1110,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/track.php",
-								"parts": []any{
-									"{api_key}",
-									"track.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "track.php",
 									},
 								},
 								"select": map[string]any{
@@ -1081,6 +1133,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.track`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"track.php",
 								},
 							},
 							map[string]any{
@@ -1113,13 +1169,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/album.php",
-								"parts": []any{
-									"{api_key}",
-									"album.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "album.php",
 									},
 								},
 								"select": map[string]any{
@@ -1132,6 +1192,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.album`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"album.php",
 								},
 							},
 							map[string]any{
@@ -1159,13 +1223,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/artist.php",
-								"parts": []any{
-									"{api_key}",
-									"artist.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "artist.php",
 									},
 								},
 								"select": map[string]any{
@@ -1177,6 +1245,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.artists`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"artist.php",
 								},
 							},
 						},
@@ -1209,13 +1281,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/album-mb.php",
-								"parts": []any{
-									"{api_key}",
-									"album-mb.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "album-mb.php",
 									},
 								},
 								"select": map[string]any{
@@ -1227,6 +1303,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"album-mb.php",
 								},
 							},
 							map[string]any{
@@ -1254,13 +1334,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/artist-mb.php",
-								"parts": []any{
-									"{api_key}",
-									"artist-mb.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "artist-mb.php",
 									},
 								},
 								"select": map[string]any{
@@ -1272,6 +1356,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"artist-mb.php",
 								},
 							},
 							map[string]any{
@@ -1298,13 +1386,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/artist-social.php",
-								"parts": []any{
-									"{api_key}",
-									"artist-social.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "artist-social.php",
 									},
 								},
 								"select": map[string]any{
@@ -1316,6 +1408,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"artist-social.php",
 								},
 							},
 							map[string]any{
@@ -1342,13 +1438,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/track-mb.php",
-								"parts": []any{
-									"{api_key}",
-									"track-mb.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "track-mb.php",
 									},
 								},
 								"select": map[string]any{
@@ -1360,6 +1460,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"track-mb.php",
 								},
 							},
 						},
@@ -1889,13 +1993,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/searchalbum.php",
-								"parts": []any{
-									"{api_key}",
-									"searchalbum.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "searchalbum.php",
 									},
 								},
 								"select": map[string]any{
@@ -1908,6 +2016,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.album`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"searchalbum.php",
 								},
 							},
 							map[string]any{
@@ -1943,13 +2055,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/searchtrack.php",
-								"parts": []any{
-									"{api_key}",
-									"searchtrack.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "searchtrack.php",
 									},
 								},
 								"select": map[string]any{
@@ -1962,6 +2078,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.track`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"searchtrack.php",
 								},
 							},
 							map[string]any{
@@ -1988,13 +2108,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/discography.php",
-								"parts": []any{
-									"{api_key}",
-									"discography.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "discography.php",
 									},
 								},
 								"select": map[string]any{
@@ -2006,6 +2130,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.album`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"discography.php",
 								},
 							},
 							map[string]any{
@@ -2034,13 +2162,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/search.php",
-								"parts": []any{
-									"{api_key}",
-									"search.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "search.php",
 									},
 								},
 								"select": map[string]any{
@@ -2052,6 +2184,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body.artists`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"search.php",
 								},
 							},
 						},
@@ -2084,13 +2220,17 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/{apiKey}/discography-mb.php",
-								"parts": []any{
-									"{api_key}",
-									"discography-mb.php",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"apiKey": "api_key",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"var": "api_key",
+									},
+									map[string]any{
+										"lit": "discography-mb.php",
 									},
 								},
 								"select": map[string]any{
@@ -2102,6 +2242,10 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"{api_key}",
+									"discography-mb.php",
 								},
 							},
 						},
@@ -2140,14 +2284,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/list/discography/{idArtist}",
-								"parts": []any{
-									"list",
-									"discography",
-									"{id_artist}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"idArtist": "id_artist",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "list",
+									},
+									map[string]any{
+										"lit": "discography",
+									},
+									map[string]any{
+										"var": "id_artist",
 									},
 								},
 								"select": map[string]any{
@@ -2158,6 +2308,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"list",
+									"discography",
+									"{id_artist}",
 								},
 							},
 						},
@@ -2208,14 +2363,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/lookup/album/{idAlbum}",
-								"parts": []any{
-									"lookup",
-									"album",
-									"{id_album}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"idAlbum": "id_album",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "lookup",
+									},
+									map[string]any{
+										"lit": "album",
+									},
+									map[string]any{
+										"var": "id_album",
 									},
 								},
 								"select": map[string]any{
@@ -2226,6 +2387,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"lookup",
+									"album",
+									"{id_album}",
 								},
 							},
 							map[string]any{
@@ -2244,14 +2410,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/lookup/artist/{idArtist}",
-								"parts": []any{
-									"lookup",
-									"artist",
-									"{id_artist}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"idArtist": "id_artist",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "lookup",
+									},
+									map[string]any{
+										"lit": "artist",
+									},
+									map[string]any{
+										"var": "id_artist",
 									},
 								},
 								"select": map[string]any{
@@ -2262,6 +2434,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"lookup",
+									"artist",
+									"{id_artist}",
 								},
 							},
 							map[string]any{
@@ -2280,14 +2457,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/lookup/track/{idTrack}",
-								"parts": []any{
-									"lookup",
-									"track",
-									"{id_track}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"idTrack": "id_track",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "lookup",
+									},
+									map[string]any{
+										"lit": "track",
+									},
+									map[string]any{
+										"var": "id_track",
 									},
 								},
 								"select": map[string]any{
@@ -2298,6 +2481,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"lookup",
+									"track",
+									"{id_track}",
 								},
 							},
 							map[string]any{
@@ -2316,14 +2504,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/lookup/album_mb/{musicBrainzId}",
-								"parts": []any{
-									"lookup",
-									"album_mb",
-									"{music_brainz_id}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"musicBrainzId": "music_brainz_id",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "lookup",
+									},
+									map[string]any{
+										"lit": "album_mb",
+									},
+									map[string]any{
+										"var": "music_brainz_id",
 									},
 								},
 								"select": map[string]any{
@@ -2334,6 +2528,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"lookup",
+									"album_mb",
+									"{music_brainz_id}",
 								},
 							},
 							map[string]any{
@@ -2352,14 +2551,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/lookup/artist_mb/{musicBrainzId}",
-								"parts": []any{
-									"lookup",
-									"artist_mb",
-									"{music_brainz_id}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"musicBrainzId": "music_brainz_id",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "lookup",
+									},
+									map[string]any{
+										"lit": "artist_mb",
+									},
+									map[string]any{
+										"var": "music_brainz_id",
 									},
 								},
 								"select": map[string]any{
@@ -2370,6 +2575,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"lookup",
+									"artist_mb",
+									"{music_brainz_id}",
 								},
 							},
 							map[string]any{
@@ -2388,14 +2598,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/lookup/track_mb/{musicBrainzId}",
-								"parts": []any{
-									"lookup",
-									"track_mb",
-									"{music_brainz_id}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"musicBrainzId": "music_brainz_id",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "lookup",
+									},
+									map[string]any{
+										"lit": "track_mb",
+									},
+									map[string]any{
+										"var": "music_brainz_id",
 									},
 								},
 								"select": map[string]any{
@@ -2406,6 +2622,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"lookup",
+									"track_mb",
+									"{music_brainz_id}",
 								},
 							},
 						},
@@ -2471,14 +2692,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/search/album/{albumName}",
-								"parts": []any{
-									"search",
-									"album",
-									"{album_name}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"albumName": "album_name",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "search",
+									},
+									map[string]any{
+										"lit": "album",
+									},
+									map[string]any{
+										"var": "album_name",
 									},
 								},
 								"select": map[string]any{
@@ -2489,6 +2716,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"search",
+									"album",
+									"{album_name}",
 								},
 							},
 							map[string]any{
@@ -2507,14 +2739,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/search/artist/{artistName}",
-								"parts": []any{
-									"search",
-									"artist",
-									"{artist_name}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"artistName": "artist_name",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "search",
+									},
+									map[string]any{
+										"lit": "artist",
+									},
+									map[string]any{
+										"var": "artist_name",
 									},
 								},
 								"select": map[string]any{
@@ -2525,6 +2763,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"search",
+									"artist",
+									"{artist_name}",
 								},
 							},
 							map[string]any{
@@ -2543,14 +2786,20 @@ func MakeConfig() map[string]any {
 								"kind": "http",
 								"method": "GET",
 								"orig": "/search/track/{trackName}",
-								"parts": []any{
-									"search",
-									"track",
-									"{track_name}",
-								},
 								"rename": map[string]any{
 									"param": map[string]any{
 										"trackName": "track_name",
+									},
+								},
+								"segments": []any{
+									map[string]any{
+										"lit": "search",
+									},
+									map[string]any{
+										"lit": "track",
+									},
+									map[string]any{
+										"var": "track_name",
 									},
 								},
 								"select": map[string]any{
@@ -2561,6 +2810,11 @@ func MakeConfig() map[string]any {
 								"transform": map[string]any{
 									"req": "`reqdata`",
 									"res": "`body`",
+								},
+								"parts": []any{
+									"search",
+									"track",
+									"{track_name}",
 								},
 							},
 						},
@@ -2582,6 +2836,17 @@ func MakeConfig() map[string]any {
 			},
 		},
 	}
+}
+
+// The plugin definitions the model selected per feature, as []any so a
+// feature package can consume them without core naming its types. Empty
+// when no active feature declares active plugin groups for this target.
+var featurePlugins = map[string][]any{
+}
+
+// FeaturePlugins is the definitions list for one feature's chain.
+func FeaturePlugins(name string) []any {
+	return featurePlugins[name]
 }
 
 var (

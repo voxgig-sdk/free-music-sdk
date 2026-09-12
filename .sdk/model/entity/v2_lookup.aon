@@ -42,16 +42,22 @@ main: kit: entity: v2_lookup: {
           }
           method: "GET"
           orig: "/lookup/album/{idAlbum}"
-          parts: [
-            "lookup"
-            "album"
-            "{id_album}"
-          ]
           rename: {
             param: {
               idAlbum: "id_album"
             }
           }
+          segments: [
+            {
+              lit: "lookup"
+            }
+            {
+              lit: "album"
+            }
+            {
+              var: "id_album"
+            }
+          ]
           select: {
             exist: [
               "id_album"
@@ -77,16 +83,22 @@ main: kit: entity: v2_lookup: {
           }
           method: "GET"
           orig: "/lookup/artist/{idArtist}"
-          parts: [
-            "lookup"
-            "artist"
-            "{id_artist}"
-          ]
           rename: {
             param: {
               idArtist: "id_artist"
             }
           }
+          segments: [
+            {
+              lit: "lookup"
+            }
+            {
+              lit: "artist"
+            }
+            {
+              var: "id_artist"
+            }
+          ]
           select: {
             exist: [
               "id_artist"
@@ -112,16 +124,22 @@ main: kit: entity: v2_lookup: {
           }
           method: "GET"
           orig: "/lookup/track/{idTrack}"
-          parts: [
-            "lookup"
-            "track"
-            "{id_track}"
-          ]
           rename: {
             param: {
               idTrack: "id_track"
             }
           }
+          segments: [
+            {
+              lit: "lookup"
+            }
+            {
+              lit: "track"
+            }
+            {
+              var: "id_track"
+            }
+          ]
           select: {
             exist: [
               "id_track"
@@ -147,16 +165,22 @@ main: kit: entity: v2_lookup: {
           }
           method: "GET"
           orig: "/lookup/album_mb/{musicBrainzId}"
-          parts: [
-            "lookup"
-            "album_mb"
-            "{music_brainz_id}"
-          ]
           rename: {
             param: {
               musicBrainzId: "music_brainz_id"
             }
           }
+          segments: [
+            {
+              lit: "lookup"
+            }
+            {
+              lit: "album_mb"
+            }
+            {
+              var: "music_brainz_id"
+            }
+          ]
           select: {
             exist: [
               "music_brainz_id"
@@ -182,16 +206,22 @@ main: kit: entity: v2_lookup: {
           }
           method: "GET"
           orig: "/lookup/artist_mb/{musicBrainzId}"
-          parts: [
-            "lookup"
-            "artist_mb"
-            "{music_brainz_id}"
-          ]
           rename: {
             param: {
               musicBrainzId: "music_brainz_id"
             }
           }
+          segments: [
+            {
+              lit: "lookup"
+            }
+            {
+              lit: "artist_mb"
+            }
+            {
+              var: "music_brainz_id"
+            }
+          ]
           select: {
             exist: [
               "music_brainz_id"
@@ -217,16 +247,22 @@ main: kit: entity: v2_lookup: {
           }
           method: "GET"
           orig: "/lookup/track_mb/{musicBrainzId}"
-          parts: [
-            "lookup"
-            "track_mb"
-            "{music_brainz_id}"
-          ]
           rename: {
             param: {
               musicBrainzId: "music_brainz_id"
             }
           }
+          segments: [
+            {
+              lit: "lookup"
+            }
+            {
+              lit: "track_mb"
+            }
+            {
+              var: "music_brainz_id"
+            }
+          ]
           select: {
             exist: [
               "music_brainz_id"

@@ -619,15 +619,19 @@ main: kit: entity: v1_search: {
           }
           method: "GET"
           orig: "/{apiKey}/searchalbum.php"
-          parts: [
-            "{api_key}"
-            "searchalbum.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "searchalbum.php"
+            }
+          ]
           select: {
             exist: [
               "a"
@@ -672,15 +676,19 @@ main: kit: entity: v1_search: {
           }
           method: "GET"
           orig: "/{apiKey}/searchtrack.php"
-          parts: [
-            "{api_key}"
-            "searchtrack.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "searchtrack.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -716,15 +724,19 @@ main: kit: entity: v1_search: {
           }
           method: "GET"
           orig: "/{apiKey}/discography.php"
-          parts: [
-            "{api_key}"
-            "discography.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "discography.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -761,15 +773,19 @@ main: kit: entity: v1_search: {
           }
           method: "GET"
           orig: "/{apiKey}/search.php"
-          parts: [
-            "{api_key}"
-            "search.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "search.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -809,15 +825,19 @@ main: kit: entity: v1_search: {
           }
           method: "GET"
           orig: "/{apiKey}/discography-mb.php"
-          parts: [
-            "{api_key}"
-            "discography-mb.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "discography-mb.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"

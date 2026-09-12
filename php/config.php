@@ -315,13 +315,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/trending.php',
-                  'parts' => [
-                    '{api_key}',
-                    'trending.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'trending.php',
                     ],
                   ],
                   'select' => [
@@ -335,6 +339,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.trending`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'trending.php',
                   ],
                 ],
                 [
@@ -361,13 +369,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/mvid.php',
-                  'parts' => [
-                    '{api_key}',
-                    'mvid.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'mvid.php',
                     ],
                   ],
                   'select' => [
@@ -379,6 +391,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.mvids`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'mvid.php',
                   ],
                 ],
                 [
@@ -406,13 +422,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/track-top10.php',
-                  'parts' => [
-                    '{api_key}',
-                    'track-top10.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'track-top10.php',
                     ],
                   ],
                   'select' => [
@@ -424,6 +444,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.track`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'track-top10.php',
                   ],
                 ],
               ],
@@ -456,13 +480,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/mostloved.php',
-                  'parts' => [
-                    '{api_key}',
-                    'mostloved.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'mostloved.php',
                     ],
                   ],
                   'select' => [
@@ -474,6 +502,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'mostloved.php',
                   ],
                 ],
                 [
@@ -500,13 +532,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/mvid-mb.php',
-                  'parts' => [
-                    '{api_key}',
-                    'mvid-mb.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'mvid-mb.php',
                     ],
                   ],
                   'select' => [
@@ -518,6 +554,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'mvid-mb.php',
                   ],
                 ],
                 [
@@ -544,13 +584,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/track-top10-mb.php',
-                  'parts' => [
-                    '{api_key}',
-                    'track-top10-mb.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'track-top10-mb.php',
                     ],
                   ],
                   'select' => [
@@ -562,6 +606,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'track-top10-mb.php',
                   ],
                 ],
               ],
@@ -1084,13 +1132,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/track.php',
-                  'parts' => [
-                    '{api_key}',
-                    'track.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'track.php',
                     ],
                   ],
                   'select' => [
@@ -1103,6 +1155,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.track`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'track.php',
                   ],
                 ],
                 [
@@ -1135,13 +1191,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/album.php',
-                  'parts' => [
-                    '{api_key}',
-                    'album.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'album.php',
                     ],
                   ],
                   'select' => [
@@ -1154,6 +1214,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.album`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'album.php',
                   ],
                 ],
                 [
@@ -1181,13 +1245,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/artist.php',
-                  'parts' => [
-                    '{api_key}',
-                    'artist.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'artist.php',
                     ],
                   ],
                   'select' => [
@@ -1199,6 +1267,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.artists`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'artist.php',
                   ],
                 ],
               ],
@@ -1231,13 +1303,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/album-mb.php',
-                  'parts' => [
-                    '{api_key}',
-                    'album-mb.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'album-mb.php',
                     ],
                   ],
                   'select' => [
@@ -1249,6 +1325,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'album-mb.php',
                   ],
                 ],
                 [
@@ -1276,13 +1356,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/artist-mb.php',
-                  'parts' => [
-                    '{api_key}',
-                    'artist-mb.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'artist-mb.php',
                     ],
                   ],
                   'select' => [
@@ -1294,6 +1378,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'artist-mb.php',
                   ],
                 ],
                 [
@@ -1320,13 +1408,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/artist-social.php',
-                  'parts' => [
-                    '{api_key}',
-                    'artist-social.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'artist-social.php',
                     ],
                   ],
                   'select' => [
@@ -1338,6 +1430,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'artist-social.php',
                   ],
                 ],
                 [
@@ -1364,13 +1460,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/track-mb.php',
-                  'parts' => [
-                    '{api_key}',
-                    'track-mb.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'track-mb.php',
                     ],
                   ],
                   'select' => [
@@ -1382,6 +1482,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'track-mb.php',
                   ],
                 ],
               ],
@@ -1911,13 +2015,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/searchalbum.php',
-                  'parts' => [
-                    '{api_key}',
-                    'searchalbum.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'searchalbum.php',
                     ],
                   ],
                   'select' => [
@@ -1930,6 +2038,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.album`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'searchalbum.php',
                   ],
                 ],
                 [
@@ -1965,13 +2077,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/searchtrack.php',
-                  'parts' => [
-                    '{api_key}',
-                    'searchtrack.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'searchtrack.php',
                     ],
                   ],
                   'select' => [
@@ -1984,6 +2100,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.track`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'searchtrack.php',
                   ],
                 ],
                 [
@@ -2010,13 +2130,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/discography.php',
-                  'parts' => [
-                    '{api_key}',
-                    'discography.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'discography.php',
                     ],
                   ],
                   'select' => [
@@ -2028,6 +2152,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.album`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'discography.php',
                   ],
                 ],
                 [
@@ -2056,13 +2184,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/search.php',
-                  'parts' => [
-                    '{api_key}',
-                    'search.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'search.php',
                     ],
                   ],
                   'select' => [
@@ -2074,6 +2206,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.artists`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'search.php',
                   ],
                 ],
               ],
@@ -2106,13 +2242,17 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/{apiKey}/discography-mb.php',
-                  'parts' => [
-                    '{api_key}',
-                    'discography-mb.php',
-                  ],
                   'rename' => [
                     'param' => [
                       'apiKey' => 'api_key',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'var' => 'api_key',
+                    ],
+                    [
+                      'lit' => 'discography-mb.php',
                     ],
                   ],
                   'select' => [
@@ -2124,6 +2264,10 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    '{api_key}',
+                    'discography-mb.php',
                   ],
                 ],
               ],
@@ -2162,14 +2306,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/list/discography/{idArtist}',
-                  'parts' => [
-                    'list',
-                    'discography',
-                    '{id_artist}',
-                  ],
                   'rename' => [
                     'param' => [
                       'idArtist' => 'id_artist',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'list',
+                    ],
+                    [
+                      'lit' => 'discography',
+                    ],
+                    [
+                      'var' => 'id_artist',
                     ],
                   ],
                   'select' => [
@@ -2180,6 +2330,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'list',
+                    'discography',
+                    '{id_artist}',
                   ],
                 ],
               ],
@@ -2230,14 +2385,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/lookup/album/{idAlbum}',
-                  'parts' => [
-                    'lookup',
-                    'album',
-                    '{id_album}',
-                  ],
                   'rename' => [
                     'param' => [
                       'idAlbum' => 'id_album',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'lookup',
+                    ],
+                    [
+                      'lit' => 'album',
+                    ],
+                    [
+                      'var' => 'id_album',
                     ],
                   ],
                   'select' => [
@@ -2248,6 +2409,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'lookup',
+                    'album',
+                    '{id_album}',
                   ],
                 ],
                 [
@@ -2266,14 +2432,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/lookup/artist/{idArtist}',
-                  'parts' => [
-                    'lookup',
-                    'artist',
-                    '{id_artist}',
-                  ],
                   'rename' => [
                     'param' => [
                       'idArtist' => 'id_artist',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'lookup',
+                    ],
+                    [
+                      'lit' => 'artist',
+                    ],
+                    [
+                      'var' => 'id_artist',
                     ],
                   ],
                   'select' => [
@@ -2284,6 +2456,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'lookup',
+                    'artist',
+                    '{id_artist}',
                   ],
                 ],
                 [
@@ -2302,14 +2479,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/lookup/track/{idTrack}',
-                  'parts' => [
-                    'lookup',
-                    'track',
-                    '{id_track}',
-                  ],
                   'rename' => [
                     'param' => [
                       'idTrack' => 'id_track',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'lookup',
+                    ],
+                    [
+                      'lit' => 'track',
+                    ],
+                    [
+                      'var' => 'id_track',
                     ],
                   ],
                   'select' => [
@@ -2320,6 +2503,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'lookup',
+                    'track',
+                    '{id_track}',
                   ],
                 ],
                 [
@@ -2338,14 +2526,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/lookup/album_mb/{musicBrainzId}',
-                  'parts' => [
-                    'lookup',
-                    'album_mb',
-                    '{music_brainz_id}',
-                  ],
                   'rename' => [
                     'param' => [
                       'musicBrainzId' => 'music_brainz_id',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'lookup',
+                    ],
+                    [
+                      'lit' => 'album_mb',
+                    ],
+                    [
+                      'var' => 'music_brainz_id',
                     ],
                   ],
                   'select' => [
@@ -2356,6 +2550,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'lookup',
+                    'album_mb',
+                    '{music_brainz_id}',
                   ],
                 ],
                 [
@@ -2374,14 +2573,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/lookup/artist_mb/{musicBrainzId}',
-                  'parts' => [
-                    'lookup',
-                    'artist_mb',
-                    '{music_brainz_id}',
-                  ],
                   'rename' => [
                     'param' => [
                       'musicBrainzId' => 'music_brainz_id',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'lookup',
+                    ],
+                    [
+                      'lit' => 'artist_mb',
+                    ],
+                    [
+                      'var' => 'music_brainz_id',
                     ],
                   ],
                   'select' => [
@@ -2392,6 +2597,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'lookup',
+                    'artist_mb',
+                    '{music_brainz_id}',
                   ],
                 ],
                 [
@@ -2410,14 +2620,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/lookup/track_mb/{musicBrainzId}',
-                  'parts' => [
-                    'lookup',
-                    'track_mb',
-                    '{music_brainz_id}',
-                  ],
                   'rename' => [
                     'param' => [
                       'musicBrainzId' => 'music_brainz_id',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'lookup',
+                    ],
+                    [
+                      'lit' => 'track_mb',
+                    ],
+                    [
+                      'var' => 'music_brainz_id',
                     ],
                   ],
                   'select' => [
@@ -2428,6 +2644,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'lookup',
+                    'track_mb',
+                    '{music_brainz_id}',
                   ],
                 ],
               ],
@@ -2493,14 +2714,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/search/album/{albumName}',
-                  'parts' => [
-                    'search',
-                    'album',
-                    '{album_name}',
-                  ],
                   'rename' => [
                     'param' => [
                       'albumName' => 'album_name',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'search',
+                    ],
+                    [
+                      'lit' => 'album',
+                    ],
+                    [
+                      'var' => 'album_name',
                     ],
                   ],
                   'select' => [
@@ -2511,6 +2738,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'search',
+                    'album',
+                    '{album_name}',
                   ],
                 ],
                 [
@@ -2529,14 +2761,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/search/artist/{artistName}',
-                  'parts' => [
-                    'search',
-                    'artist',
-                    '{artist_name}',
-                  ],
                   'rename' => [
                     'param' => [
                       'artistName' => 'artist_name',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'search',
+                    ],
+                    [
+                      'lit' => 'artist',
+                    ],
+                    [
+                      'var' => 'artist_name',
                     ],
                   ],
                   'select' => [
@@ -2547,6 +2785,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'search',
+                    'artist',
+                    '{artist_name}',
                   ],
                 ],
                 [
@@ -2565,14 +2808,20 @@ class FreeMusicConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/search/track/{trackName}',
-                  'parts' => [
-                    'search',
-                    'track',
-                    '{track_name}',
-                  ],
                   'rename' => [
                     'param' => [
                       'trackName' => 'track_name',
+                    ],
+                  ],
+                  'segments' => [
+                    [
+                      'lit' => 'search',
+                    ],
+                    [
+                      'lit' => 'track',
+                    ],
+                    [
+                      'var' => 'track_name',
                     ],
                   ],
                   'select' => [
@@ -2583,6 +2832,11 @@ class FreeMusicConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body`',
+                  ],
+                  'parts' => [
+                    'search',
+                    'track',
+                    '{track_name}',
                   ],
                 ],
               ],

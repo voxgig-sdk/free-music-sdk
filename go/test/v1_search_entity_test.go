@@ -98,7 +98,7 @@ func TestV1SearchEntity(t *testing.T) {
 		client := setup.client
 
 		// Bootstrap entity data from existing test data (no create step in flow).
-		v1SearchRef01DataRaw := vs.Items(core.ToMapAny(vs.GetPath("existing.v1_search", setup.data)))
+		v1SearchRef01DataRaw := vs.Items(core.ToMapAny(vs.GetPath(setup.data, "existing.v1_search")))
 		var v1SearchRef01Data map[string]any
 		if len(v1SearchRef01DataRaw) > 0 {
 			v1SearchRef01Data = core.ToMapAny(v1SearchRef01DataRaw[0][1])
@@ -159,7 +159,7 @@ func v1_searchBasicSetup(extra map[string]any) *entityTestSetup {
 	client := sdk.TestSDK(options, extra)
 
 	// Generate idmap via transform, matching TS pattern.
-	idmap := vs.Transform(
+	idmap, _ := vs.Transform(
 		[]any{"v1_search01", "v1_search02", "v1_search03", "api_key01"},
 		map[string]any{
 			"`$PACK`": []any{"", map[string]any{
@@ -179,7 +179,7 @@ func v1_searchBasicSetup(extra map[string]any) *entityTestSetup {
 		"FREE_MUSIC_TEST_V1_SEARCH_ENTID": idmap,
 		"FREE_MUSIC_TEST_LIVE":      "FALSE",
 		"FREE_MUSIC_TEST_EXPLAIN":   "FALSE",
-		"FREE_MUSIC_APIKEY":         "NONE",
+		"FREE_MUSIC_APIKEY":         "",
 	})
 
 	idmapResolved := core.ToMapAny(env["FREE_MUSIC_TEST_V1_SEARCH_ENTID"])
@@ -188,11 +188,23 @@ func v1_searchBasicSetup(extra map[string]any) *entityTestSetup {
 	}
 
 	if env["FREE_MUSIC_TEST_LIVE"] == "TRUE" {
+		// An empty map, not a nil one: Merge returns nil when its last entry
+		// is nil, and BasicSetup is normally called with no extras - so a
+		// bare nil silently discarded the apikey and server values below.
+		extraOpts := extra
+		if extraOpts == nil {
+			extraOpts = map[string]any{}
+		}
+
 		mergedOpts := vs.Merge([]any{
+			// liveClientOptions() FIRST, so the generated fields below win:
+			// sdk-test-control.json's test.client.options adds to the live
+			// client, it does not redirect it.
+			liveClientOptions(),
 			map[string]any{
 				"apikey": env["FREE_MUSIC_APIKEY"],
 			},
-			extra,
+			extraOpts,
 		})
 		client = sdk.NewFreeMusicSDK(core.ToMapAny(mergedOpts))
 	}

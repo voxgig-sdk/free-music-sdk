@@ -612,15 +612,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/track.php"
-          parts: [
-            "{api_key}"
-            "track.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "track.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -664,15 +668,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/album.php"
-          parts: [
-            "{api_key}"
-            "album.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "album.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -709,15 +717,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/artist.php"
-          parts: [
-            "{api_key}"
-            "artist.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "artist.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -757,15 +769,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/album-mb.php"
-          parts: [
-            "{api_key}"
-            "album-mb.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "album-mb.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -801,15 +817,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/artist-mb.php"
-          parts: [
-            "{api_key}"
-            "artist-mb.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "artist-mb.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -844,15 +864,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/artist-social.php"
-          parts: [
-            "{api_key}"
-            "artist-social.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "artist-social.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
@@ -887,15 +911,19 @@ main: kit: entity: v1_lookup: {
           }
           method: "GET"
           orig: "/{apiKey}/track-mb.php"
-          parts: [
-            "{api_key}"
-            "track-mb.php"
-          ]
           rename: {
             param: {
               apiKey: "api_key"
             }
           }
+          segments: [
+            {
+              var: "api_key"
+            }
+            {
+              lit: "track-mb.php"
+            }
+          ]
           select: {
             exist: [
               "api_key"
