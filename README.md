@@ -105,7 +105,7 @@ local result, err = client:V2Lookup():load({ id_album = 1 })
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
+| TypeScript | `@voxgig-sdk/free-music-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
 | Python | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
 | PHP | `voxgig-sdk/free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/free-music-sdk/go` | `go get github.com/voxgig-sdk/free-music-sdk/go@latest` |
@@ -119,7 +119,7 @@ local result, err = client:V2Lookup():load({ id_album = 1 })
 ### TypeScript
 
 ```ts
-import { FreeMusicSDK } from '@voxgig-sdk/free-music'
+import { FreeMusicSDK } from '@voxgig-sdk/free-music-sdk'
 
 const client = new FreeMusicSDK({
   apikey: process.env.FREE_MUSIC_APIKEY,
