@@ -293,6 +293,12 @@ main: kit: entity: v1_list: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/trending.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Country code\",\"example\":\"us\",\"in\":\"query\",\"name\":\"country\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Chart type\",\"in\":\"query\",\"name\":\"type\",\"required\":true,\"schema\":{\"enum\":[\"itunes\"],\"type\":\"string\"}},{\"description\":\"Format type\",\"in\":\"query\",\"name\":\"format\",\"required\":true,\"schema\":{\"enum\":[\"albums\",\"singles\"],\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"trending\":{\"items\":{\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/trending.php"
           rename: {
@@ -342,6 +348,12 @@ main: kit: entity: v1_list: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/mvid.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Artist ID\",\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"integer\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"mvids\":{\"items\":{\"properties\":{\"idAlbum\":{\"type\":\"string\"},\"idArtist\":{\"type\":\"string\"},\"idTrack\":{\"type\":\"string\"},\"strDescriptionEN\":{\"type\":\"string\"},\"strMusicVid\":{\"type\":\"string\"},\"strTrack\":{\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/mvid.php"
           rename: {
@@ -389,6 +401,12 @@ main: kit: entity: v1_list: {
                 type: "`$STRING`"
               }
             ]
+          }
+          contract: {
+            id: "GET /{apiKey}/track-top10.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Artist name\",\"example\":\"coldplay\",\"in\":\"query\",\"name\":\"s\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"track\":{\"items\":{\"properties\":{\"idAlbum\":{\"description\":\"Album ID\",\"type\":\"string\"},\"idArtist\":{\"description\":\"Artist ID\",\"type\":\"string\"},\"idIMVDB\":{\"description\":\"IMVDB ID\",\"type\":\"string\"},\"idLyric\":{\"description\":\"Lyrics ID\",\"type\":\"string\"},\"idTrack\":{\"description\":\"Unique track ID\",\"type\":\"string\"},\"intCD\":{\"description\":\"CD number\",\"type\":\"string\"},\"intDuration\":{\"description\":\"Track duration in milliseconds\",\"type\":\"string\"},\"intLoved\":{\"description\":\"Number of loves/likes\",\"type\":\"string\"},\"intMusicVidComments\":{\"description\":\"Music video comment count\",\"type\":\"string\"},\"intMusicVidDislikes\":{\"description\":\"Music video dislike count\",\"type\":\"string\"},\"intMusicVidFavorites\":{\"description\":\"Music video favorite count\",\"type\":\"string\"},\"intMusicVidLikes\":{\"description\":\"Music video like count\",\"type\":\"string\"},\"intMusicVidViews\":{\"description\":\"Music video view count\",\"type\":\"string\"},\"intScore\":{\"description\":\"Track score/rating\",\"type\":\"string\"},\"intScoreVotes\":{\"description\":\"Number of score votes\",\"type\":\"string\"},\"intTotalListeners\":{\"description\":\"Total listener count\",\"type\":\"string\"},\"intTotalPlays\":{\"description\":\"Total play count\",\"type\":\"string\"},\"intTrackNumber\":{\"description\":\"Track number on album\",\"type\":\"string\"},\"strAlbum\":{\"description\":\"Album name\",\"type\":\"string\"},\"strArtist\":{\"description\":\"Artist name\",\"type\":\"string\"},\"strArtistAlternate\":{\"description\":\"Alternative artist name\",\"type\":\"string\"},\"strDescriptionEN\":{\"description\":\"Track description in English\",\"type\":\"string\"},\"strGenre\":{\"description\":\"Musical genre\",\"type\":\"string\"},\"strLocked\":{\"description\":\"Lock status\",\"type\":\"string\"},\"strMood\":{\"description\":\"Track mood\",\"type\":\"string\"},\"strMusicBrainzAlbumID\":{\"description\":\"MusicBrainz Album ID\",\"type\":\"string\"},\"strMusicBrainzArtistID\":{\"description\":\"MusicBrainz Artist ID\",\"type\":\"string\"},\"strMusicBrainzID\":{\"description\":\"MusicBrainz Recording ID\",\"type\":\"string\"},\"strMusicVid\":{\"description\":\"Music video URL\",\"type\":\"string\"},\"strMusicVidCompany\":{\"description\":\"Music video production company\",\"type\":\"string\"},\"strMusicVidDirector\":{\"description\":\"Music video director\",\"type\":\"string\"},\"strMusicVidScreen1\":{\"description\":\"Music video screenshot 1\",\"type\":\"string\"},\"strMusicVidScreen2\":{\"description\":\"Music video screenshot 2\",\"type\":\"string\"},\"strMusicVidScreen3\":{\"description\":\"Music video screenshot 3\",\"type\":\"string\"},\"strStyle\":{\"description\":\"Musical style\",\"type\":\"string\"},\"strTheme\":{\"description\":\"Track theme\",\"type\":\"string\"},\"strTrack\":{\"description\":\"Track name\",\"type\":\"string\"},\"strTrack3x3\":{\"description\":\"3x3 track image URL\",\"type\":\"string\"},\"strTrackLyrics\":{\"description\":\"Track lyrics\",\"type\":\"string\"},\"strTrackThumb\":{\"description\":\"Track thumbnail URL\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
           }
           method: "GET"
           orig: "/{apiKey}/track-top10.php"
@@ -442,6 +460,12 @@ main: kit: entity: v1_list: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/mostloved.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Format type (track or album)\",\"in\":\"query\",\"name\":\"format\",\"required\":true,\"schema\":{\"enum\":[\"track\",\"album\"],\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/mostloved.php"
           rename: {
@@ -489,6 +513,12 @@ main: kit: entity: v1_list: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/mvid-mb.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"MusicBrainz Artist ID\",\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/mvid-mb.php"
           rename: {
@@ -535,6 +565,12 @@ main: kit: entity: v1_list: {
                 type: "`$STRING`"
               }
             ]
+          }
+          contract: {
+            id: "GET /{apiKey}/track-top10-mb.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"MusicBrainz Artist ID\",\"in\":\"query\",\"name\":\"s\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
           }
           method: "GET"
           orig: "/{apiKey}/track-top10-mb.php"

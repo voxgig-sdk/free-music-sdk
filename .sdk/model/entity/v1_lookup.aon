@@ -610,6 +610,12 @@ main: kit: entity: v1_lookup: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/track.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Album ID\",\"in\":\"query\",\"name\":\"m\",\"required\":false,\"schema\":{\"type\":\"integer\"}},{\"description\":\"Track ID\",\"in\":\"query\",\"name\":\"h\",\"required\":false,\"schema\":{\"type\":\"integer\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"track\":{\"items\":{\"properties\":{\"idAlbum\":{\"description\":\"Album ID\",\"type\":\"string\"},\"idArtist\":{\"description\":\"Artist ID\",\"type\":\"string\"},\"idIMVDB\":{\"description\":\"IMVDB ID\",\"type\":\"string\"},\"idLyric\":{\"description\":\"Lyrics ID\",\"type\":\"string\"},\"idTrack\":{\"description\":\"Unique track ID\",\"type\":\"string\"},\"intCD\":{\"description\":\"CD number\",\"type\":\"string\"},\"intDuration\":{\"description\":\"Track duration in milliseconds\",\"type\":\"string\"},\"intLoved\":{\"description\":\"Number of loves/likes\",\"type\":\"string\"},\"intMusicVidComments\":{\"description\":\"Music video comment count\",\"type\":\"string\"},\"intMusicVidDislikes\":{\"description\":\"Music video dislike count\",\"type\":\"string\"},\"intMusicVidFavorites\":{\"description\":\"Music video favorite count\",\"type\":\"string\"},\"intMusicVidLikes\":{\"description\":\"Music video like count\",\"type\":\"string\"},\"intMusicVidViews\":{\"description\":\"Music video view count\",\"type\":\"string\"},\"intScore\":{\"description\":\"Track score/rating\",\"type\":\"string\"},\"intScoreVotes\":{\"description\":\"Number of score votes\",\"type\":\"string\"},\"intTotalListeners\":{\"description\":\"Total listener count\",\"type\":\"string\"},\"intTotalPlays\":{\"description\":\"Total play count\",\"type\":\"string\"},\"intTrackNumber\":{\"description\":\"Track number on album\",\"type\":\"string\"},\"strAlbum\":{\"description\":\"Album name\",\"type\":\"string\"},\"strArtist\":{\"description\":\"Artist name\",\"type\":\"string\"},\"strArtistAlternate\":{\"description\":\"Alternative artist name\",\"type\":\"string\"},\"strDescriptionEN\":{\"description\":\"Track description in English\",\"type\":\"string\"},\"strGenre\":{\"description\":\"Musical genre\",\"type\":\"string\"},\"strLocked\":{\"description\":\"Lock status\",\"type\":\"string\"},\"strMood\":{\"description\":\"Track mood\",\"type\":\"string\"},\"strMusicBrainzAlbumID\":{\"description\":\"MusicBrainz Album ID\",\"type\":\"string\"},\"strMusicBrainzArtistID\":{\"description\":\"MusicBrainz Artist ID\",\"type\":\"string\"},\"strMusicBrainzID\":{\"description\":\"MusicBrainz Recording ID\",\"type\":\"string\"},\"strMusicVid\":{\"description\":\"Music video URL\",\"type\":\"string\"},\"strMusicVidCompany\":{\"description\":\"Music video production company\",\"type\":\"string\"},\"strMusicVidDirector\":{\"description\":\"Music video director\",\"type\":\"string\"},\"strMusicVidScreen1\":{\"description\":\"Music video screenshot 1\",\"type\":\"string\"},\"strMusicVidScreen2\":{\"description\":\"Music video screenshot 2\",\"type\":\"string\"},\"strMusicVidScreen3\":{\"description\":\"Music video screenshot 3\",\"type\":\"string\"},\"strStyle\":{\"description\":\"Musical style\",\"type\":\"string\"},\"strTheme\":{\"description\":\"Track theme\",\"type\":\"string\"},\"strTrack\":{\"description\":\"Track name\",\"type\":\"string\"},\"strTrack3x3\":{\"description\":\"3x3 track image URL\",\"type\":\"string\"},\"strTrackLyrics\":{\"description\":\"Track lyrics\",\"type\":\"string\"},\"strTrackThumb\":{\"description\":\"Track thumbnail URL\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/track.php"
           rename: {
@@ -666,6 +672,12 @@ main: kit: entity: v1_lookup: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/album.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Artist ID\",\"in\":\"query\",\"name\":\"i\",\"required\":false,\"schema\":{\"type\":\"integer\"}},{\"description\":\"Album ID\",\"example\":2115888,\"in\":\"query\",\"name\":\"m\",\"required\":false,\"schema\":{\"type\":\"integer\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"album\":{\"items\":{\"properties\":{\"idAlbum\":{\"description\":\"Unique album ID\",\"type\":\"string\"},\"idArtist\":{\"description\":\"Artist ID\",\"type\":\"string\"},\"idLabel\":{\"description\":\"Label ID\",\"type\":\"string\"},\"intLoved\":{\"description\":\"Number of loves/likes\",\"type\":\"string\"},\"intSales\":{\"description\":\"Sales figures\",\"type\":\"string\"},\"intScore\":{\"description\":\"Album score/rating\",\"type\":\"string\"},\"intScoreVotes\":{\"description\":\"Number of score votes\",\"type\":\"string\"},\"intYearReleased\":{\"description\":\"Release year\",\"type\":\"string\"},\"strAlbum\":{\"description\":\"Album name\",\"type\":\"string\"},\"strAlbum3DCase\":{\"description\":\"3D case image URL\",\"type\":\"string\"},\"strAlbum3DFace\":{\"description\":\"3D face image URL\",\"type\":\"string\"},\"strAlbum3DFlat\":{\"description\":\"3D flat image URL\",\"type\":\"string\"},\"strAlbum3DThumb\":{\"description\":\"3D thumbnail URL\",\"type\":\"string\"},\"strAlbumCDart\":{\"description\":\"CD art URL\",\"type\":\"string\"},\"strAlbumSpine\":{\"description\":\"Album spine image URL\",\"type\":\"string\"},\"strAlbumStripped\":{\"description\":\"Album name stripped of special characters\",\"type\":\"string\"},\"strAlbumThumb\":{\"description\":\"Album thumbnail URL\",\"type\":\"string\"},\"strAlbumThumbBack\":{\"description\":\"Album back cover URL\",\"type\":\"string\"},\"strAlbumThumbHQ\":{\"description\":\"High quality album thumbnail URL\",\"type\":\"string\"},\"strAllMusicID\":{\"description\":\"AllMusic ID\",\"type\":\"string\"},\"strAmazonID\":{\"description\":\"Amazon ID\",\"type\":\"string\"},\"strArtist\":{\"description\":\"Artist name\",\"type\":\"string\"},\"strArtistStripped\":{\"description\":\"Artist name stripped\",\"type\":\"string\"},\"strBBCReviewID\":{\"description\":\"BBC Review ID\",\"type\":\"string\"},\"strDescriptionEN\":{\"description\":\"Album description in English\",\"type\":\"string\"},\"strDiscogsID\":{\"description\":\"Discogs ID\",\"type\":\"string\"},\"strGeniusID\":{\"description\":\"Genius ID\",\"type\":\"string\"},\"strGenre\":{\"description\":\"Musical genre\",\"type\":\"string\"},\"strItunesID\":{\"description\":\"iTunes ID\",\"type\":\"string\"},\"strLabel\":{\"description\":\"Record label\",\"type\":\"string\"},\"strLocation\":{\"description\":\"Recording location\",\"type\":\"string\"},\"strLocked\":{\"description\":\"Lock status\",\"type\":\"string\"},\"strLyricWikiID\":{\"description\":\"LyricWiki ID\",\"type\":\"string\"},\"strMood\":{\"description\":\"Album mood\",\"type\":\"string\"},\"strMusicBrainzArtistID\":{\"description\":\"MusicBrainz Artist ID\",\"type\":\"string\"},\"strMusicBrainzID\":{\"description\":\"MusicBrainz Release Group ID\",\"type\":\"string\"},\"strMusicMozID\":{\"description\":\"MusicMoz ID\",\"type\":\"string\"},\"strRateYourMusicID\":{\"description\":\"Rate Your Music ID\",\"type\":\"string\"},\"strReleaseFormat\":{\"description\":\"Release format (CD, Vinyl, etc.)\",\"type\":\"string\"},\"strReview\":{\"description\":\"Album review\",\"type\":\"string\"},\"strSpeed\":{\"description\":\"Album speed/tempo\",\"type\":\"string\"},\"strStyle\":{\"description\":\"Musical style\",\"type\":\"string\"},\"strTheme\":{\"description\":\"Album theme\",\"type\":\"string\"},\"strWikidataID\":{\"description\":\"Wikidata ID\",\"type\":\"string\"},\"strWikipediaID\":{\"description\":\"Wikipedia ID\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/album.php"
           rename: {
@@ -714,6 +726,12 @@ main: kit: entity: v1_lookup: {
                 type: "`$INTEGER`"
               }
             ]
+          }
+          contract: {
+            id: "GET /{apiKey}/artist.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Artist ID\",\"example\":112024,\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"integer\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"artists\":{\"items\":{\"properties\":{\"idArtist\":{\"description\":\"Unique artist ID\",\"type\":\"string\"},\"idLabel\":{\"description\":\"Label ID\",\"type\":\"string\"},\"intBornYear\":{\"description\":\"Birth year (for solo artists)\",\"type\":\"string\"},\"intCharted\":{\"description\":\"Chart position\",\"type\":\"string\"},\"intDiedYear\":{\"description\":\"Death year (if applicable)\",\"type\":\"string\"},\"intFormedYear\":{\"description\":\"Year the artist was formed\",\"type\":\"string\"},\"intMembers\":{\"description\":\"Number of band members\",\"type\":\"string\"},\"strArtist\":{\"description\":\"Artist name\",\"type\":\"string\"},\"strArtistAlternate\":{\"description\":\"Alternative artist name\",\"type\":\"string\"},\"strArtistBanner\":{\"description\":\"Banner image URL\",\"type\":\"string\"},\"strArtistClearart\":{\"description\":\"Clear art image URL\",\"type\":\"string\"},\"strArtistCutout\":{\"description\":\"Cutout image URL\",\"type\":\"string\"},\"strArtistFanart\":{\"description\":\"Fan art image URL\",\"type\":\"string\"},\"strArtistFanart2\":{\"description\":\"Additional fan art image URL\",\"type\":\"string\"},\"strArtistFanart3\":{\"description\":\"Additional fan art image URL\",\"type\":\"string\"},\"strArtistFanart4\":{\"description\":\"Additional fan art image URL\",\"type\":\"string\"},\"strArtistLogo\":{\"description\":\"Logo image URL\",\"type\":\"string\"},\"strArtistStripped\":{\"description\":\"Artist name stripped of special characters\",\"type\":\"string\"},\"strArtistThumb\":{\"description\":\"Thumbnail image URL\",\"type\":\"string\"},\"strArtistWideThumb\":{\"description\":\"Wide thumbnail image URL\",\"type\":\"string\"},\"strBiographyEN\":{\"description\":\"Biography in English\",\"type\":\"string\"},\"strCountry\":{\"description\":\"Country of origin\",\"type\":\"string\"},\"strCountryCode\":{\"description\":\"Country code\",\"type\":\"string\"},\"strDisbanded\":{\"description\":\"Disbandment status\",\"type\":\"string\"},\"strFacebook\":{\"description\":\"Facebook URL\",\"type\":\"string\"},\"strGender\":{\"description\":\"Gender\",\"type\":\"string\"},\"strGenre\":{\"description\":\"Musical genre\",\"type\":\"string\"},\"strISNIcode\":{\"description\":\"ISNI code\",\"type\":\"string\"},\"strLabel\":{\"description\":\"Record label\",\"type\":\"string\"},\"strLastFMChart\":{\"description\":\"Last.fm chart URL\",\"type\":\"string\"},\"strLocked\":{\"description\":\"Lock status\",\"type\":\"string\"},\"strMood\":{\"description\":\"Musical mood\",\"type\":\"string\"},\"strMusicBrainzID\":{\"description\":\"MusicBrainz ID\",\"type\":\"string\"},\"strStyle\":{\"description\":\"Musical style\",\"type\":\"string\"},\"strTwitter\":{\"description\":\"Twitter handle\",\"type\":\"string\"},\"strWebsite\":{\"description\":\"Official website URL\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
           }
           method: "GET"
           orig: "/{apiKey}/artist.php"
@@ -767,6 +785,12 @@ main: kit: entity: v1_lookup: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/album-mb.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"MusicBrainz Release Group ID\",\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/album-mb.php"
           rename: {
@@ -815,6 +839,12 @@ main: kit: entity: v1_lookup: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/artist-mb.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"MusicBrainz Artist ID\",\"example\":\"cc197bad-dc9c-440d-a5b5-d52ba2e14234\",\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/artist-mb.php"
           rename: {
@@ -862,6 +892,12 @@ main: kit: entity: v1_lookup: {
               }
             ]
           }
+          contract: {
+            id: "GET /{apiKey}/artist-social.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"Artist ID\",\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"integer\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/{apiKey}/artist-social.php"
           rename: {
@@ -908,6 +944,12 @@ main: kit: entity: v1_lookup: {
                 type: "`$STRING`"
               }
             ]
+          }
+          contract: {
+            id: "GET /{apiKey}/track-mb.php"
+            json: "{\"parameters\":[{\"in\":\"path\",\"name\":\"apiKey\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"description\":\"MusicBrainz Recording ID\",\"in\":\"query\",\"name\":\"i\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"protocol\":\"http\",\"responses\":{\"200\":{\"description\":\"Successful response\"}},\"securitySchemes\":{\"ApiKeyAuth\":{\"description\":\"API key for V2 endpoints (Premium only)\",\"in\":\"header\",\"name\":\"X-API-KEY\",\"type\":\"apiKey\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
           }
           method: "GET"
           orig: "/{apiKey}/track-mb.php"

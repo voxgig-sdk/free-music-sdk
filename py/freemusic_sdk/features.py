@@ -1,12 +1,18 @@
 # FreeMusic SDK feature factory
 
 from freemusic_sdk.feature.base_feature import FreeMusicBaseFeature
+from freemusic_sdk.feature.ratelimit_feature import FreeMusicRatelimitFeature
+from freemusic_sdk.feature.retry_feature import FreeMusicRetryFeature
 from freemusic_sdk.feature.test_feature import FreeMusicTestFeature
+from freemusic_sdk.feature.timeout_feature import FreeMusicTimeoutFeature
 
 
 _FEATURES = {
     "base": lambda: FreeMusicBaseFeature(),
+    "ratelimit": lambda: FreeMusicRatelimitFeature(),
+    "retry": lambda: FreeMusicRetryFeature(),
     "test": lambda: FreeMusicTestFeature(),
+    "timeout": lambda: FreeMusicTimeoutFeature(),
 }
 
 
