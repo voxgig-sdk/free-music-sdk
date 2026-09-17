@@ -105,12 +105,12 @@ local result, err = client:V2Lookup():load({ id_album = 1 })
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/free-music-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
-| Python | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
-| PHP | `voxgig-sdk/free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
+| TypeScript | `@voxgig-sdk/free-music-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/tags) |
+| Python | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/tags) |
+| PHP | `voxgig-sdk/free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/free-music-sdk/go` | `go get github.com/voxgig-sdk/free-music-sdk/go@latest` |
-| Ruby | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
-| Lua | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/releases) |
+| Ruby | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/tags) |
+| Lua | `voxgig-sdk-free-music` | publish pending — [install from git tag](https://github.com/voxgig-sdk/free-music-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/free-music-sdk/go-cli` | `go install github.com/voxgig-sdk/free-music-sdk/go-cli/cmd/free-music@latest` |
 | Go MCP server | `github.com/voxgig-sdk/free-music-sdk/go-mcp` | `go get github.com/voxgig-sdk/free-music-sdk/go-mcp@latest` |
 
